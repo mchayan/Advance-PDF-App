@@ -3,9 +3,6 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a53a303f44b59aef75f094c3688ae2ee/jetified-android-viewpager-transformers-1.0.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a53a303f44b59aef75f094c3688ae2ee/jetified-android-viewpager-transformers-1.0.1/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b5a039da074766a81cce52ec4f641a27/jetified-android-viewpager-transformers-1.0.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b5a039da074766a81cce52ec4f641a27/jetified-android-viewpager-transformers-1.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b5a039da074766a81cce52ec4f641a27/jetified-android-viewpager-transformers-1.0.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

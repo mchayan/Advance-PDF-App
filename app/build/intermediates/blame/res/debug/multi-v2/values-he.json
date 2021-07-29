@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\PDF\\ByManojSir\\Advance-PDF-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-he\\values-he.xml",
+            "outputFile": "C:\\Users\\manoj\\Documents\\Android\\Advance-PDF-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-he\\values-he.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Farhad\\.gradle\\caches\\transforms-2\\files-2.1\\83a5f674913b53b020b7044d11c1b258\\jetified-android-image-cropper-2.7.0\\res\\values-he\\values-he.xml",
+                    "source": "C:\\Users\\manoj\\.gradle\\caches\\transforms-2\\files-2.1\\1f86e4a47d412db384779ff43028e357\\jetified-android-image-cropper-2.7.0\\res\\values-he\\values-he.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Farhad\\.gradle\\caches\\transforms-2\\files-2.1\\68b9b97e65b73477305ef0de08e681ec\\jetified-zxing-android-embedded-3.4.0\\res\\values-he\\values-he.xml",
+                    "source": "C:\\Users\\manoj\\.gradle\\caches\\transforms-2\\files-2.1\\f46cdee979c3b38687f6e603a0589250\\jetified-zxing-android-embedded-3.4.0\\res\\values-he\\values-he.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

@@ -6,7 +6,6 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3e123aa37c4752cc568c057fff62e709/matisse-0.5.3-beta3/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3e123aa37c4752cc568c057fff62e709/matisse-0.5.3-beta3/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3e123aa37c4752cc568c057fff62e709/matisse-0.5.3-beta3/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zhihu.android/matisse/0.5.3-beta3/3ae16f57428c89707211bfcd6c013a21bd86032b/matisse-0.5.3-beta3-javadoc.jar!/" />

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\PDF\\ByManojSir\\Advance-PDF-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-es-rGT\\values-es-rGT.xml",
+            "outputFile": "C:\\Users\\manoj\\Documents\\Android\\Advance-PDF-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-es-rGT\\values-es-rGT.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Farhad\\.gradle\\caches\\transforms-2\\files-2.1\\83a5f674913b53b020b7044d11c1b258\\jetified-android-image-cropper-2.7.0\\res\\values-es-rGT\\values-es-rGT.xml",
+                    "source": "C:\\Users\\manoj\\.gradle\\caches\\transforms-2\\files-2.1\\1f86e4a47d412db384779ff43028e357\\jetified-android-image-cropper-2.7.0\\res\\values-es-rGT\\values-es-rGT.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

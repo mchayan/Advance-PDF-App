@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\PDF\\ByManojSir\\Advance-PDF-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+            "outputFile": "C:\\Users\\manoj\\Documents\\Android\\Advance-PDF-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Farhad\\.gradle\\caches\\transforms-2\\files-2.1\\b73c124c126a3b5a3abf881f023b64a2\\jetified-core-0.9.6.0\\res\\values-v11\\values-v11.xml",
+                    "source": "C:\\Users\\manoj\\.gradle\\caches\\transforms-2\\files-2.1\\ba0dd7286a336617e281882c33fd6cf6\\jetified-core-0.9.6.0\\res\\values-v11\\values-v11.xml",
                     "from": {
                         "startLines": "2,19",
                         "startColumns": "4,4",
@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Farhad\\.gradle\\caches\\transforms-2\\files-2.1\\68b9b97e65b73477305ef0de08e681ec\\jetified-zxing-android-embedded-3.4.0\\res\\values-v11\\values-v11.xml",
+                    "source": "C:\\Users\\manoj\\.gradle\\caches\\transforms-2\\files-2.1\\f46cdee979c3b38687f6e603a0589250\\jetified-zxing-android-embedded-3.4.0\\res\\values-v11\\values-v11.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
