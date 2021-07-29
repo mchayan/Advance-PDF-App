@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Bgcolor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:stretchColumns="*"
+        android:layout_marginBottom="40dp"
+        tools:context=".fragment.AddImagesFragment">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/colorPrimary"
+            android:elevation="10dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="4dp">
+        <com.dd.morphingbutton.MorphingButton
+            android:id="@+id/selectFile"
+            style="@style/MorphingButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxWidth="30dp"
+            android:fontFamily="@font/sarabunregular"
+            android:text="@string/merge_file_select"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/colorAccent1"
+            android:backgroundTint="@color/colorPrimary"/>
+        </androidx.cardview.widget.CardView>
+
+
+        <EditText
+            android:id="@+id/split_config"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="24dp"
+            android:ems="10"
+            android:labelFor="@id/split_info"
+            android:inputType="number"
+            android:digits="0123456789-,"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/split_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="24dp"
+            android:gravity="center"
+            android:fontFamily="@font/sarabunregular"
+            android:text="@string/split_info"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent1"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/colorPrimary"
+            android:elevation="10dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="4dp">
+        <com.dd.morphingbutton.MorphingButton
+            android:id="@+id/splitFiles"
+            style="@style/MorphingButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/sarabunregular"
+            android:text="@string/split_pdf"
+            app:layout_constraintBottom_toTopOf="@id/recyclerView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView"
+            android:textColor="@color/colorPrimary"
+            android:backgroundTint="@color/colorAccent1"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/splitfiles_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="24dp"
+            android:fontFamily="@font/sarabunregular"
+            android:text="@string/split_success"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent1"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/splitted_files"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <include layout="@layout/bottom_sheet" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

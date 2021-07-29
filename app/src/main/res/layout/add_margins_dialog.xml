@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/Bgcolor">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Top Margin"
+        android:fontFamily="@font/sarabunregular"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent1" />
+
+    <EditText
+        android:id="@+id/topMarginEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/sarabunregular"
+        android:inputType="number"
+        android:hint="0 cm"
+        android:textColorHint="#bdbdbdbd"
+        android:textColor="@color/colorAccent1"/>
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bottom Margin"
+        android:fontFamily="@font/sarabunregular"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent1"/>
+
+    <EditText
+        android:id="@+id/bottomMarginEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/sarabunregular"
+        android:inputType="number"
+        android:hint="0 cm"
+        android:textColorHint="#bdbdbdbd"
+        android:textColor="@color/colorAccent1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Right Margin"
+        android:fontFamily="@font/sarabunregular"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent1"/>
+
+    <EditText
+        android:id="@+id/rightMarginEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/sarabunregular"
+        android:inputType="number"
+        android:hint="0 cm"
+        android:textColorHint="#bdbdbdbd"
+        android:textColor="@color/colorAccent1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Left Margin"
+        android:fontFamily="@font/sarabunregular"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent1"/>
+
+    <EditText
+        android:id="@+id/leftMarginEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/sarabunregular"
+        android:inputType="number"
+        android:hint="0 cm"
+        android:textColorHint="#bdbdbdbd"
+        android:textColor="@color/colorAccent1"/>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">701513372570-h2f0c4fk5qcmnvuk0ofq9s0gg8oudkkr.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">701513372570</string>
+    <string name="google_api_key" translatable="false">AIzaSyDCpiVgujSM3rm89fZQMfgw_HoCFONDU_M</string>
+    <string name="google_app_id" translatable="false">1:701513372570:android:5ef0637ca4ed4cc2906023</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDCpiVgujSM3rm89fZQMfgw_HoCFONDU_M</string>
+    <string name="google_storage_bucket" translatable="false">pdf-advance-tool-f036c.appspot.com</string>
+    <string name="project_id" translatable="false">pdf-advance-tool-f036c</string>
+</resources>

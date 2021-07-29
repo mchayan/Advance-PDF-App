@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "701513372570",
+    "project_id": "pdf-advance-tool-f036c",
+    "storage_bucket": "pdf-advance-tool-f036c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:701513372570:android:5ef0637ca4ed4cc2906023",
+        "android_client_info": {
+          "package_name": "com.editmypdffree.rdtl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "701513372570-h2f0c4fk5qcmnvuk0ofq9s0gg8oudkkr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCpiVgujSM3rm89fZQMfgw_HoCFONDU_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "701513372570-h2f0c4fk5qcmnvuk0ofq9s0gg8oudkkr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

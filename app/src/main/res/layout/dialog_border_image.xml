@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/Bgcolor">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sarabunregular"
+        android:text="@string/border_width_prompt"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent1"/>
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/border_width"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/compress_dialog_enter_prompt"
+        android:fontFamily="@font/sarabunregular"
+        android:textSize="20sp"
+        android:textColorHint="#bdbdbdbd"
+        android:textColor="@color/colorAccent1"/>
+
+    <CheckBox
+        android:id="@+id/cbSetDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/sarabunregular"
+        android:text="@string/set_as_default"
+        android:textColor="@color/colorAccent1"
+        android:buttonTint="@color/colorAccent1"/>
+
+</LinearLayout>

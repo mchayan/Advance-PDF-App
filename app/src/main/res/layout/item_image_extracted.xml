@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/Bgcolor">
+
+    <ImageView
+        android:id="@+id/imagePreview"
+        android:layout_width="40dp"
+        android:padding="5dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/default_content_description"
+        app:tint="#ffffff" />
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/fileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:fontFamily="@font/sarabunregular"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent1"
+            />
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+</LinearLayout>

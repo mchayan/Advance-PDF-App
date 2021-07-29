@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+     android:background="@color/Bgcolor">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sarabunregular"
+        android:text="@string/quality_image"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent1"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/quality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sarabunregular"
+            android:hint="@string/compress_dialog_enter_prompt"
+            android:textSize="20sp"
+            android:textColorHint="#bdbdbdbd"
+            android:textColor="@color/colorAccent1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/compress_dialog_percentage"
+            android:fontFamily="@font/sarabunregular"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent1"/>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/cbSetDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sarabunregular"
+        android:layout_marginTop="20dp"
+        android:text="@string/set_as_default"
+        android:textColor="@color/colorAccent1"
+        android:buttonTint="@color/colorAccent1"/>
+
+</LinearLayout>

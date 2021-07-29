@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/Bgcolor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/radio_group_page_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/page_size_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:textSize="16sp"
+                android:buttonTint="@color/colorAccent1"
+                android:textColor="@color/colorAccent1"/>
+
+            <RadioButton
+                android:id="@+id/page_size_letter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/letter"
+                android:fontFamily="@font/sarabunregular"
+                android:textSize="16sp"
+                android:textColor="@color/colorAccent1"
+                android:buttonTint="@color/colorAccent1"/>
+
+            <RadioButton
+                android:id="@+id/page_size_legal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/legal"
+                android:fontFamily="@font/sarabunregular"
+                android:textSize="16sp"
+                android:textColor="@color/colorAccent1"
+                android:buttonTint="@color/colorAccent1"/>
+
+            <RadioButton
+                android:id="@+id/page_size_executive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/executive"
+                android:fontFamily="@font/sarabunregular"
+                android:textSize="16sp"
+                android:textColor="@color/colorAccent1"
+                android:buttonTint="@color/colorAccent1"/>
+
+            <RadioButton
+                android:id="@+id/page_size_ledger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ledger"
+                android:fontFamily="@font/sarabunregular"
+                android:textSize="16sp"
+                android:textColor="@color/colorAccent1"
+                android:buttonTint="@color/colorAccent1"/>
+
+            <RadioButton
+                android:id="@+id/page_size_tabloid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tabloid"
+                android:fontFamily="@font/sarabunregular"
+                android:textSize="16sp"
+                android:textColor="@color/colorAccent1"
+                android:buttonTint="@color/colorAccent1"/>
+
+            <RadioButton
+                android:id="@+id/page_size_a0_a10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/a0_to_a10"
+                android:fontFamily="@font/sarabunregular"
+                android:textSize="16sp"
+                android:textColor="@color/colorAccent1"
+                android:buttonTint="@color/colorAccent1"/>
+
+            <RadioButton
+                android:id="@+id/page_size_b0_b10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/b0_to_b10"
+                android:fontFamily="@font/sarabunregular"
+                android:textSize="16sp"
+                android:textColor="@color/colorAccent1"
+                android:buttonTint="@color/colorAccent1"/>
+
+        </RadioGroup>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/createImages1"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selectFile1"
+            app:cardBackgroundColor="@color/colorAccent1"
+            android:elevation="10dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="5dp"
+            android:layout_margin="4dp">
+            <Spinner
+
+                android:id="@+id/spinner_page_size_a0_a10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:entries="@array/array_page_sizes_a0_b10"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selectFile1"
+            app:cardBackgroundColor="@color/colorAccent1"
+            android:elevation="10dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="5dp"
+            android:layout_margin="4dp">
+            <Spinner
+                android:id="@+id/spinner_page_size_b0_b10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/array_page_sizes_b0_b10"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/set_as_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/sarabunregular"
+        android:text="@string/set_as_default"
+        android:textColor="@color/colorAccent1"
+        android:buttonTint="@color/colorAccent1"/>
+</LinearLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Bgcolor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:id="@+id/popup"
+        android:visibility="visible"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_margin="30dp"
+            app:cardBackgroundColor="@color/colorAccent1"
+            android:elevation="10dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="20dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/colorPrimary"
+            android:elevation="10dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="10dp">
+        <com.dd.morphingbutton.MorphingButton
+            android:id="@+id/selectFile"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:fontFamily="@font/sarabunregular"
+            android:textColor="@color/colorAccent1"
+            android:backgroundTint="@color/Bgcolor"/>
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:backgroundTint="@color/colorAccent1"
+                        android:background="@drawable/image_pluse"
+                        android:layout_gravity="center"
+                        android:translationZ="2dp"
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textSize="24dp"
+                    android:text="@string/merge_file_select"
+                    android:gravity="center"
+                    android:letterSpacing="0.1"
+                    android:textColor="@color/colorGray">
+
+                </TextView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/add_images_all"
+        android:orientation="vertical"
+        android:stretchColumns="*"
+        tools:context=".fragment.AddImagesFragment"
+        android:visibility="gone">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="24dp"
+            android:fontFamily="@font/sarabunregular"
+            android:gravity="center_horizontal"
+            android:text="@string/selected_images_text"
+            android:textColor="@color/colorAccent1"/>
+
+        <TextView
+            android:id="@+id/tvNoOfImages"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/myrecycler_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/colorPrimary"
+            android:elevation="10dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="4dp">
+            <com.dd.morphingbutton.MorphingButton
+                android:id="@+id/addImages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxWidth="30dp"
+                android:padding="3dip"
+                android:fontFamily="@font/sarabunregular"
+                style="@style/MorphingButton"
+                android:text="@string/add_images"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textColor="@color/colorPrimary"
+                android:backgroundTint="@color/colorAccent1"
+                android:visibility="gone"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/colorPrimary"
+            android:elevation="10dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="4dp">
+            <com.dd.morphingbutton.MorphingButton
+                android:id="@+id/pdfCreate"
+                style="@style/MorphingButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:maxWidth="30dp"
+                android:padding="3dip"
+                android:fontFamily="@font/sarabunregular"
+                android:text="@string/create_pdf"
+                android:textColor="@color/colorAccent1"
+                android:backgroundTint="@color/colorPrimary"
+                android:visibility="gone"/>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <include layout="@layout/bottom_sheet2" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
