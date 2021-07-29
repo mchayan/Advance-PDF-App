@@ -364,7 +364,7 @@ public class PdfToImageFragment extends Fragment implements BottomSheetPopulate,
                             FragmentManager fm = getFragmentManager();
                             FragmentTransaction fragmentTransaction = fm.beginTransaction();
                             fragmentTransaction.replace(R.id.content, myfragment);
-                           // fragmentTransaction.addToBackStack(null);
+                            // fragmentTransaction.addToBackStack(null);
                             fragmentTransaction.commit();
 
                         }

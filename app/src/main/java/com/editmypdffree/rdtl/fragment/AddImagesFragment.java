@@ -146,14 +146,14 @@ public class AddImagesFragment extends Fragment implements BottomSheetPopulate, 
         switch (requestCode) {
 
             case INTENT_REQUEST_GET_IMAGES:
-               // mImagesUri.clear();
+                // mImagesUri.clear();
                 mImagesUri.addAll(Matisse.obtainPathResult(data));
 
                 if (mImagesUri.size() > 0) {
                     mNoOfImages.setText(String.format(mActivity.getResources()
                             .getString(R.string.images_selected), mImagesUri.size()));
                     mNoOfImages.setVisibility(View.VISIBLE);
-                   // StringUtils.getInstance().showSnackbar(mActivity, R.string.snackbar_images_added);
+                    // StringUtils.getInstance().showSnackbar(mActivity, R.string.snackbar_images_added);
                     mCreatePdf.setEnabled(true);
                     recyclerImges();
 
@@ -340,15 +340,17 @@ public class AddImagesFragment extends Fragment implements BottomSheetPopulate, 
     }
 
 
+    @Override
     public boolean onBackPressed() {
 
-       // Toast.makeText(mActivity, ""+mImagesUri.size(), Toast.LENGTH_SHORT).show();
+        //IOnBackPressed,
 
-        if (mImagesUri.size() !=0) {
+        if (mPath != null) {
             //action not popBackStack
-           //  Toast.makeText(mActivity, "backpress clicked", Toast.LENGTH_SHORT).show();
+            // Toast.makeText(mActivity, "backpress clicked", Toast.LENGTH_SHORT).show();
             AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-            builder.setMessage("Want to back?")
+            builder.setMessage("If You Discard Now, You'll Lose Changes You've Made to It." )
+                    .setTitle("Discard PDF?")
                     .setCancelable(false)
                     .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
@@ -360,7 +362,7 @@ public class AddImagesFragment extends Fragment implements BottomSheetPopulate, 
                             FragmentManager fm = getFragmentManager();
                             FragmentTransaction fragmentTransaction = fm.beginTransaction();
                             fragmentTransaction.replace(R.id.content, myfragment);
-                            fragmentTransaction.addToBackStack(null);
+                            //fragmentTransaction.addToBackStack(null);
                             fragmentTransaction.commit();
 
                         }
@@ -375,7 +377,10 @@ public class AddImagesFragment extends Fragment implements BottomSheetPopulate, 
             return true;
         } else {
             // Toast.makeText(mActivity, "clicked", Toast.LENGTH_SHORT).show();
+            mPath = null;
             return false;
         }
     }
+
+
 }

@@ -220,7 +220,7 @@ public class ImageToPdfFragment extends Fragment implements OnItemClickListener,
             }
         });
         //Horizontal RecyclerView
-      //  myr.setLayoutManager(new LinearLayoutManager(mActivity.getApplicationContext(),LinearLayoutManager.HORIZONTAL,false));
+        //  myr.setLayoutManager(new LinearLayoutManager(mActivity.getApplicationContext(),LinearLayoutManager.HORIZONTAL,false));
 //        LinearLayoutManager layoutManager
 //                = new LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false);
 //        myr.setLayoutManager(layoutManager);
@@ -266,7 +266,7 @@ public class ImageToPdfFragment extends Fragment implements OnItemClickListener,
         if (bundle != null) {
             if (bundle.getBoolean(OPEN_SELECT_IMAGES))
                 startAddingImages();
-               // startAddingImages1();
+            // startAddingImages1();
             ArrayList<Parcelable> uris = bundle.getParcelableArrayList(getString(R.string.bundleKey));
             if (uris == null)
                 return;
@@ -484,7 +484,7 @@ public class ImageToPdfFragment extends Fragment implements OnItemClickListener,
                     mNoOfImages.setText(String.format(mActivity.getResources()
                             .getString(R.string.images_selected), mImagesUri.size()));
                     mNoOfImages.setVisibility(View.VISIBLE);
-                  //  StringUtils.getInstance().showSnackbar(mActivity, "R.string.snackbar_images_added");
+                    //  StringUtils.getInstance().showSnackbar(mActivity, "R.string.snackbar_images_added");
 
                     mCreatePdf.setVisibility(View.VISIBLE);
                     rlBtmCreate.setVisibility(View.VISIBLE);
@@ -498,7 +498,7 @@ public class ImageToPdfFragment extends Fragment implements OnItemClickListener,
 
 
                     recyclerImges();
-                    
+
 
 
                 }
@@ -1210,7 +1210,7 @@ public class ImageToPdfFragment extends Fragment implements OnItemClickListener,
                     FragmentManager fm = getFragmentManager();
                     FragmentTransaction fragmentTransaction = fm.beginTransaction();
                     fragmentTransaction.replace(R.id.content, myfragment);
-                  //  fragmentTransaction.addToBackStack(null);
+                    //  fragmentTransaction.addToBackStack(null);
                     try {
                         fragmentTransaction.commit();
                     }
@@ -1219,7 +1219,7 @@ public class ImageToPdfFragment extends Fragment implements OnItemClickListener,
                     }
 
 
-                  //  openpdf.setVisibility(View.VISIBLE);
+                    //  openpdf.setVisibility(View.VISIBLE);
                 }
                 else {
                     mCreatePdf.setVisibility(View.VISIBLE);
