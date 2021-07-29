@@ -2399,6 +2399,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_crop_image_activity
 layout activity_main
+layout activity_main_activity2nothing
 layout activity_matisse
 layout activity_media_preview
 layout activity_photo_editor

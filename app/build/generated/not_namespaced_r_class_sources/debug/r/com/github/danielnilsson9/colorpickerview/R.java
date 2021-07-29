@@ -41,8 +41,8 @@ public final class R {
     public static final class layout {
         private layout() {}
 
-        public static final int colorpickerview__dialog_color_picker = 0x7f0d002f;
-        public static final int colorpickerview__preference_preview_layout = 0x7f0d0030;
+        public static final int colorpickerview__dialog_color_picker = 0x7f0d0030;
+        public static final int colorpickerview__preference_preview_layout = 0x7f0d0031;
     }
     public static final class style {
         private style() {}

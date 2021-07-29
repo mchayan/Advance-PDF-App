@@ -1634,7 +1634,7 @@
     <string name="location_not_available_open_settings_message">You have previously denied sharing your device location. Please go to settings to enable.</string>
     <string name="location_not_available_open_settings_option">Settings</string>
     <string name="location_not_available_title">Location Not Available</string>
-    <string name="maintain_aspect_ratio">Maintain Aspect Ratio of Images</string>
+    <string name="maintain_aspect_ratio">Please Maintain Aspect Ratio of Images</string>
     <string name="master_password_changed">The Password Seems to Be Incorrect. May Be, You Have Changed the Master Password.</string>
     <string name="merge_file_select">Select a File</string>
     <string name="merge_files">Merge Files</string>
