@@ -421,6 +421,8 @@ public class ImageToPdfFragment extends Fragment implements OnItemClickListener,
 
                     new CreatePdf(mPdfOptions, mHomePath,
                             ImageToPdfFragment.this).execute();
+                    onCreatePdfClick();
+
                 } else {
                     MaterialDialog.Builder builder2 = DialogUtils.getInstance().createOverwriteDialog(mActivity);
                     builder2.onPositive((dialog2, which) -> {
@@ -428,6 +430,7 @@ public class ImageToPdfFragment extends Fragment implements OnItemClickListener,
                         if (isGrayScale)
                             saveImagesInGrayScale();
                         new CreatePdf(mPdfOptions, mHomePath, ImageToPdfFragment.this).execute();
+                        onCreatePdfClick();
                     }).onNegative((dialog1, which) -> createPdf(isGrayScale)).show();
                 }
             }
@@ -497,9 +500,8 @@ public class ImageToPdfFragment extends Fragment implements OnItemClickListener,
 
 
                 ////farhad
-                PopUp.setVisibility(View.GONE);
-                rltvall.setVisibility(View.VISIBLE);
-                AddImageBtn.setVisibility(View.VISIBLE);
+
+                onSelectImage();
 
 
                 /////sobur
@@ -1235,57 +1237,8 @@ public class ImageToPdfFragment extends Fragment implements OnItemClickListener,
             @Override
             public void run() {
                 //Do something after 100ms
-                if (myAdapter.getItemCount()==0) {
-                    mCreatePdf.setVisibility(View.GONE);
-                    rlBtmCreate.setVisibility(View.GONE);
-                    AddImageBtn.setVisibility(View.GONE);
-                    PopUp.setVisibility(View.VISIBLE);
-                    rltvall.setVisibility(View.GONE);
-                    mEnhancementOptionsRecycleView.setVisibility(View.GONE);
-                    adition.setVisibility(View.GONE);
-                    view.setVisibility(View.GONE);
 
-
-                    ////new logic
-//                    btnC1.setVisibility(View.GONE);
-//                    btnC2.setVisibility(View.VISIBLE);
-//                    btnC2.setTranslationZ(10);
-
-
-
-//                    ImageToPdfFragment myfragment;
-//                    myfragment = new ImageToPdfFragment();
-//                    FragmentManager fm = getFragmentManager();
-//                    FragmentTransaction fragmentTransaction = fm.beginTransaction();
-//                    fragmentTransaction.replace(R.id.content, myfragment);
-//                    //  fragmentTransaction.addToBackStack(null);
-//                    try {
-//                        fragmentTransaction.commit();
-//                    }
-//                    catch (Exception e){
-//
-//                    }
-
-
-//                    HomeFragment myfragment;
-//                    myfragment = new HomeFragment();
-//                    FragmentManager fm = getFragmentManager();
-//                    FragmentTransaction fragmentTransaction = fm.beginTransaction();
-//                    fragmentTransaction.replace(R.id.content, myfragment);
-//                    //fragmentTransaction.addToBackStack(null);
-//                    resetValues();
-//                    fragmentTransaction.commit();
-
-
-                    //  openpdf.setVisibility(View.VISIBLE);
-                    //addImages.blockTouch();
-                }
-                else {
-                    mCreatePdf.setVisibility(View.VISIBLE);
-                    rlBtmCreate.setVisibility(View.VISIBLE);
-                    AddImageBtn.setVisibility(View.VISIBLE);
-                    mEnhancementOptionsRecycleView.setVisibility(View.VISIBLE);
-                }
+                onArrayZero();
 
 
 
@@ -1329,5 +1282,80 @@ public class ImageToPdfFragment extends Fragment implements OnItemClickListener,
             // Toast.makeText(mActivity, "clicked", Toast.LENGTH_SHORT).show();
             return false;
         }
+    }
+
+
+    private void onSelectImage(){
+
+        PopUp.setVisibility(View.GONE);
+        rltvall.setVisibility(View.VISIBLE);
+        AddImageBtn.setVisibility(View.VISIBLE);
+
+    }
+
+    private void onArrayZero(){
+
+        if (myAdapter.getItemCount()==0) {
+            mCreatePdf.setVisibility(View.GONE);
+            rlBtmCreate.setVisibility(View.GONE);
+            AddImageBtn.setVisibility(View.GONE);
+            PopUp.setVisibility(View.VISIBLE);
+            rltvall.setVisibility(View.GONE);
+            mEnhancementOptionsRecycleView.setVisibility(View.GONE);
+            adition.setVisibility(View.GONE);
+            view.setVisibility(View.GONE);
+
+
+            ////new logic
+//                    btnC1.setVisibility(View.GONE);
+//                    btnC2.setVisibility(View.VISIBLE);
+//                    btnC2.setTranslationZ(10);
+
+
+
+//                    ImageToPdfFragment myfragment;
+//                    myfragment = new ImageToPdfFragment();
+//                    FragmentManager fm = getFragmentManager();
+//                    FragmentTransaction fragmentTransaction = fm.beginTransaction();
+//                    fragmentTransaction.replace(R.id.content, myfragment);
+//                    //  fragmentTransaction.addToBackStack(null);
+//                    try {
+//                        fragmentTransaction.commit();
+//                    }
+//                    catch (Exception e){
+//
+//                    }
+
+
+//                    HomeFragment myfragment;
+//                    myfragment = new HomeFragment();
+//                    FragmentManager fm = getFragmentManager();
+//                    FragmentTransaction fragmentTransaction = fm.beginTransaction();
+//                    fragmentTransaction.replace(R.id.content, myfragment);
+//                    //fragmentTransaction.addToBackStack(null);
+//                    resetValues();
+//                    fragmentTransaction.commit();
+
+
+            //  openpdf.setVisibility(View.VISIBLE);
+            //addImages.blockTouch();
+        }
+        else {
+            mCreatePdf.setVisibility(View.VISIBLE);
+            rlBtmCreate.setVisibility(View.VISIBLE);
+            AddImageBtn.setVisibility(View.VISIBLE);
+            mEnhancementOptionsRecycleView.setVisibility(View.VISIBLE);
+        }
+    }
+
+    private void onCreatePdfClick(){
+
+        PopUp.setVisibility(View.GONE);
+        rltvall.setVisibility(View.GONE);
+        openpdf.setVisibility(View.VISIBLE);
+        Toast.makeText(mActivity, "cccccccccp", Toast.LENGTH_SHORT).show();
+    }
+    private void onReCreate(){
+
     }
 }
