@@ -25,9 +25,9 @@ public class ExceltoPdfFragment_ViewBinding implements Unbinder {
 
   private View view7f0a009b;
 
-  private View view7f0a01fe;
-
   private View view7f0a01ff;
+
+  private View view7f0a0200;
 
   @UiThread
   public ExceltoPdfFragment_ViewBinding(final ExceltoPdfFragment target, View source) {
@@ -61,7 +61,7 @@ public class ExceltoPdfFragment_ViewBinding implements Unbinder {
     target.mRecyclerViewFiles = Utils.findRequiredViewAsType(source, R.id.recyclerViewFiles, "field 'mRecyclerViewFiles'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.select_excel_file, "field 'selectexlfile' and method 'selectExcelFile'");
     target.selectexlfile = Utils.castView(view, R.id.select_excel_file, "field 'selectexlfile'", MorphingButton.class);
-    view7f0a01fe = view;
+    view7f0a01ff = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -70,7 +70,7 @@ public class ExceltoPdfFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.select_excel_file2, "field 'selectexlfile2' and method 'selectExcelFile2'");
     target.selectexlfile2 = Utils.castView(view, R.id.select_excel_file2, "field 'selectexlfile2'", MorphingButton.class);
-    view7f0a01ff = view;
+    view7f0a0200 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -108,9 +108,9 @@ public class ExceltoPdfFragment_ViewBinding implements Unbinder {
     view7f0a017e = null;
     view7f0a009b.setOnClickListener(null);
     view7f0a009b = null;
-    view7f0a01fe.setOnClickListener(null);
-    view7f0a01fe = null;
     view7f0a01ff.setOnClickListener(null);
     view7f0a01ff = null;
+    view7f0a0200.setOnClickListener(null);
+    view7f0a0200 = null;
   }
 }

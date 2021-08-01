@@ -21,7 +21,7 @@ public class ViewFilesFragment_ViewBinding implements Unbinder {
 
   private View view7f0a00f5;
 
-  private View view7f0a01b2;
+  private View view7f0a01b3;
 
   @UiThread
   public ViewFilesFragment_ViewBinding(final ViewFilesFragment target, View source) {
@@ -42,7 +42,7 @@ public class ViewFilesFragment_ViewBinding implements Unbinder {
     target.emptyView = Utils.findRequiredViewAsType(source, R.id.emptyStatusView, "field 'emptyView'", ConstraintLayout.class);
     target.noPermissionsLayout = Utils.findRequiredViewAsType(source, R.id.no_permissions_view, "field 'noPermissionsLayout'", RelativeLayout.class);
     view = Utils.findRequiredView(source, R.id.provide_permissions, "method 'providePermissions'");
-    view7f0a01b2 = view;
+    view7f0a01b3 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -66,7 +66,7 @@ public class ViewFilesFragment_ViewBinding implements Unbinder {
 
     view7f0a00f5.setOnClickListener(null);
     view7f0a00f5 = null;
-    view7f0a01b2.setOnClickListener(null);
-    view7f0a01b2 = null;
+    view7f0a01b3.setOnClickListener(null);
+    view7f0a01b3 = null;
   }
 }

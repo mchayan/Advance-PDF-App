@@ -19,11 +19,11 @@ import java.lang.Override;
 public class TextToPdfFragment_ViewBinding implements Unbinder {
   private TextToPdfFragment target;
 
-  private View view7f0a01f8;
+  private View view7f0a01f9;
 
   private View view7f0a009e;
 
-  private View view7f0a01fa;
+  private View view7f0a01fb;
 
   @UiThread
   public TextToPdfFragment_ViewBinding(final TextToPdfFragment target, View source) {
@@ -33,7 +33,7 @@ public class TextToPdfFragment_ViewBinding implements Unbinder {
     target.mTextEnhancementOptionsRecycleView = Utils.findRequiredViewAsType(source, R.id.enhancement_options_recycle_view_text, "field 'mTextEnhancementOptionsRecycleView'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.selectFile, "field 'mSelectFile' and method 'selectTextFile'");
     target.mSelectFile = Utils.castView(view, R.id.selectFile, "field 'mSelectFile'", MorphingButton.class);
-    view7f0a01f8 = view;
+    view7f0a01f9 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -50,18 +50,20 @@ public class TextToPdfFragment_ViewBinding implements Unbinder {
       }
     });
     target.view = Utils.findRequiredView(source, R.id.view, "field 'view'");
-    target.popup = Utils.findRequiredViewAsType(source, R.id.popup, "field 'popup'", LinearLayout.class);
-    target.NestedScrollView = Utils.findRequiredViewAsType(source, R.id.NestedScrollView, "field 'NestedScrollView'", NestedScrollView.class);
     target.tvAdi = Utils.findRequiredViewAsType(source, R.id.aditionid, "field 'tvAdi'", TextView.class);
     view = Utils.findRequiredView(source, R.id.selectFile2, "field 'mSelectFile2' and method 'selectTextFile2'");
     target.mSelectFile2 = Utils.castView(view, R.id.selectFile2, "field 'mSelectFile2'", MorphingButton.class);
-    view7f0a01fa = view;
+    view7f0a01fb = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.selectTextFile2();
       }
     });
+    target.popup = Utils.findRequiredViewAsType(source, R.id.popup, "field 'popup'", LinearLayout.class);
+    target.popup2 = Utils.findRequiredViewAsType(source, R.id.popup2, "field 'popup2'", LinearLayout.class);
+    target.NestedScrollView = Utils.findRequiredViewAsType(source, R.id.NestedScrollView, "field 'NestedScrollView'", NestedScrollView.class);
+    target.openpdf = Utils.findRequiredViewAsType(source, R.id.openpdf, "field 'openpdf'", MorphingButton.class);
   }
 
   @Override
@@ -75,16 +77,18 @@ public class TextToPdfFragment_ViewBinding implements Unbinder {
     target.mSelectFile = null;
     target.mCreateTextPdf = null;
     target.view = null;
-    target.popup = null;
-    target.NestedScrollView = null;
     target.tvAdi = null;
     target.mSelectFile2 = null;
+    target.popup = null;
+    target.popup2 = null;
+    target.NestedScrollView = null;
+    target.openpdf = null;
 
-    view7f0a01f8.setOnClickListener(null);
-    view7f0a01f8 = null;
+    view7f0a01f9.setOnClickListener(null);
+    view7f0a01f9 = null;
     view7f0a009e.setOnClickListener(null);
     view7f0a009e = null;
-    view7f0a01fa.setOnClickListener(null);
-    view7f0a01fa = null;
+    view7f0a01fb.setOnClickListener(null);
+    view7f0a01fb = null;
   }
 }

@@ -21,11 +21,11 @@ import java.lang.Override;
 public class InvertPdfFragment_ViewBinding implements Unbinder {
   private InvertPdfFragment target;
 
-  private View view7f0a01f8;
+  private View view7f0a01f9;
 
   private View view7f0a0119;
 
-  private View view7f0a026a;
+  private View view7f0a026b;
 
   @UiThread
   public InvertPdfFragment_ViewBinding(final InvertPdfFragment target, View source) {
@@ -35,7 +35,7 @@ public class InvertPdfFragment_ViewBinding implements Unbinder {
     target.mLottieProgress = Utils.findRequiredViewAsType(source, R.id.lottie_progress, "field 'mLottieProgress'", LottieAnimationView.class);
     view = Utils.findRequiredView(source, R.id.selectFile, "field 'selectFileButton' and method 'showFileChooser'");
     target.selectFileButton = Utils.castView(view, R.id.selectFile, "field 'selectFileButton'", MorphingButton.class);
-    view7f0a01f8 = view;
+    view7f0a01f9 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -57,7 +57,7 @@ public class InvertPdfFragment_ViewBinding implements Unbinder {
     target.mRecyclerViewFiles = Utils.findRequiredViewAsType(source, R.id.recyclerViewFiles, "field 'mRecyclerViewFiles'", RecyclerView.class);
     target.mViewPdf = Utils.findRequiredViewAsType(source, R.id.view_pdf, "field 'mViewPdf'", Button.class);
     view = Utils.findRequiredView(source, R.id.viewFiles, "method 'onViewFilesClick'");
-    view7f0a026a = view;
+    view7f0a026b = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -82,11 +82,11 @@ public class InvertPdfFragment_ViewBinding implements Unbinder {
     target.mRecyclerViewFiles = null;
     target.mViewPdf = null;
 
-    view7f0a01f8.setOnClickListener(null);
-    view7f0a01f8 = null;
+    view7f0a01f9.setOnClickListener(null);
+    view7f0a01f9 = null;
     view7f0a0119.setOnClickListener(null);
     view7f0a0119 = null;
-    view7f0a026a.setOnClickListener(null);
-    view7f0a026a = null;
+    view7f0a026b.setOnClickListener(null);
+    view7f0a026b = null;
   }
 }

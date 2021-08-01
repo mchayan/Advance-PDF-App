@@ -72,14 +72,19 @@ public class TextToPdfFragment extends Fragment implements OnItemClickListener,
     MorphingButton mCreateTextPdf;
     @BindView(R.id.view)
     View view;
-    @BindView(R.id.popup)
-    LinearLayout popup;
-    @BindView(R.id.NestedScrollView)
-    NestedScrollView NestedScrollView;
+
     @BindView(R.id.aditionid)
     TextView tvAdi;
     @BindView(R.id.selectFile2)
     MorphingButton mSelectFile2;
+    @BindView(R.id.popup)
+    LinearLayout popup;
+    @BindView(R.id.popup2)
+    LinearLayout popup2;
+    @BindView(R.id.NestedScrollView)
+    NestedScrollView NestedScrollView;
+    @BindView(R.id.openpdf)
+    MorphingButton openpdf;
 
     private EnhancementOptionsAdapter mTextEnhancementOptionsAdapter;
     private MorphButtonUtility mMorphButtonUtility;
@@ -338,15 +343,28 @@ public class TextToPdfFragment extends Fragment implements OnItemClickListener,
             mButtonClicked = 0;
             return;
         }
-        StringUtils.getInstance().getSnackbarwithAction(mActivity, R.string.snackbar_pdfCreated)
-                .setAction(R.string.snackbar_viewAction,
-                        v -> mFileUtils.openFile(mPath, FileUtils.FileType.e_PDF)).show();
+
+        openpdf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mFileUtils.openFile(mPath, FileUtils.FileType.e_PDF);
+            }
+        });
+       // StringUtils.getInstance().getSnackbarwithAction(mActivity, R.string.snackbar_pdfCreated)
+               // .setAction(R.string.snackbar_viewAction,
+                //        v -> mFileUtils.openFile(mPath, FileUtils.FileType.e_PDF)).show();
         mSelectFile.setText(R.string.select_text_file);
         mMorphButtonUtility.morphToGrey(mCreateTextPdf, mMorphButtonUtility.integer());
         mCreateTextPdf.setEnabled(false);
         mTextFileUri = null;
         mButtonClicked = 0;
         mBuilder = new TextToPDFOptions.Builder(getContext());
+
+        NestedScrollView.setVisibility(View.GONE);
+        popup2.setVisibility(View.VISIBLE);
+        mCreateTextPdf.setVisibility(View.GONE);
+
+
     }
 
     @Override
