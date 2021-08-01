@@ -19,11 +19,11 @@ import java.lang.Override;
 public class TextToPdfFragment_ViewBinding implements Unbinder {
   private TextToPdfFragment target;
 
-  private View view7f0a01f1;
+  private View view7f0a01f6;
 
-  private View view7f0a009c;
+  private View view7f0a009d;
 
-  private View view7f0a01f3;
+  private View view7f0a01f8;
 
   @UiThread
   public TextToPdfFragment_ViewBinding(final TextToPdfFragment target, View source) {
@@ -33,7 +33,7 @@ public class TextToPdfFragment_ViewBinding implements Unbinder {
     target.mTextEnhancementOptionsRecycleView = Utils.findRequiredViewAsType(source, R.id.enhancement_options_recycle_view_text, "field 'mTextEnhancementOptionsRecycleView'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.selectFile, "field 'mSelectFile' and method 'selectTextFile'");
     target.mSelectFile = Utils.castView(view, R.id.selectFile, "field 'mSelectFile'", MorphingButton.class);
-    view7f0a01f1 = view;
+    view7f0a01f6 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -42,7 +42,7 @@ public class TextToPdfFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.createtextpdf, "field 'mCreateTextPdf' and method 'openCreateTextPdf'");
     target.mCreateTextPdf = Utils.castView(view, R.id.createtextpdf, "field 'mCreateTextPdf'", MorphingButton.class);
-    view7f0a009c = view;
+    view7f0a009d = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -55,7 +55,7 @@ public class TextToPdfFragment_ViewBinding implements Unbinder {
     target.tvAdi = Utils.findRequiredViewAsType(source, R.id.aditionid, "field 'tvAdi'", TextView.class);
     view = Utils.findRequiredView(source, R.id.selectFile2, "field 'mSelectFile2' and method 'selectTextFile2'");
     target.mSelectFile2 = Utils.castView(view, R.id.selectFile2, "field 'mSelectFile2'", MorphingButton.class);
-    view7f0a01f3 = view;
+    view7f0a01f8 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -80,11 +80,11 @@ public class TextToPdfFragment_ViewBinding implements Unbinder {
     target.tvAdi = null;
     target.mSelectFile2 = null;
 
-    view7f0a01f1.setOnClickListener(null);
-    view7f0a01f1 = null;
-    view7f0a009c.setOnClickListener(null);
-    view7f0a009c = null;
-    view7f0a01f3.setOnClickListener(null);
-    view7f0a01f3 = null;
+    view7f0a01f6.setOnClickListener(null);
+    view7f0a01f6 = null;
+    view7f0a009d.setOnClickListener(null);
+    view7f0a009d = null;
+    view7f0a01f8.setOnClickListener(null);
+    view7f0a01f8 = null;
   }
 }

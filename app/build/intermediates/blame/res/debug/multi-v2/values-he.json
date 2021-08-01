@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\SumoN\\Desktop\\pdf project\\New folder2\\Advance-PDF-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-he\\values-he.xml",
+            "outputFile": "D:\\PDF\\ByManojSir\\Advance-PDF-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-he\\values-he.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\SumoN\\.gradle\\caches\\transforms-2\\files-2.1\\dc56ed10fbe13e174ba2e79e44538db3\\jetified-zxing-android-embedded-3.4.0\\res\\values-he\\values-he.xml",
+                    "source": "C:\\Users\\Farhad\\.gradle\\caches\\transforms-2\\files-2.1\\83a5f674913b53b020b7044d11c1b258\\jetified-android-image-cropper-2.7.0\\res\\values-he\\values-he.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,146,193,247,301,375,446,523,585",
+                        "endColumns": "90,46,53,53,73,70,76,61,68",
+                        "endOffsets": "141,188,242,296,370,441,518,580,649"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Farhad\\.gradle\\caches\\transforms-2\\files-2.1\\68b9b97e65b73477305ef0de08e681ec\\jetified-zxing-android-embedded-3.4.0\\res\\values-he\\values-he.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -18,16 +28,6 @@
                         "startOffsets": "654,710,760,895",
                         "endColumns": "55,49,134,89",
                         "endOffsets": "705,755,890,980"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\SumoN\\.gradle\\caches\\transforms-2\\files-2.1\\17e8a05e4e5741354f3c44a0544023c2\\jetified-android-image-cropper-2.7.0\\res\\values-he\\values-he.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,146,193,247,301,375,446,523,585",
-                        "endColumns": "90,46,53,53,73,70,76,61,68",
-                        "endOffsets": "141,188,242,296,370,441,518,580,649"
                     }
                 }
             ]

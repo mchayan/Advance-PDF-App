@@ -22,11 +22,11 @@ import java.lang.Override;
 public class SplitFilesFragment_ViewBinding implements Unbinder {
   private SplitFilesFragment target;
 
-  private View view7f0a01f1;
+  private View view7f0a01f6;
 
-  private View view7f0a0213;
+  private View view7f0a0218;
 
-  private View view7f0a0263;
+  private View view7f0a0268;
 
   @UiThread
   public SplitFilesFragment_ViewBinding(final SplitFilesFragment target, View source) {
@@ -36,7 +36,7 @@ public class SplitFilesFragment_ViewBinding implements Unbinder {
     target.mLottieProgress = Utils.findRequiredViewAsType(source, R.id.lottie_progress, "field 'mLottieProgress'", LottieAnimationView.class);
     view = Utils.findRequiredView(source, R.id.selectFile, "field 'selectFileButton' and method 'showFileChooser'");
     target.selectFileButton = Utils.castView(view, R.id.selectFile, "field 'selectFileButton'", MorphingButton.class);
-    view7f0a01f1 = view;
+    view7f0a01f6 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -45,7 +45,7 @@ public class SplitFilesFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.splitFiles, "field 'splitFilesButton' and method 'parse'");
     target.splitFilesButton = Utils.castView(view, R.id.splitFiles, "field 'splitFilesButton'", MorphingButton.class);
-    view7f0a0213 = view;
+    view7f0a0218 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -61,7 +61,7 @@ public class SplitFilesFragment_ViewBinding implements Unbinder {
     target.splitFilesSuccessText = Utils.findRequiredViewAsType(source, R.id.splitfiles_text, "field 'splitFilesSuccessText'", TextView.class);
     target.mSplitConfitEditText = Utils.findRequiredViewAsType(source, R.id.split_config, "field 'mSplitConfitEditText'", EditText.class);
     view = Utils.findRequiredView(source, R.id.viewFiles, "method 'onViewFilesClick'");
-    view7f0a0263 = view;
+    view7f0a0268 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -89,11 +89,11 @@ public class SplitFilesFragment_ViewBinding implements Unbinder {
     target.splitFilesSuccessText = null;
     target.mSplitConfitEditText = null;
 
-    view7f0a01f1.setOnClickListener(null);
-    view7f0a01f1 = null;
-    view7f0a0213.setOnClickListener(null);
-    view7f0a0213 = null;
-    view7f0a0263.setOnClickListener(null);
-    view7f0a0263 = null;
+    view7f0a01f6.setOnClickListener(null);
+    view7f0a01f6 = null;
+    view7f0a0218.setOnClickListener(null);
+    view7f0a0218 = null;
+    view7f0a0268.setOnClickListener(null);
+    view7f0a0268 = null;
   }
 }

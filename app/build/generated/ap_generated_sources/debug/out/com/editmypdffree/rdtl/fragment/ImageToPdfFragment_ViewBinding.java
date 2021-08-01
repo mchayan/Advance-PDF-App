@@ -8,6 +8,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.CallSuper;
 import androidx.annotation.UiThread;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 import butterknife.Unbinder;
 import butterknife.internal.DebouncingOnClickListener;
@@ -20,9 +21,9 @@ import java.lang.Override;
 public class ImageToPdfFragment_ViewBinding implements Unbinder {
   private ImageToPdfFragment target;
 
-  private View view7f0a019c;
+  private View view7f0a01a1;
 
-  private View view7f0a019d;
+  private View view7f0a01a2;
 
   private View view7f0a004c;
 
@@ -33,7 +34,7 @@ public class ImageToPdfFragment_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.pdfCreate, "field 'mCreatePdf' and method 'pdfCreateClicked'");
     target.mCreatePdf = Utils.castView(view, R.id.pdfCreate, "field 'mCreatePdf'", MorphingButton.class);
-    view7f0a019c = view;
+    view7f0a01a1 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -42,7 +43,7 @@ public class ImageToPdfFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.pdfOpen, "field 'mOpenPdf' and method 'openPdf'");
     target.mOpenPdf = Utils.castView(view, R.id.pdfOpen, "field 'mOpenPdf'", MorphingButton.class);
-    view7f0a019d = view;
+    view7f0a01a2 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -60,6 +61,7 @@ public class ImageToPdfFragment_ViewBinding implements Unbinder {
         target.startAddingImages();
       }
     });
+    target.addImages2 = Utils.findRequiredViewAsType(source, R.id.addImages2, "field 'addImages2'", MorphingButton.class);
     target.AddImageBtn = Utils.findRequiredViewAsType(source, R.id.AddImageBtn, "field 'AddImageBtn'", ImageView.class);
     target.rlBtmCreate = Utils.findRequiredViewAsType(source, R.id.relativebtmcreate, "field 'rlBtmCreate'", RelativeLayout.class);
     target.PopUp = Utils.findRequiredViewAsType(source, R.id.popup, "field 'PopUp'", LinearLayout.class);
@@ -67,6 +69,8 @@ public class ImageToPdfFragment_ViewBinding implements Unbinder {
     target.adition = Utils.findRequiredViewAsType(source, R.id.adition, "field 'adition'", TextView.class);
     target.view = Utils.findRequiredView(source, R.id.view, "field 'view'");
     target.openpdf = Utils.findRequiredViewAsType(source, R.id.openpdf, "field 'openpdf'", LinearLayout.class);
+    target.btnC1 = Utils.findRequiredViewAsType(source, R.id.idbtnCard1st, "field 'btnC1'", CardView.class);
+    target.btnC2 = Utils.findRequiredViewAsType(source, R.id.idbtnCard2nd, "field 'btnC2'", CardView.class);
   }
 
   @Override
@@ -81,6 +85,7 @@ public class ImageToPdfFragment_ViewBinding implements Unbinder {
     target.mEnhancementOptionsRecycleView = null;
     target.mNoOfImages = null;
     target.addImages = null;
+    target.addImages2 = null;
     target.AddImageBtn = null;
     target.rlBtmCreate = null;
     target.PopUp = null;
@@ -88,11 +93,13 @@ public class ImageToPdfFragment_ViewBinding implements Unbinder {
     target.adition = null;
     target.view = null;
     target.openpdf = null;
+    target.btnC1 = null;
+    target.btnC2 = null;
 
-    view7f0a019c.setOnClickListener(null);
-    view7f0a019c = null;
-    view7f0a019d.setOnClickListener(null);
-    view7f0a019d = null;
+    view7f0a01a1.setOnClickListener(null);
+    view7f0a01a1 = null;
+    view7f0a01a2.setOnClickListener(null);
+    view7f0a01a2 = null;
     view7f0a004c.setOnClickListener(null);
     view7f0a004c = null;
   }

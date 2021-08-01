@@ -20,13 +20,13 @@ import java.lang.Override;
 public class AddTextFragment_ViewBinding implements Unbinder {
   private AddTextFragment target;
 
-  private View view7f0a01f9;
+  private View view7f0a01fe;
 
-  private View view7f0a01fb;
+  private View view7f0a0200;
 
-  private View view7f0a009a;
+  private View view7f0a009b;
 
-  private View view7f0a0263;
+  private View view7f0a0268;
 
   @UiThread
   public AddTextFragment_ViewBinding(final AddTextFragment target, View source) {
@@ -35,7 +35,7 @@ public class AddTextFragment_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.select_pdf_file, "field 'mSelectPDF' and method 'showPdfFileChooser'");
     target.mSelectPDF = Utils.castView(view, R.id.select_pdf_file, "field 'mSelectPDF'", MorphingButton.class);
-    view7f0a01f9 = view;
+    view7f0a01fe = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -44,7 +44,7 @@ public class AddTextFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.select_text_file, "field 'mSelectText' and method 'showTextFileChooser'");
     target.mSelectText = Utils.castView(view, R.id.select_text_file, "field 'mSelectText'", MorphingButton.class);
-    view7f0a01fb = view;
+    view7f0a0200 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -53,7 +53,7 @@ public class AddTextFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.create_pdf_added_text, "field 'mCreateTextPDF' and method 'openPdfNameDialog'");
     target.mCreateTextPDF = Utils.castView(view, R.id.create_pdf_added_text, "field 'mCreateTextPDF'", MorphingButton.class);
-    view7f0a009a = view;
+    view7f0a009b = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -67,7 +67,7 @@ public class AddTextFragment_ViewBinding implements Unbinder {
     target.mLottieProgress = Utils.findRequiredViewAsType(source, R.id.lottie_progress, "field 'mLottieProgress'", LottieAnimationView.class);
     target.mTextEnhancementOptionsRecycleView = Utils.findRequiredViewAsType(source, R.id.enhancement_options_recycle_view_text, "field 'mTextEnhancementOptionsRecycleView'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.viewFiles, "method 'onViewFilesClick'");
-    view7f0a0263 = view;
+    view7f0a0268 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -93,13 +93,13 @@ public class AddTextFragment_ViewBinding implements Unbinder {
     target.mLottieProgress = null;
     target.mTextEnhancementOptionsRecycleView = null;
 
-    view7f0a01f9.setOnClickListener(null);
-    view7f0a01f9 = null;
-    view7f0a01fb.setOnClickListener(null);
-    view7f0a01fb = null;
-    view7f0a009a.setOnClickListener(null);
-    view7f0a009a = null;
-    view7f0a0263.setOnClickListener(null);
-    view7f0a0263 = null;
+    view7f0a01fe.setOnClickListener(null);
+    view7f0a01fe = null;
+    view7f0a0200.setOnClickListener(null);
+    view7f0a0200 = null;
+    view7f0a009b.setOnClickListener(null);
+    view7f0a009b = null;
+    view7f0a0268.setOnClickListener(null);
+    view7f0a0268 = null;
   }
 }

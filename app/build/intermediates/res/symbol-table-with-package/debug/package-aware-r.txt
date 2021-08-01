@@ -1771,6 +1771,7 @@ id activity_chooser_view_content
 id activity_settings
 id add
 id addImages
+id addImages2
 id add_images
 id add_images_all
 id add_images_fav
@@ -1953,7 +1954,11 @@ id icon
 id icon_frame
 id icon_group
 id icon_only
+id idCard1stWhite
+id idLV1st
 id idListIV
+id idbtnCard1st
+id idbtnCard2nd
 id ifRoom
 id image
 id imagePreview

@@ -21,11 +21,11 @@ import java.lang.Override;
 public class ExtractTextFragment_ViewBinding implements Unbinder {
   private ExtractTextFragment target;
 
-  private View view7f0a00d3;
+  private View view7f0a00d4;
 
-  private View view7f0a0263;
+  private View view7f0a0268;
 
-  private View view7f0a01f9;
+  private View view7f0a01fe;
 
   @UiThread
   public ExtractTextFragment_ViewBinding(final ExtractTextFragment target, View source) {
@@ -35,7 +35,7 @@ public class ExtractTextFragment_ViewBinding implements Unbinder {
     target.mTextView = Utils.findRequiredViewAsType(source, R.id.tv_extract_text_bottom, "field 'mTextView'", TextView.class);
     view = Utils.findRequiredView(source, R.id.extract_text, "field 'extractText' and method 'openExtractText'");
     target.extractText = Utils.castView(view, R.id.extract_text, "field 'extractText'", MorphingButton.class);
-    view7f0a00d3 = view;
+    view7f0a00d4 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -48,7 +48,7 @@ public class ExtractTextFragment_ViewBinding implements Unbinder {
     target.mLayout = Utils.findRequiredViewAsType(source, R.id.layout, "field 'mLayout'", RelativeLayout.class);
     target.mLottieProgress = Utils.findRequiredViewAsType(source, R.id.lottie_progress, "field 'mLottieProgress'", LottieAnimationView.class);
     view = Utils.findRequiredView(source, R.id.viewFiles, "method 'onViewFilesClick'");
-    view7f0a0263 = view;
+    view7f0a0268 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -56,7 +56,7 @@ public class ExtractTextFragment_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.select_pdf_file, "method 'selectPdfFile'");
-    view7f0a01f9 = view;
+    view7f0a01fe = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -80,11 +80,11 @@ public class ExtractTextFragment_ViewBinding implements Unbinder {
     target.mLayout = null;
     target.mLottieProgress = null;
 
-    view7f0a00d3.setOnClickListener(null);
-    view7f0a00d3 = null;
-    view7f0a0263.setOnClickListener(null);
-    view7f0a0263 = null;
-    view7f0a01f9.setOnClickListener(null);
-    view7f0a01f9 = null;
+    view7f0a00d4.setOnClickListener(null);
+    view7f0a00d4 = null;
+    view7f0a0268.setOnClickListener(null);
+    view7f0a0268 = null;
+    view7f0a01fe.setOnClickListener(null);
+    view7f0a01fe = null;
   }
 }

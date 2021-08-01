@@ -19,6 +19,7 @@ import android.os.Looper;
 import android.os.Parcelable;
 import android.preference.PreferenceManager;
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -147,6 +148,8 @@ public class ImageToPdfFragment extends Fragment implements OnItemClickListener,
     LinearLayout imageAdd;
     @BindView(R.id.addImages)
     MorphingButton addImages;
+    @BindView(R.id.addImages2)
+    MorphingButton addImages2;
     @BindView(R.id.AddImageBtn)
     ImageView AddImageBtn;
     @BindView(R.id.relativebtmcreate)
@@ -161,6 +164,10 @@ public class ImageToPdfFragment extends Fragment implements OnItemClickListener,
     View view;
     @BindView(R.id.openpdf)
     LinearLayout openpdf;
+    @BindView(R.id.idbtnCard1st)
+    CardView btnC1;
+    @BindView(R.id.idbtnCard2nd)
+    CardView btnC2;
 
 //    @BindView(R.id.deleteImage)
 //    ImageView DeleteImage;
@@ -186,6 +193,7 @@ public class ImageToPdfFragment extends Fragment implements OnItemClickListener,
     private String mPageNumStyle;
     private int mChoseId;
     private boolean mPermissionGranted = false;
+    int i = 0;
 
     ImageView btnAddImage;
     //ArrayList<String> cars;
@@ -207,6 +215,7 @@ public class ImageToPdfFragment extends Fragment implements OnItemClickListener,
 
         myr=(RecyclerView)root.findViewById(R.id.myrecycler_view);
         btnAddImage = root.findViewById(R.id.AddImageBtn);
+        btnC2 = root.findViewById(R.id.idbtnCard2nd);
         //cars = new ArrayList<String>();
 
         mCreatePdf.setVisibility(View.GONE);
@@ -219,6 +228,25 @@ public class ImageToPdfFragment extends Fragment implements OnItemClickListener,
                 selectImages2();
             }
         });
+
+
+//        if (i == 1) {
+//            addImages2.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    selectImages2();
+//                }
+//            });
+//        }
+
+        addImages2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                selectImages2();
+            }
+        });
+
+
         //Horizontal RecyclerView
         //  myr.setLayoutManager(new LinearLayoutManager(mActivity.getApplicationContext(),LinearLayoutManager.HORIZONTAL,false));
 //        LinearLayoutManager layoutManager
@@ -308,6 +336,7 @@ public class ImageToPdfFragment extends Fragment implements OnItemClickListener,
             getRuntimePermissions();
             return;
         }
+        Log.e("tf",""+mIsButtonAlreadyClicked);
         if (!mIsButtonAlreadyClicked) {
             selectImages();
             mIsButtonAlreadyClicked = true;
@@ -449,7 +478,9 @@ public class ImageToPdfFragment extends Fragment implements OnItemClickListener,
 
 
 
+        Log.e("tf",""+mIsButtonAlreadyClicked);
         mIsButtonAlreadyClicked = false;
+        Log.e("tf",""+mIsButtonAlreadyClicked);
         if (resultCode != Activity.RESULT_OK || data == null)
             return;
 
@@ -464,21 +495,29 @@ public class ImageToPdfFragment extends Fragment implements OnItemClickListener,
 //                    openpdf.setVisibility(View.VISIBLE);
 //                }
 
-                if (PopUp.getVisibility() == View.VISIBLE)
-                {
-                    PopUp.setVisibility(View.GONE);
-                }
+
+                ////farhad
+                PopUp.setVisibility(View.GONE);
+                rltvall.setVisibility(View.VISIBLE);
+                AddImageBtn.setVisibility(View.VISIBLE);
 
 
-                if (rltvall.getVisibility() == View.GONE)
-                {
-                    rltvall.setVisibility(View.VISIBLE);
-                }
-
-                if (AddImageBtn.getVisibility() == View.GONE)
-                {
-                    AddImageBtn.setVisibility(View.VISIBLE);
-                }
+                /////sobur
+//                if (PopUp.getVisibility() == View.VISIBLE)
+//                {
+//                    PopUp.setVisibility(View.GONE);
+//                }
+//
+//
+//                if (rltvall.getVisibility() == View.GONE)
+//                {
+//                    rltvall.setVisibility(View.VISIBLE);
+//                }
+//
+//                if (AddImageBtn.getVisibility() == View.GONE)
+//                {
+//                    AddImageBtn.setVisibility(View.VISIBLE);
+//                }
 
                 if (mImagesUri.size() > 0) {
                     mNoOfImages.setText(String.format(mActivity.getResources()
@@ -504,6 +543,7 @@ public class ImageToPdfFragment extends Fragment implements OnItemClickListener,
                 }
                 mMorphButtonUtility.morphToSquare(mCreatePdf, mMorphButtonUtility.integer());
                 mOpenPdf.setVisibility(View.GONE);
+                //addImages.unblockTouch();
                 break;
 
             case INTENT_REQUEST_GET_IMAGES2:
@@ -1200,26 +1240,45 @@ public class ImageToPdfFragment extends Fragment implements OnItemClickListener,
                     rlBtmCreate.setVisibility(View.GONE);
                     AddImageBtn.setVisibility(View.GONE);
                     PopUp.setVisibility(View.VISIBLE);
-                    rltvall.setVisibility(View.VISIBLE);
+                    rltvall.setVisibility(View.GONE);
                     mEnhancementOptionsRecycleView.setVisibility(View.GONE);
                     adition.setVisibility(View.GONE);
                     view.setVisibility(View.GONE);
 
-                    ImageToPdfFragment myfragment;
-                    myfragment = new ImageToPdfFragment();
-                    FragmentManager fm = getFragmentManager();
-                    FragmentTransaction fragmentTransaction = fm.beginTransaction();
-                    fragmentTransaction.replace(R.id.content, myfragment);
-                    //  fragmentTransaction.addToBackStack(null);
-                    try {
-                        fragmentTransaction.commit();
-                    }
-                    catch (Exception e){
 
-                    }
+                    ////new logic
+//                    btnC1.setVisibility(View.GONE);
+//                    btnC2.setVisibility(View.VISIBLE);
+//                    btnC2.setTranslationZ(10);
+
+
+
+//                    ImageToPdfFragment myfragment;
+//                    myfragment = new ImageToPdfFragment();
+//                    FragmentManager fm = getFragmentManager();
+//                    FragmentTransaction fragmentTransaction = fm.beginTransaction();
+//                    fragmentTransaction.replace(R.id.content, myfragment);
+//                    //  fragmentTransaction.addToBackStack(null);
+//                    try {
+//                        fragmentTransaction.commit();
+//                    }
+//                    catch (Exception e){
+//
+//                    }
+
+
+//                    HomeFragment myfragment;
+//                    myfragment = new HomeFragment();
+//                    FragmentManager fm = getFragmentManager();
+//                    FragmentTransaction fragmentTransaction = fm.beginTransaction();
+//                    fragmentTransaction.replace(R.id.content, myfragment);
+//                    //fragmentTransaction.addToBackStack(null);
+//                    resetValues();
+//                    fragmentTransaction.commit();
 
 
                     //  openpdf.setVisibility(View.VISIBLE);
+                    //addImages.blockTouch();
                 }
                 else {
                     mCreatePdf.setVisibility(View.VISIBLE);

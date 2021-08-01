@@ -19,13 +19,13 @@ import java.lang.Override;
 public class ImageEditor_ViewBinding implements Unbinder {
   private ImageEditor target;
 
-  private View view7f0a01a7;
+  private View view7f0a01ac;
 
-  private View view7f0a016b;
+  private View view7f0a0170;
 
-  private View view7f0a01db;
+  private View view7f0a01e0;
 
-  private View view7f0a01ca;
+  private View view7f0a01cf;
 
   @UiThread
   public ImageEditor_ViewBinding(ImageEditor target) {
@@ -40,7 +40,7 @@ public class ImageEditor_ViewBinding implements Unbinder {
     target.imageCount = Utils.findRequiredViewAsType(source, R.id.imagecount, "field 'imageCount'", TextView.class);
     view = Utils.findRequiredView(source, R.id.previousImageButton, "field 'previousButton' and method 'previousImg'");
     target.previousButton = Utils.castView(view, R.id.previousImageButton, "field 'previousButton'", ImageView.class);
-    view7f0a01a7 = view;
+    view7f0a01ac = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -51,7 +51,7 @@ public class ImageEditor_ViewBinding implements Unbinder {
     target.photoEditorView = Utils.findRequiredViewAsType(source, R.id.photoEditorView, "field 'photoEditorView'", PhotoEditorView.class);
     target.brushColorsView = Utils.findRequiredViewAsType(source, R.id.doodle_colors, "field 'brushColorsView'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.nextimageButton, "method 'nextImg'");
-    view7f0a016b = view;
+    view7f0a0170 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -59,7 +59,7 @@ public class ImageEditor_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.savecurrent, "method 'saveC'");
-    view7f0a01db = view;
+    view7f0a01e0 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -67,7 +67,7 @@ public class ImageEditor_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.resetCurrent, "method 'resetCurrent'");
-    view7f0a01ca = view;
+    view7f0a01cf = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -89,13 +89,13 @@ public class ImageEditor_ViewBinding implements Unbinder {
     target.photoEditorView = null;
     target.brushColorsView = null;
 
-    view7f0a01a7.setOnClickListener(null);
-    view7f0a01a7 = null;
-    view7f0a016b.setOnClickListener(null);
-    view7f0a016b = null;
-    view7f0a01db.setOnClickListener(null);
-    view7f0a01db = null;
-    view7f0a01ca.setOnClickListener(null);
-    view7f0a01ca = null;
+    view7f0a01ac.setOnClickListener(null);
+    view7f0a01ac = null;
+    view7f0a0170.setOnClickListener(null);
+    view7f0a0170 = null;
+    view7f0a01e0.setOnClickListener(null);
+    view7f0a01e0 = null;
+    view7f0a01cf.setOnClickListener(null);
+    view7f0a01cf = null;
   }
 }

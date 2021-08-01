@@ -21,9 +21,9 @@ import java.lang.Override;
 public class AddImagesFragment_ViewBinding implements Unbinder {
   private AddImagesFragment target;
 
-  private View view7f0a01f1;
+  private View view7f0a01f6;
 
-  private View view7f0a019c;
+  private View view7f0a01a1;
 
   private View view7f0a004c;
 
@@ -35,7 +35,7 @@ public class AddImagesFragment_ViewBinding implements Unbinder {
     target.mLottieProgress = Utils.findRequiredViewAsType(source, R.id.lottie_progress, "field 'mLottieProgress'", LottieAnimationView.class);
     view = Utils.findRequiredView(source, R.id.selectFile, "field 'selectFileButton' and method 'showFileChooser'");
     target.selectFileButton = Utils.castView(view, R.id.selectFile, "field 'selectFileButton'", MorphingButton.class);
-    view7f0a01f1 = view;
+    view7f0a01f6 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -44,7 +44,7 @@ public class AddImagesFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.pdfCreate, "field 'mCreatePdf' and method 'parse'");
     target.mCreatePdf = Utils.castView(view, R.id.pdfCreate, "field 'mCreatePdf'", MorphingButton.class);
-    view7f0a019c = view;
+    view7f0a01a1 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -88,10 +88,10 @@ public class AddImagesFragment_ViewBinding implements Unbinder {
     target.PopUp = null;
     target.rltvall = null;
 
-    view7f0a01f1.setOnClickListener(null);
-    view7f0a01f1 = null;
-    view7f0a019c.setOnClickListener(null);
-    view7f0a019c = null;
+    view7f0a01f6.setOnClickListener(null);
+    view7f0a01f6 = null;
+    view7f0a01a1.setOnClickListener(null);
+    view7f0a01a1 = null;
     view7f0a004c.setOnClickListener(null);
     view7f0a004c = null;
   }

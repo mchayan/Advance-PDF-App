@@ -21,13 +21,13 @@ import java.lang.Override;
 public class ExceltoPdfFragment_ViewBinding implements Unbinder {
   private ExceltoPdfFragment target;
 
-  private View view7f0a0175;
+  private View view7f0a017a;
 
-  private View view7f0a0099;
+  private View view7f0a009a;
 
-  private View view7f0a01f7;
+  private View view7f0a01fc;
 
-  private View view7f0a01f8;
+  private View view7f0a01fd;
 
   @UiThread
   public ExceltoPdfFragment_ViewBinding(final ExceltoPdfFragment target, View source) {
@@ -38,7 +38,7 @@ public class ExceltoPdfFragment_ViewBinding implements Unbinder {
     target.mTextView = Utils.findRequiredViewAsType(source, R.id.tv_excel_file_name_bottom, "field 'mTextView'", TextView.class);
     view = Utils.findRequiredView(source, R.id.open_pdf, "field 'mOpenPdf' and method 'openPdf'");
     target.mOpenPdf = Utils.castView(view, R.id.open_pdf, "field 'mOpenPdf'", MorphingButton.class);
-    view7f0a0175 = view;
+    view7f0a017a = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -47,7 +47,7 @@ public class ExceltoPdfFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.create_excel_to_pdf, "field 'mCreateExcelPdf' and method 'openExcelToPdf'");
     target.mCreateExcelPdf = Utils.castView(view, R.id.create_excel_to_pdf, "field 'mCreateExcelPdf'", MorphingButton.class);
-    view7f0a0099 = view;
+    view7f0a009a = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -61,7 +61,7 @@ public class ExceltoPdfFragment_ViewBinding implements Unbinder {
     target.mRecyclerViewFiles = Utils.findRequiredViewAsType(source, R.id.recyclerViewFiles, "field 'mRecyclerViewFiles'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.select_excel_file, "field 'selectexlfile' and method 'selectExcelFile'");
     target.selectexlfile = Utils.castView(view, R.id.select_excel_file, "field 'selectexlfile'", MorphingButton.class);
-    view7f0a01f7 = view;
+    view7f0a01fc = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -70,7 +70,7 @@ public class ExceltoPdfFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.select_excel_file2, "field 'selectexlfile2' and method 'selectExcelFile2'");
     target.selectexlfile2 = Utils.castView(view, R.id.select_excel_file2, "field 'selectexlfile2'", MorphingButton.class);
-    view7f0a01f8 = view;
+    view7f0a01fd = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -104,13 +104,13 @@ public class ExceltoPdfFragment_ViewBinding implements Unbinder {
     target.PopUp2 = null;
     target.rltvall = null;
 
-    view7f0a0175.setOnClickListener(null);
-    view7f0a0175 = null;
-    view7f0a0099.setOnClickListener(null);
-    view7f0a0099 = null;
-    view7f0a01f7.setOnClickListener(null);
-    view7f0a01f7 = null;
-    view7f0a01f8.setOnClickListener(null);
-    view7f0a01f8 = null;
+    view7f0a017a.setOnClickListener(null);
+    view7f0a017a = null;
+    view7f0a009a.setOnClickListener(null);
+    view7f0a009a = null;
+    view7f0a01fc.setOnClickListener(null);
+    view7f0a01fc = null;
+    view7f0a01fd.setOnClickListener(null);
+    view7f0a01fd = null;
   }
 }

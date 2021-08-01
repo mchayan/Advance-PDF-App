@@ -1,10 +1,21 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\SumoN\\Desktop\\pdf project\\New folder2\\Advance-PDF-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+            "outputFile": "D:\\PDF\\ByManojSir\\Advance-PDF-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\SumoN\\.gradle\\caches\\transforms-2\\files-2.1\\dc56ed10fbe13e174ba2e79e44538db3\\jetified-zxing-android-embedded-3.4.0\\res\\values-v11\\values-v11.xml",
+                    "source": "C:\\Users\\Farhad\\.gradle\\caches\\transforms-2\\files-2.1\\b73c124c126a3b5a3abf881f023b64a2\\jetified-core-0.9.6.0\\res\\values-v11\\values-v11.xml",
+                    "from": {
+                        "startLines": "2,19",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,1044",
+                        "endLines": "18,35",
+                        "endColumns": "10,10",
+                        "endOffsets": "1039,2010"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Farhad\\.gradle\\caches\\transforms-2\\files-2.1\\68b9b97e65b73477305ef0de08e681ec\\jetified-zxing-android-embedded-3.4.0\\res\\values-v11\\values-v11.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,17 +31,6 @@
                         "endLines": "37",
                         "endColumns": "10",
                         "endOffsets": "2110"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\SumoN\\.gradle\\caches\\transforms-2\\files-2.1\\ff57da9d6346a2544976e57938c95b56\\jetified-core-0.9.6.0\\res\\values-v11\\values-v11.xml",
-                    "from": {
-                        "startLines": "2,19",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,1044",
-                        "endLines": "18,35",
-                        "endColumns": "10,10",
-                        "endOffsets": "1039,2010"
                     }
                 }
             ]
