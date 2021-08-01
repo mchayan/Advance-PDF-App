@@ -16,9 +16,9 @@ import java.lang.Override;
 public class ZipToPdfFragment_ViewBinding implements Unbinder {
   private ZipToPdfFragment target;
 
-  private View view7f0a01f0;
+  private View view7f0a01f1;
 
-  private View view7f0a0279;
+  private View view7f0a027b;
 
   @UiThread
   public ZipToPdfFragment_ViewBinding(final ZipToPdfFragment target, View source) {
@@ -27,7 +27,7 @@ public class ZipToPdfFragment_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.selectFile, "field 'selectFileButton' and method 'showFileChooser'");
     target.selectFileButton = Utils.castView(view, R.id.selectFile, "field 'selectFileButton'", MorphingButton.class);
-    view7f0a01f0 = view;
+    view7f0a01f1 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -36,7 +36,7 @@ public class ZipToPdfFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.zip_to_pdf, "field 'convertButton' and method 'convertZipToPdf'");
     target.convertButton = Utils.castView(view, R.id.zip_to_pdf, "field 'convertButton'", MorphingButton.class);
-    view7f0a0279 = view;
+    view7f0a027b = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -57,9 +57,9 @@ public class ZipToPdfFragment_ViewBinding implements Unbinder {
     target.convertButton = null;
     target.extractionProgress = null;
 
-    view7f0a01f0.setOnClickListener(null);
-    view7f0a01f0 = null;
-    view7f0a0279.setOnClickListener(null);
-    view7f0a0279 = null;
+    view7f0a01f1.setOnClickListener(null);
+    view7f0a01f1 = null;
+    view7f0a027b.setOnClickListener(null);
+    view7f0a027b = null;
   }
 }

@@ -2116,6 +2116,7 @@ id percent
 id photoEditorView
 id pin
 id popup
+id popup2
 id previousImageButton
 id progressBar
 id progress_circular
@@ -2197,6 +2198,7 @@ id selectFiles
 id select_all
 id select_dialog_listview
 id select_excel_file
+id select_excel_file2
 id select_pdf_file
 id select_pdf_file1
 id select_text_file

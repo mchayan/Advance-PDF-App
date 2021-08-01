@@ -21,7 +21,7 @@ import java.lang.Override;
 public class AddImagesFragment_ViewBinding implements Unbinder {
   private AddImagesFragment target;
 
-  private View view7f0a01f0;
+  private View view7f0a01f1;
 
   private View view7f0a019c;
 
@@ -35,7 +35,7 @@ public class AddImagesFragment_ViewBinding implements Unbinder {
     target.mLottieProgress = Utils.findRequiredViewAsType(source, R.id.lottie_progress, "field 'mLottieProgress'", LottieAnimationView.class);
     view = Utils.findRequiredView(source, R.id.selectFile, "field 'selectFileButton' and method 'showFileChooser'");
     target.selectFileButton = Utils.castView(view, R.id.selectFile, "field 'selectFileButton'", MorphingButton.class);
-    view7f0a01f0 = view;
+    view7f0a01f1 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -65,6 +65,8 @@ public class AddImagesFragment_ViewBinding implements Unbinder {
     target.mLayout = Utils.findRequiredViewAsType(source, R.id.layout, "field 'mLayout'", RelativeLayout.class);
     target.mRecyclerViewFiles = Utils.findRequiredViewAsType(source, R.id.recyclerViewFiles, "field 'mRecyclerViewFiles'", RecyclerView.class);
     target.mNoOfImages = Utils.findRequiredViewAsType(source, R.id.tvNoOfImages, "field 'mNoOfImages'", TextView.class);
+    target.PopUp = Utils.findRequiredViewAsType(source, R.id.popup, "field 'PopUp'", LinearLayout.class);
+    target.rltvall = Utils.findRequiredViewAsType(source, R.id.rltvall, "field 'rltvall'", RelativeLayout.class);
   }
 
   @Override
@@ -83,9 +85,11 @@ public class AddImagesFragment_ViewBinding implements Unbinder {
     target.mLayout = null;
     target.mRecyclerViewFiles = null;
     target.mNoOfImages = null;
+    target.PopUp = null;
+    target.rltvall = null;
 
-    view7f0a01f0.setOnClickListener(null);
-    view7f0a01f0 = null;
+    view7f0a01f1.setOnClickListener(null);
+    view7f0a01f1 = null;
     view7f0a019c.setOnClickListener(null);
     view7f0a019c = null;
     view7f0a004c.setOnClickListener(null);

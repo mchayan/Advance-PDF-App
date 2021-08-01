@@ -100,6 +100,16 @@ public class ExceltoPdfFragment extends Fragment implements MergeFilesAdapter.On
     @BindView(R.id.select_excel_file)
     MorphingButton selectexlfile;
 
+    @BindView(R.id.select_excel_file2)
+    MorphingButton selectexlfile2;
+
+    @BindView(R.id.popup)
+    LinearLayout PopUp;
+    @BindView(R.id.popup2)
+    LinearLayout PopUp2;
+    @BindView(R.id.rltvall)
+    RelativeLayout rltvall;
+
 
     private SharedPreferences mSharedPreferences;
     private MorphButtonUtility mMorphButtonUtility;
@@ -136,6 +146,8 @@ public class ExceltoPdfFragment extends Fragment implements MergeFilesAdapter.On
         mLottieProgress.setVisibility(View.VISIBLE);
         mBottomSheetUtils.populateBottomSheetWithExcelFiles(this);
 
+        //prothomeo hide hoia thake
+        mSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
 
 
         return rootView;
@@ -164,18 +176,44 @@ public class ExceltoPdfFragment extends Fragment implements MergeFilesAdapter.On
     @OnClick(R.id.select_excel_file)
     public void selectExcelFile() {
         if (!mButtonClicked) {
-            Uri uri = Uri.parse(Environment.getRootDirectory() + "/");
-            Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-            intent.setDataAndType(uri, "*/*");
-            intent.addCategory(Intent.CATEGORY_OPENABLE);
-            try {
-                startActivityForResult(
-                        Intent.createChooser(intent, String.valueOf(R.string.select_file)),
-                        mFileSelectCode);
-            } catch (android.content.ActivityNotFoundException ex) {
-                StringUtils.getInstance().showSnackbar(mActivity, R.string.install_file_manager);
-            }
-            mButtonClicked = true;
+//            Uri uri = Uri.parse(Environment.getRootDirectory() + "/");
+//            Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+//            intent.setDataAndType(uri, "*/*");
+//            intent.addCategory(Intent.CATEGORY_OPENABLE);
+//            try {
+//                startActivityForResult(
+//                        Intent.createChooser(intent, String.valueOf(R.string.select_file)),
+//                        mFileSelectCode);
+//            } catch (android.content.ActivityNotFoundException ex) {
+//                StringUtils.getInstance().showSnackbar(mActivity, R.string.install_file_manager);
+//            }
+//            mButtonClicked = true;
+            mBottomSheetUtils.showHideSheet(mSheetBehavior);
+
+
+        }
+
+    }
+
+    @OnClick(R.id.select_excel_file2)
+
+    public void selectExcelFile2() {
+        if (!mButtonClicked) {
+//            Uri uri = Uri.parse(Environment.getRootDirectory() + "/");
+//            Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+//            intent.setDataAndType(uri, "*/*");
+//            intent.addCategory(Intent.CATEGORY_OPENABLE);
+//            try {
+//                startActivityForResult(
+//                        Intent.createChooser(intent, String.valueOf(R.string.select_file)),
+//                        mFileSelectCode);
+//            } catch (android.content.ActivityNotFoundException ex) {
+//                StringUtils.getInstance().showSnackbar(mActivity, R.string.install_file_manager);
+//            }
+//            mButtonClicked = true;
+            mBottomSheetUtils.showHideSheet(mSheetBehavior);
+
+
         }
 
     }
@@ -244,7 +282,7 @@ public class ExceltoPdfFragment extends Fragment implements MergeFilesAdapter.On
     }
 
     private void processUri() {
-        StringUtils.getInstance().showSnackbar(mActivity, getResources().getString(R.string.excel_selected));
+       // StringUtils.getInstance().showSnackbar(mActivity, getResources().getString(R.string.excel_selected));
         String fileName = mFileUtils.getFileName(mExcelFileUri);
         if (fileName != null && !fileName.endsWith(Constants.excelExtension) &&
                 !fileName.endsWith(Constants.excelWorkbookExtension)) {
@@ -264,15 +302,26 @@ public class ExceltoPdfFragment extends Fragment implements MergeFilesAdapter.On
         fileName = getResources().getString(R.string.excel_selected)
                 +": "+ fileName;
         mTextView.setText(fileName);
-        mTextView.setText("fffffffffffffff");
+        //mTextView.setText("fffffffffffffff");
         mTextView.setVisibility(View.VISIBLE);
         mCreateExcelPdf.setEnabled(true);
         mCreateExcelPdf.unblockTouch();
         mMorphButtonUtility.morphToSquare(mCreateExcelPdf, mMorphButtonUtility.integer());
         mOpenPdf.setVisibility(View.GONE);
         selectexlfile.setVisibility(View.VISIBLE);
-        selectexlfile.setText(fileName);
-        mTextView.setVisibility(View.VISIBLE);
+        selectexlfile2.setText(fileName);
+        //mTextView.setVisibility(View.VISIBLE);
+
+        if (PopUp.getVisibility() == View.VISIBLE)
+        {
+            PopUp.setVisibility(View.GONE);
+        }
+
+
+        if (rltvall.getVisibility() == View.GONE)
+        {
+            rltvall.setVisibility(View.VISIBLE);
+        }
     }
 
     /**
@@ -321,6 +370,8 @@ public class ExceltoPdfFragment extends Fragment implements MergeFilesAdapter.On
         new DatabaseHelper(mActivity).insertRecord(mPath, mActivity.getString(R.string.created));
         mTextView.setVisibility(View.GONE);
         mOpenPdf.setVisibility(View.VISIBLE);
+        rltvall.setVisibility(View.GONE);
+        PopUp2.setVisibility(View.VISIBLE);
         mMorphButtonUtility.morphToSuccess(mCreateExcelPdf);
         mCreateExcelPdf.blockTouch();
         mMorphButtonUtility.morphToGrey(mCreateExcelPdf, mMorphButtonUtility.integer());
@@ -408,10 +459,11 @@ public class ExceltoPdfFragment extends Fragment implements MergeFilesAdapter.On
 
     @Override
     public void onItemClick(String path) {
-        mSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+        mSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
         mExcelFileUri = Uri.parse("file://" + path);
         mRealPath = path;
         processUri();
+       // mSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
     }
 
     @Override

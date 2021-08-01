@@ -19,13 +19,13 @@ import java.lang.Override;
 public class ImageEditor_ViewBinding implements Unbinder {
   private ImageEditor target;
 
-  private View view7f0a01a6;
+  private View view7f0a01a7;
 
   private View view7f0a016b;
 
-  private View view7f0a01da;
+  private View view7f0a01db;
 
-  private View view7f0a01c9;
+  private View view7f0a01ca;
 
   @UiThread
   public ImageEditor_ViewBinding(ImageEditor target) {
@@ -40,7 +40,7 @@ public class ImageEditor_ViewBinding implements Unbinder {
     target.imageCount = Utils.findRequiredViewAsType(source, R.id.imagecount, "field 'imageCount'", TextView.class);
     view = Utils.findRequiredView(source, R.id.previousImageButton, "field 'previousButton' and method 'previousImg'");
     target.previousButton = Utils.castView(view, R.id.previousImageButton, "field 'previousButton'", ImageView.class);
-    view7f0a01a6 = view;
+    view7f0a01a7 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -59,7 +59,7 @@ public class ImageEditor_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.savecurrent, "method 'saveC'");
-    view7f0a01da = view;
+    view7f0a01db = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -67,7 +67,7 @@ public class ImageEditor_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.resetCurrent, "method 'resetCurrent'");
-    view7f0a01c9 = view;
+    view7f0a01ca = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -89,13 +89,13 @@ public class ImageEditor_ViewBinding implements Unbinder {
     target.photoEditorView = null;
     target.brushColorsView = null;
 
-    view7f0a01a6.setOnClickListener(null);
-    view7f0a01a6 = null;
+    view7f0a01a7.setOnClickListener(null);
+    view7f0a01a7 = null;
     view7f0a016b.setOnClickListener(null);
     view7f0a016b = null;
-    view7f0a01da.setOnClickListener(null);
-    view7f0a01da = null;
-    view7f0a01c9.setOnClickListener(null);
-    view7f0a01c9 = null;
+    view7f0a01db.setOnClickListener(null);
+    view7f0a01db = null;
+    view7f0a01ca.setOnClickListener(null);
+    view7f0a01ca = null;
   }
 }

@@ -251,7 +251,7 @@ public class PdfToImageFragment extends Fragment implements BottomSheetPopulate,
     @Override
     public void onItemClick(String path) {
         mUri = null;
-        mSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+        mSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
         setTextAndActivateButtons(path);
 
         if (mCreateImagesButton.getVisibility() == View.GONE)

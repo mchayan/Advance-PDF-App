@@ -6,6 +6,9 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c0df75766453eb2c47efdc99f75e3004/jetified-photoeditor-0.2.1/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c0df75766453eb2c47efdc99f75e3004/jetified-photoeditor-0.2.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c0df75766453eb2c47efdc99f75e3004/jetified-photoeditor-0.2.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/41fd15d65fd7efea9ec9197042c03003/jetified-photoeditor-0.2.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/41fd15d65fd7efea9ec9197042c03003/jetified-photoeditor-0.2.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/41fd15d65fd7efea9ec9197042c03003/jetified-photoeditor-0.2.1/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ja.burhanrashid52/photoeditor/0.2.1/a4c3244cfdf4d3f4234b602430d761cff15914cb/photoeditor-0.2.1-javadoc.jar!/" />

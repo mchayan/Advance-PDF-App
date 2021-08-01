@@ -25,7 +25,9 @@ public class ExceltoPdfFragment_ViewBinding implements Unbinder {
 
   private View view7f0a0099;
 
-  private View view7f0a01f6;
+  private View view7f0a01f7;
+
+  private View view7f0a01f8;
 
   @UiThread
   public ExceltoPdfFragment_ViewBinding(final ExceltoPdfFragment target, View source) {
@@ -59,13 +61,25 @@ public class ExceltoPdfFragment_ViewBinding implements Unbinder {
     target.mRecyclerViewFiles = Utils.findRequiredViewAsType(source, R.id.recyclerViewFiles, "field 'mRecyclerViewFiles'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.select_excel_file, "field 'selectexlfile' and method 'selectExcelFile'");
     target.selectexlfile = Utils.castView(view, R.id.select_excel_file, "field 'selectexlfile'", MorphingButton.class);
-    view7f0a01f6 = view;
+    view7f0a01f7 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.selectExcelFile();
       }
     });
+    view = Utils.findRequiredView(source, R.id.select_excel_file2, "field 'selectexlfile2' and method 'selectExcelFile2'");
+    target.selectexlfile2 = Utils.castView(view, R.id.select_excel_file2, "field 'selectexlfile2'", MorphingButton.class);
+    view7f0a01f8 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.selectExcelFile2();
+      }
+    });
+    target.PopUp = Utils.findRequiredViewAsType(source, R.id.popup, "field 'PopUp'", LinearLayout.class);
+    target.PopUp2 = Utils.findRequiredViewAsType(source, R.id.popup2, "field 'PopUp2'", LinearLayout.class);
+    target.rltvall = Utils.findRequiredViewAsType(source, R.id.rltvall, "field 'rltvall'", RelativeLayout.class);
   }
 
   @Override
@@ -85,12 +99,18 @@ public class ExceltoPdfFragment_ViewBinding implements Unbinder {
     target.mLayout = null;
     target.mRecyclerViewFiles = null;
     target.selectexlfile = null;
+    target.selectexlfile2 = null;
+    target.PopUp = null;
+    target.PopUp2 = null;
+    target.rltvall = null;
 
     view7f0a0175.setOnClickListener(null);
     view7f0a0175 = null;
     view7f0a0099.setOnClickListener(null);
     view7f0a0099 = null;
-    view7f0a01f6.setOnClickListener(null);
-    view7f0a01f6 = null;
+    view7f0a01f7.setOnClickListener(null);
+    view7f0a01f7 = null;
+    view7f0a01f8.setOnClickListener(null);
+    view7f0a01f8 = null;
   }
 }

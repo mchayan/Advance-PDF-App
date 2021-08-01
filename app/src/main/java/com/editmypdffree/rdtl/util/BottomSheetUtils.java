@@ -17,7 +17,7 @@ public class BottomSheetUtils  {
         if (sheetBehavior.getState() != BottomSheetBehavior.STATE_EXPANDED) {
             sheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
         } else {
-            sheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+            sheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
         }
     }
 

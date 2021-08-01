@@ -7,7 +7,7 @@
     <string name="select_images_text">Select Images</string>
     <string name="password_protect_pdf_text">Password Protect PDF</string>
     <string name="edit_images_text">Edit Images</string>
-    <string name="open_pdf_text">Open PDF</string>
+    <string name="open_pdf_text">Open This PDF</string>
     <string name="create_pdf_text">Create PDF</string>
     <string name="details"><b>Details</b></string>
     <string name="search_hint">Name of File</string>
@@ -191,6 +191,7 @@
     <string name="snackbar_txtExtracted">Text Extracted!</string>
     <string name="snackbar_pdfselected">PDF File Selected!</string>
     <string name="snackbar_viewAction">View</string>
+    ------------
     <string name="more_options_text">Additional Options</string>
     <string name="snackbar_no_duplicate_pdf">Duplicate Pages Not Found. No New Pdf Created.</string>
     <string name="snackbar_duplicate_removed">A New Pdf Is Created After Removal of Duplicate Pages.</string>

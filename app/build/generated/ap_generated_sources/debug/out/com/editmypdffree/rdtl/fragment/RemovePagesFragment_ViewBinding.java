@@ -23,11 +23,11 @@ import java.lang.Override;
 public class RemovePagesFragment_ViewBinding implements Unbinder {
   private RemovePagesFragment target;
 
-  private View view7f0a01f0;
+  private View view7f0a01f1;
 
   private View view7f0a019c;
 
-  private View view7f0a0261;
+  private View view7f0a0263;
 
   @UiThread
   public RemovePagesFragment_ViewBinding(final RemovePagesFragment target, View source) {
@@ -37,7 +37,7 @@ public class RemovePagesFragment_ViewBinding implements Unbinder {
     target.mLottieProgress = Utils.findRequiredViewAsType(source, R.id.lottie_progress, "field 'mLottieProgress'", LottieAnimationView.class);
     view = Utils.findRequiredView(source, R.id.selectFile, "field 'selectFileButton' and method 'showFileChooser'");
     target.selectFileButton = Utils.castView(view, R.id.selectFile, "field 'selectFileButton'", MorphingButton.class);
-    view7f0a01f0 = view;
+    view7f0a01f1 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -63,7 +63,7 @@ public class RemovePagesFragment_ViewBinding implements Unbinder {
     target.mCompressionInfoText = Utils.findRequiredViewAsType(source, R.id.compressionInfoText, "field 'mCompressionInfoText'", TextView.class);
     target.mViewPdf = Utils.findRequiredViewAsType(source, R.id.view_pdf, "field 'mViewPdf'", Button.class);
     view = Utils.findRequiredView(source, R.id.viewFiles, "method 'onViewFilesClick'");
-    view7f0a0261 = view;
+    view7f0a0263 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -92,11 +92,11 @@ public class RemovePagesFragment_ViewBinding implements Unbinder {
     target.mCompressionInfoText = null;
     target.mViewPdf = null;
 
-    view7f0a01f0.setOnClickListener(null);
-    view7f0a01f0 = null;
+    view7f0a01f1.setOnClickListener(null);
+    view7f0a01f1 = null;
     view7f0a019c.setOnClickListener(null);
     view7f0a019c = null;
-    view7f0a0261.setOnClickListener(null);
-    view7f0a0261 = null;
+    view7f0a0263.setOnClickListener(null);
+    view7f0a0263 = null;
   }
 }

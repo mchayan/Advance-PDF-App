@@ -97,6 +97,16 @@ public class AddImagesFragment extends Fragment implements BottomSheetPopulate, 
     @BindView(R.id.tvNoOfImages)
     TextView mNoOfImages;
 
+//    @BindView(R.id.select_excel_file2)
+//    MorphingButton selectexlfile2;
+
+    @BindView(R.id.popup)
+    LinearLayout PopUp;
+//    @BindView(R.id.popup2)
+//    LinearLayout PopUp2;
+    @BindView(R.id.rltvall)
+    RelativeLayout rltvall;
+
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -124,6 +134,7 @@ public class AddImagesFragment extends Fragment implements BottomSheetPopulate, 
     @OnClick(R.id.selectFile)
     public void showFileChooser() {
 
+        mBottomSheetUtils.showHideSheet(mSheetBehavior);
         mSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
 //        startActivityForResult(mFileUtils.getFileChooser(),
 //                INTENT_REQUEST_PICK_FILE_CODE);
@@ -292,13 +303,18 @@ public class AddImagesFragment extends Fragment implements BottomSheetPopulate, 
 
     @Override
     public void onItemClick(String path) {
-        mSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+
+        mBottomSheetUtils.showHideSheet(mSheetBehavior);
+        mSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
         setTextAndActivateButtons(path);
 
         if (addImages.getVisibility() == View.GONE)
         {
             addImages.setVisibility(View.VISIBLE);
         }
+
+        PopUp.setVisibility(View.GONE);
+        rltvall.setVisibility(View.VISIBLE);
     }
 
     private void setTextAndActivateButtons(String path) {
@@ -337,6 +353,8 @@ public class AddImagesFragment extends Fragment implements BottomSheetPopulate, 
         {
             mCreatePdf.setVisibility(View.VISIBLE);
         }
+
+        //abc
     }
 
 
