@@ -21,17 +21,17 @@ import java.lang.Override;
 public class PdfToImageFragment_ViewBinding implements Unbinder {
   private PdfToImageFragment target;
 
-  private View view7f0a01f6;
+  private View view7f0a01f8;
 
-  private View view7f0a0098;
+  private View view7f0a0099;
+
+  private View view7f0a026c;
+
+  private View view7f0a020a;
 
   private View view7f0a026a;
 
-  private View view7f0a0208;
-
-  private View view7f0a0268;
-
-  private View view7f0a0269;
+  private View view7f0a026b;
 
   @UiThread
   public PdfToImageFragment_ViewBinding(final PdfToImageFragment target, View source) {
@@ -43,7 +43,7 @@ public class PdfToImageFragment_ViewBinding implements Unbinder {
     target.mUpArrow = Utils.findRequiredViewAsType(source, R.id.upArrow, "field 'mUpArrow'", ImageView.class);
     view = Utils.findRequiredView(source, R.id.selectFile, "field 'mSelectFileButton' and method 'showFileChooser'");
     target.mSelectFileButton = Utils.castView(view, R.id.selectFile, "field 'mSelectFileButton'", MorphingButton.class);
-    view7f0a01f6 = view;
+    view7f0a01f8 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -52,7 +52,7 @@ public class PdfToImageFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.createImages, "field 'mCreateImagesButton' and method 'parse'");
     target.mCreateImagesButton = Utils.castView(view, R.id.createImages, "field 'mCreateImagesButton'", MorphingButton.class);
-    view7f0a0098 = view;
+    view7f0a0099 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -65,7 +65,7 @@ public class PdfToImageFragment_ViewBinding implements Unbinder {
     target.mLayout = Utils.findRequiredViewAsType(source, R.id.layout, "field 'mLayout'", RelativeLayout.class);
     target.mRecyclerViewFiles = Utils.findRequiredViewAsType(source, R.id.recyclerViewFiles, "field 'mRecyclerViewFiles'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.viewImagesInGallery, "method 'onImagesInGalleryClick'");
-    view7f0a026a = view;
+    view7f0a026c = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -73,7 +73,7 @@ public class PdfToImageFragment_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.shareImages, "method 'onShareFilesClick'");
-    view7f0a0208 = view;
+    view7f0a020a = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -81,7 +81,7 @@ public class PdfToImageFragment_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.viewFiles, "method 'onViewFilesClick'");
-    view7f0a0268 = view;
+    view7f0a026a = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -89,7 +89,7 @@ public class PdfToImageFragment_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.viewImages, "method 'onViewImagesClicked'");
-    view7f0a0269 = view;
+    view7f0a026b = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -116,17 +116,17 @@ public class PdfToImageFragment_ViewBinding implements Unbinder {
     target.mLayout = null;
     target.mRecyclerViewFiles = null;
 
-    view7f0a01f6.setOnClickListener(null);
-    view7f0a01f6 = null;
-    view7f0a0098.setOnClickListener(null);
-    view7f0a0098 = null;
+    view7f0a01f8.setOnClickListener(null);
+    view7f0a01f8 = null;
+    view7f0a0099.setOnClickListener(null);
+    view7f0a0099 = null;
+    view7f0a026c.setOnClickListener(null);
+    view7f0a026c = null;
+    view7f0a020a.setOnClickListener(null);
+    view7f0a020a = null;
     view7f0a026a.setOnClickListener(null);
     view7f0a026a = null;
-    view7f0a0208.setOnClickListener(null);
-    view7f0a0208 = null;
-    view7f0a0268.setOnClickListener(null);
-    view7f0a0268 = null;
-    view7f0a0269.setOnClickListener(null);
-    view7f0a0269 = null;
+    view7f0a026b.setOnClickListener(null);
+    view7f0a026b = null;
   }
 }

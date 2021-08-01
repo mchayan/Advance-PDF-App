@@ -21,11 +21,11 @@ import java.lang.Override;
 public class RemoveDuplicatePagesFragment_ViewBinding implements Unbinder {
   private RemoveDuplicatePagesFragment target;
 
-  private View view7f0a01f6;
+  private View view7f0a01f8;
 
-  private View view7f0a01c7;
+  private View view7f0a01c9;
 
-  private View view7f0a0268;
+  private View view7f0a026a;
 
   @UiThread
   public RemoveDuplicatePagesFragment_ViewBinding(final RemoveDuplicatePagesFragment target,
@@ -36,7 +36,7 @@ public class RemoveDuplicatePagesFragment_ViewBinding implements Unbinder {
     target.mLottieProgress = Utils.findRequiredViewAsType(source, R.id.lottie_progress, "field 'mLottieProgress'", LottieAnimationView.class);
     view = Utils.findRequiredView(source, R.id.selectFile, "field 'selectFileButton' and method 'showFileChooser'");
     target.selectFileButton = Utils.castView(view, R.id.selectFile, "field 'selectFileButton'", MorphingButton.class);
-    view7f0a01f6 = view;
+    view7f0a01f8 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -45,7 +45,7 @@ public class RemoveDuplicatePagesFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.remove, "field 'removeDuplicateButton' and method 'parse'");
     target.removeDuplicateButton = Utils.castView(view, R.id.remove, "field 'removeDuplicateButton'", MorphingButton.class);
-    view7f0a01c7 = view;
+    view7f0a01c9 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -59,7 +59,7 @@ public class RemoveDuplicatePagesFragment_ViewBinding implements Unbinder {
     target.mRecyclerViewFiles = Utils.findRequiredViewAsType(source, R.id.recyclerViewFiles, "field 'mRecyclerViewFiles'", RecyclerView.class);
     target.mViewPdf = Utils.findRequiredViewAsType(source, R.id.view_pdf, "field 'mViewPdf'", Button.class);
     view = Utils.findRequiredView(source, R.id.viewFiles, "method 'onViewFilesClick'");
-    view7f0a0268 = view;
+    view7f0a026a = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -85,11 +85,11 @@ public class RemoveDuplicatePagesFragment_ViewBinding implements Unbinder {
     target.mRecyclerViewFiles = null;
     target.mViewPdf = null;
 
-    view7f0a01f6.setOnClickListener(null);
-    view7f0a01f6 = null;
-    view7f0a01c7.setOnClickListener(null);
-    view7f0a01c7 = null;
-    view7f0a0268.setOnClickListener(null);
-    view7f0a0268 = null;
+    view7f0a01f8.setOnClickListener(null);
+    view7f0a01f8 = null;
+    view7f0a01c9.setOnClickListener(null);
+    view7f0a01c9 = null;
+    view7f0a026a.setOnClickListener(null);
+    view7f0a026a = null;
   }
 }

@@ -17,7 +17,7 @@ import java.lang.Override;
 public class FavouritesFragment_ViewBinding implements Unbinder {
   private FavouritesFragment target;
 
-  private View view7f0a00d7;
+  private View view7f0a00d8;
 
   @UiThread
   public FavouritesFragment_ViewBinding(final FavouritesFragment target, View source) {
@@ -50,7 +50,7 @@ public class FavouritesFragment_ViewBinding implements Unbinder {
     target.favouritesText = Utils.findRequiredViewAsType(source, R.id.favourites_text, "field 'favouritesText'", TextView.class);
     target.pref_zip_to_pdf = Utils.findRequiredViewAsType(source, R.id.zip_to_pdf_fav, "field 'pref_zip_to_pdf'", MyCardView.class);
     view = Utils.findRequiredView(source, R.id.fav_add_fab, "method 'onAddFavouriteButtonClicked'");
-    view7f0a00d7 = view;
+    view7f0a00d8 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -92,7 +92,7 @@ public class FavouritesFragment_ViewBinding implements Unbinder {
     target.favouritesText = null;
     target.pref_zip_to_pdf = null;
 
-    view7f0a00d7.setOnClickListener(null);
-    view7f0a00d7 = null;
+    view7f0a00d8.setOnClickListener(null);
+    view7f0a00d8 = null;
   }
 }

@@ -33,10 +33,10 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int colorpickerview__color_panel_new = 0x7f0a008c;
-        public static final int colorpickerview__color_panel_old = 0x7f0a008d;
-        public static final int colorpickerview__color_picker_view = 0x7f0a008e;
-        public static final int colorpickerview__preference_preview_color_panel = 0x7f0a008f;
+        public static final int colorpickerview__color_panel_new = 0x7f0a008d;
+        public static final int colorpickerview__color_panel_old = 0x7f0a008e;
+        public static final int colorpickerview__color_picker_view = 0x7f0a008f;
+        public static final int colorpickerview__preference_preview_color_panel = 0x7f0a0090;
     }
     public static final class layout {
         private layout() {}

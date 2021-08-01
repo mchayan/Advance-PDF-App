@@ -1771,6 +1771,7 @@ id activity_chooser_view_content
 id activity_settings
 id add
 id addImages
+id addImages1
 id addImages2
 id add_images
 id add_images_all
@@ -1955,9 +1956,12 @@ id icon_frame
 id icon_group
 id icon_only
 id idCard1stWhite
+id idCard1stWhite2
 id idLV1st
+id idLV1st2
 id idListIV
 id idbtnCard1st
+id idbtnCard1st2
 id idbtnCard2nd
 id ifRoom
 id image
@@ -2073,7 +2077,6 @@ id off
 id on
 id onTouch
 id open_pdf
-id openpdf
 id operationDate
 id operationImage
 id operationType
@@ -2113,7 +2116,6 @@ id parent_matrix
 id password
 id pdfCreate
 id pdfOpen
-id pdfOpen2
 id pdfToImagesText
 id pdf_to_images
 id pdf_to_images_fav

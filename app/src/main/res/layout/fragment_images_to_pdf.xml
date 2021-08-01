@@ -124,98 +124,166 @@
     </LinearLayout>
 
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_margin="10dp"
-            android:backgroundTint="@color/colorAccent1"
-            android:background="@drawable/baseline_share_24"
-            android:layout_alignParentRight="true"
-            android:translationZ="2dp"
-            android:visibility="gone"
-            />
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_margin="@dimen/activity_horizontal_margin"-->
+<!--        android:orientation="vertical"-->
+<!--        android:gravity="center"-->
+<!--        android:id="@+id/openpdf"-->
+<!--        android:visibility="gone"-->
+<!--        android:padding="10dp"-->
+<!--        android:layout_gravity="center">-->
+<!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:padding="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textSize="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textColor="@color/mb_gray"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text="Your PDF has been created successfully!"/>&ndash;&gt;-->
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_gravity="center"-->
+<!--            app:cardBackgroundColor="@color/colorPrimary"-->
+<!--            android:elevation="10dp"-->
+<!--            app:cardElevation="4dp"-->
+<!--            app:cardCornerRadius="30dp"-->
+<!--            android:layout_margin="4dp">-->
+<!--            <com.dd.morphingbutton.MorphingButton-->
+<!--                android:id="@+id/pdfOpen"-->
+<!--                style="@style/MorphingButton"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:fontFamily="@font/sarabunregular"-->
+<!--                android:text="@string/open_pdf_text"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:backgroundTint="@color/colorAccent1"-->
+<!--                android:visibility="visible" />-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--&lt;!&ndash;        <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:orientation="horizontal"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:gravity="center">&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <androidx.cardview.widget.CardView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:cardBackgroundColor="@color/colorPrimary"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:cardCornerRadius="50dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_margin="4dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                >&ndash;&gt;-->
+<!--&lt;!&ndash;                <com.dd.morphingbutton.MorphingButton&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/pdfOpen2"&ndash;&gt;-->
+<!--&lt;!&ndash;                    style="@style/MorphingButton"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:fontFamily="@font/sarabunregular"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="Re-Create PDF"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="@color/colorAccent1"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:backgroundTint="#3c26ae"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:visibility="visible" />&ndash;&gt;-->
+<!--&lt;!&ndash;            </androidx.cardview.widget.CardView>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content">&ndash;&gt;-->
+
+
+
+
+<!--&lt;!&ndash;            </LinearLayout>&ndash;&gt;-->
+<!--&lt;!&ndash;        </LinearLayout>&ndash;&gt;-->
+
+<!--    </LinearLayout>-->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="@dimen/activity_horizontal_margin"
-        android:orientation="vertical"
         android:gravity="center"
-        android:id="@+id/openpdf"
+        android:id="@+id/popup2"
         android:visibility="gone"
-        android:padding="10dp"
-        android:layout_gravity="center">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="10dp"
-            android:textSize="20dp"
-            android:textColor="@color/mb_gray"
-            android:text="Your PDF has been created successfully!"/>
+        >
         <androidx.cardview.widget.CardView
+            android:id="@+id/idCard1stWhite2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_gravity="center"
-            app:cardBackgroundColor="@color/colorPrimary"
+            android:layout_height="400dp"
+            android:layout_margin="30dp"
+            app:cardBackgroundColor="@color/colorAccent1"
             android:elevation="10dp"
             app:cardElevation="4dp"
-            app:cardCornerRadius="50dp"
-            android:layout_margin="4dp">
-            <com.dd.morphingbutton.MorphingButton
-                android:id="@+id/pdfOpen"
-                style="@style/MorphingButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:fontFamily="@font/sarabunregular"
-                android:text="@string/open_pdf_text"
-                android:textColor="@color/colorPrimary"
-                android:backgroundTint="@color/colorAccent1"
-                android:visibility="gone" />
-        </androidx.cardview.widget.CardView>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center"
-            android:gravity="center">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:layout_gravity="center"
-                app:cardBackgroundColor="@color/colorPrimary"
-                app:cardCornerRadius="50dp"
-                android:layout_margin="4dp"
-                >
-                <com.dd.morphingbutton.MorphingButton
-                    android:id="@+id/pdfOpen2"
-                    style="@style/MorphingButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:fontFamily="@font/sarabunregular"
-                    android:text="Re-Create PDF"
-                    android:textColor="@color/colorAccent1"
-                    android:backgroundTint="#3c26ae"
-                    android:visibility="visible" />
-            </androidx.cardview.widget.CardView>
-
+            app:cardCornerRadius="20dp"
+            >
             <LinearLayout
+                android:id="@+id/idLV1st2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical">
 
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/idbtnCard1st2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/colorAccent1"
+                    android:elevation="10dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="20dp"
+                    android:visibility="visible"
+                    >
 
+                    <com.dd.morphingbutton.MorphingButton
+                        android:id="@+id/pdfOpen"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:padding="5dp"
+                        android:textColor="@color/colorAccent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:fontFamily="@font/sarabunregular"
+                        android:background="@color/Bgcolor"
+                        android:backgroundTint="@color/Bgcolor"
+                        android:src="@drawable/pluse"
+                        android:visibility="visible"
+                        />
 
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:backgroundTint="@color/colorAccent1"
+                        android:background="@drawable/ic_pdf_to_image"
+                        android:layout_gravity="center"
+                        android:translationZ="2dp"
+                        />
 
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textSize="24dp"
+                    android:text="Open This PDF"
+                    android:gravity="center"
+                    android:letterSpacing="0.1"
+                    android:textColor="@color/colorGray">
+
+                </TextView>
             </LinearLayout>
-        </LinearLayout>
-
+        </androidx.cardview.widget.CardView>
     </LinearLayout>
     <RelativeLayout
         android:layout_width="match_parent"

@@ -162,7 +162,7 @@ public class ImageToPdfFragment extends Fragment implements OnItemClickListener,
     TextView adition;
     @BindView(R.id.view)
     View view;
-    @BindView(R.id.openpdf)
+    @BindView(R.id.popup2)
     LinearLayout openpdf;
     @BindView(R.id.idbtnCard1st)
     CardView btnC1;
@@ -544,7 +544,7 @@ public class ImageToPdfFragment extends Fragment implements OnItemClickListener,
 
                 }
                 mMorphButtonUtility.morphToSquare(mCreatePdf, mMorphButtonUtility.integer());
-                mOpenPdf.setVisibility(View.GONE);
+              //  mOpenPdf.setVisibility(View.GONE);
                 //addImages.unblockTouch();
                 break;
 
@@ -555,14 +555,14 @@ public class ImageToPdfFragment extends Fragment implements OnItemClickListener,
                 mUnarrangedImagesUri.addAll(mImagesUri);
 
 
-                if (PopUp.getVisibility() == View.GONE)
-                {
-                    PopUp.setVisibility(View.VISIBLE);
-                }
-                if (PopUp.getVisibility() == View.VISIBLE)
-                {
-                    PopUp.setVisibility(View.GONE);
-                }
+//                if (PopUp.getVisibility() == View.GONE)
+//                {
+//                    PopUp.setVisibility(View.VISIBLE);
+//                }
+//                if (PopUp.getVisibility() == View.VISIBLE)
+//                {
+//                    PopUp.setVisibility(View.GONE);
+//                }
 
                 if (rltvall.getVisibility() == View.GONE)
                 {
@@ -586,7 +586,7 @@ public class ImageToPdfFragment extends Fragment implements OnItemClickListener,
 
                 }
                 mMorphButtonUtility.morphToSquare(mCreatePdf, mMorphButtonUtility.integer());
-                mOpenPdf.setVisibility(View.GONE);
+               // mOpenPdf.setVisibility(View.GONE);
                 break;
 
             case CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE:
@@ -1011,6 +1011,7 @@ public class ImageToPdfFragment extends Fragment implements OnItemClickListener,
 //                .setAction(R.string.snackbar_viewAction,
 //                        v -> mFileUtils.openFile(mPath, FileUtils.FileType.e_PDF)).show();
         openpdf.setVisibility(View.VISIBLE);
+        PopUp.setVisibility(View.GONE);
 
         mMorphButtonUtility.morphToSuccess(mCreatePdf);
         mCreatePdf.blockTouch();
@@ -1353,7 +1354,7 @@ public class ImageToPdfFragment extends Fragment implements OnItemClickListener,
         PopUp.setVisibility(View.GONE);
         rltvall.setVisibility(View.GONE);
         openpdf.setVisibility(View.VISIBLE);
-        Toast.makeText(mActivity, "cccccccccp", Toast.LENGTH_SHORT).show();
+       // Toast.makeText(mActivity, "cccccccccp", Toast.LENGTH_SHORT).show();
     }
     private void onReCreate(){
 
