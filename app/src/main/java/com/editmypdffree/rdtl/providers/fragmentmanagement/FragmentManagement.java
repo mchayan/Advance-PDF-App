@@ -19,7 +19,7 @@ import com.editmypdffree.rdtl.fragment.AddTextFragment;
 import com.editmypdffree.rdtl.fragment.ExceltoPdfFragment;
 import com.editmypdffree.rdtl.fragment.ExtractTextFragment;
 import com.editmypdffree.rdtl.fragment.FAQFragment;
-import com.editmypdffree.rdtl.fragment.FavouritesFragment;
+//import com.editmypdffree.rdtl.fragment.FavouritesFragment;
 import com.editmypdffree.rdtl.fragment.HistoryFragment;
 import com.editmypdffree.rdtl.fragment.HomeFragment;
 import com.editmypdffree.rdtl.fragment.ImageToPdfFragment;
@@ -75,16 +75,16 @@ public class FragmentManagement implements IFragmentManagement {
     }
 
     public void favouritesFragmentOption() {
-        Fragment currFragment = mContext.getSupportFragmentManager().findFragmentById(R.id.content);
-
-        Fragment fragment = new FavouritesFragment();
-        FragmentManager fragmentManager = mContext.getSupportFragmentManager();
-        FragmentTransaction transaction = fragmentManager.beginTransaction()
-                .replace(R.id.content, fragment);
-        if (!(currFragment instanceof HomeFragment)) {
-            transaction.addToBackStack(mFragmentUtils.getFragmentName(currFragment));
-        }
-        transaction.commit();
+//        Fragment currFragment = mContext.getSupportFragmentManager().findFragmentById(R.id.content);
+//
+//        Fragment fragment = new FavouritesFragment();
+//        FragmentManager fragmentManager = mContext.getSupportFragmentManager();
+//        FragmentTransaction transaction = fragmentManager.beginTransaction()
+//                .replace(R.id.content, fragment);
+//        if (!(currFragment instanceof HomeFragment)) {
+//            transaction.addToBackStack(mFragmentUtils.getFragmentName(currFragment));
+//        }
+//        transaction.commit();
     }
 
     public Fragment checkForAppShortcutClicked() {

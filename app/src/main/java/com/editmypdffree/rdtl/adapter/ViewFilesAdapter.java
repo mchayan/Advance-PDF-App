@@ -2,6 +2,7 @@ package com.editmypdffree.rdtl.adapter;
 
 import android.app.Activity;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.preference.PreferenceManager;
 import androidx.annotation.NonNull;
 import com.google.android.material.snackbar.Snackbar;
@@ -305,6 +306,7 @@ public class ViewFilesAdapter extends RecyclerView.Adapter<ViewFilesAdapter.View
 
                     AtomicInteger undoClicked = new AtomicInteger();
                     StringUtils.getInstance().getSnackbarwithAction(mActivity, messageSnackbar)
+                            .setActionTextColor(Color.parseColor("#FFFFFF"))
                             .setAction(R.string.snackbar_undoAction, v -> {
                                 if (mFileList.size() == 0) {
                                     mEmptyStateChangeListener.setEmptyStateInvisible();

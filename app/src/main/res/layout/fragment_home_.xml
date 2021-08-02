@@ -252,13 +252,7 @@
                             app:option_icon="@drawable/ic_add_watermark"
                             app:option_text="@string/add_watermark" />
 
-                        <com.editmypdffree.rdtl.customviews.MyCardView
-                            android:id="@+id/add_images"
-                            android:layout_width="100dp"
-                            android:layout_height="wrap_content"
-                            app:option_icon="@drawable/ic_add_image"
-                            app:option_text="@string/add_images"
-                            android:layout_marginRight="10dp"/>
+
 
                         <com.editmypdffree.rdtl.customviews.MyCardView
                             android:layout_width="0dp"
@@ -324,6 +318,13 @@
                             app:option_text="@string/rotate_pages"
                             android:layout_marginRight="10dp"/>
 
+                        <com.editmypdffree.rdtl.customviews.MyCardView
+                            android:id="@+id/add_images"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            app:option_icon="@drawable/ic_add_image"
+                            app:option_text="@string/add_images" />
 
                     </LinearLayout>
 

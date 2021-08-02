@@ -191,21 +191,22 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.menu_favourites_item) {
-            setTitle(R.string.favourites);
-            mFragmentManagement.favouritesFragmentOption();
-        } else if (item.getItemId() == R.id.menu_home_item) {
-            Fragment fragment;
-            FragmentManager fragmentManager = getSupportFragmentManager();
-            fragment = new HomeFragment();
-            setTitle(R.string.app_name);
-            try {
-                if (fragment != null)
-                    fragmentManager.beginTransaction().replace(R.id.content, fragment).commit();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
+//        if (item.getItemId() == R.id.menu_favourites_item) {
+//           // setTitle(R.string.favourites);
+//            mFragmentManagement.favouritesFragmentOption();
+//        }
+//        if (item.getItemId() == R.id.menu_home_item) {
+//            Fragment fragment;
+//            FragmentManager fragmentManager = getSupportFragmentManager();
+//            fragment = new HomeFragment();
+//            setTitle(R.string.app_name);
+//            try {
+//                if (fragment != null)
+//                    fragmentManager.beginTransaction().replace(R.id.content, fragment).commit();
+//            } catch (Exception e) {
+//                e.printStackTrace();
+//            }
+//        }
         return super.onOptionsItemSelected(item);
     }
 

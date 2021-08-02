@@ -19,11 +19,11 @@ public class CropImageActivity_ViewBinding implements Unbinder {
 
   private View view7f0a009f;
 
-  private View view7f0a01dc;
+  private View view7f0a01db;
 
-  private View view7f0a0174;
+  private View view7f0a0173;
 
-  private View view7f0a01af;
+  private View view7f0a01ae;
 
   @UiThread
   public CropImageActivity_ViewBinding(CropImageActivity target) {
@@ -47,7 +47,7 @@ public class CropImageActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.rotateButton, "method 'rotateButtonClicked'");
-    view7f0a01dc = view;
+    view7f0a01db = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -55,7 +55,7 @@ public class CropImageActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.nextimageButton, "method 'nextImageClicked'");
-    view7f0a0174 = view;
+    view7f0a0173 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -63,7 +63,7 @@ public class CropImageActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.previousImageButton, "method 'prevImgBtnClicked'");
-    view7f0a01af = view;
+    view7f0a01ae = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -85,11 +85,11 @@ public class CropImageActivity_ViewBinding implements Unbinder {
 
     view7f0a009f.setOnClickListener(null);
     view7f0a009f = null;
-    view7f0a01dc.setOnClickListener(null);
-    view7f0a01dc = null;
-    view7f0a0174.setOnClickListener(null);
-    view7f0a0174 = null;
-    view7f0a01af.setOnClickListener(null);
-    view7f0a01af = null;
+    view7f0a01db.setOnClickListener(null);
+    view7f0a01db = null;
+    view7f0a0173.setOnClickListener(null);
+    view7f0a0173 = null;
+    view7f0a01ae.setOnClickListener(null);
+    view7f0a01ae = null;
   }
 }
