@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.balysv.materialripple.MaterialRippleLayout;
@@ -100,19 +101,26 @@ public class ViewFilesAdapter extends RecyclerView.Adapter<ViewFilesAdapter.View
         final int position = holder.getAdapterPosition();
         final PDFFile pdfFile = mFileList.get(position);
 
+
         holder.fileName.setText(pdfFile.getPdfFile().getName());
         holder.fileSize.setText(FileUtils.getFormattedSize(pdfFile.getPdfFile()));
         holder.fileDate.setText(getFormattedDate(pdfFile.getPdfFile()));
         holder.checkBox.setChecked(mSelectedFiles.contains(position));
         holder.encryptionImage.setVisibility(pdfFile.isEncrypted() ? View.VISIBLE : View.GONE);
         holder.ripple.setOnClickListener(view -> {
-            new MaterialDialog.Builder(mActivity)
-                    .title(R.string.title)
-                    .items(R.array.items)
-                    .itemsIds(R.array.itemIds)
-                    .itemsCallback((dialog, view1, which, text)
-                            -> performOperation(which, position, pdfFile.getPdfFile()))
-                    .show();
+
+
+
+            if (mSelectedFiles.size()<=1){
+                new MaterialDialog.Builder(mActivity)
+                        .title(R.string.title)
+                        .items(R.array.items)
+                        .itemsIds(R.array.itemIds)
+                        .itemsCallback((dialog, view1, which, text)
+                                -> performOperation(which, position, pdfFile.getPdfFile()))
+                        .show();
+            }
+
             notifyDataSetChanged();
         });
     }
@@ -126,6 +134,9 @@ public class ViewFilesAdapter extends RecyclerView.Adapter<ViewFilesAdapter.View
      * @param file     - file object clicked
      */
     private void performOperation(int index, int position, File file) {
+
+
+
         switch (index) {
             case 0: //Open
                 mFileUtils.openFile(file.getPath(), FileUtils.FileType.e_PDF);
