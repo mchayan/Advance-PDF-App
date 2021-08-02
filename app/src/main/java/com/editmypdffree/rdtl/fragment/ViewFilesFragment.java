@@ -18,6 +18,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.appcompat.widget.SearchView;
+
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -203,6 +205,7 @@ public class ViewFilesFragment extends Fragment
 
     private void deleteFiles() {
         mViewFilesAdapter.deleteFile();
+        Log.e("dlt 1","viewfile");
     }
 
     /**

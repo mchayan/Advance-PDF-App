@@ -182,7 +182,7 @@ public class MainActivity extends AppCompatActivity
 
 
         Bitmap icon = BitmapFactory.decodeResource(getResources(),
-                R.drawable.ic_favorite1); //Converting drawable into bitmap
+                R.drawable.ic_home); //Converting drawable into bitmap
         Bitmap newIcon = resizeBitmapImageFn(icon, 58); //resizing the bitmap
         Drawable d = new BitmapDrawable(getResources(), newIcon); //Converting bitmap into drawable
         menu.getItem(0).setIcon(d); //choose the item number you want to set
@@ -195,18 +195,18 @@ public class MainActivity extends AppCompatActivity
 //           // setTitle(R.string.favourites);
 //            mFragmentManagement.favouritesFragmentOption();
 //        }
-//        if (item.getItemId() == R.id.menu_home_item) {
-//            Fragment fragment;
-//            FragmentManager fragmentManager = getSupportFragmentManager();
-//            fragment = new HomeFragment();
-//            setTitle(R.string.app_name);
-//            try {
-//                if (fragment != null)
-//                    fragmentManager.beginTransaction().replace(R.id.content, fragment).commit();
-//            } catch (Exception e) {
-//                e.printStackTrace();
-//            }
-//        }
+        if (item.getItemId() == R.id.menu_home_item) {
+            Fragment fragment;
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            fragment = new HomeFragment();
+            setTitle(R.string.app_name);
+            try {
+                if (fragment != null)
+                    fragmentManager.beginTransaction().replace(R.id.content, fragment).commit();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
         return super.onOptionsItemSelected(item);
     }
 

@@ -4,10 +4,14 @@ import android.app.Activity;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.preference.PreferenceManager;
+
+import androidx.annotation.LongDef;
 import androidx.annotation.NonNull;
 import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -264,18 +268,24 @@ public class ViewFilesAdapter extends RecyclerView.Adapter<ViewFilesAdapter.View
      */
     public void deleteFile() {
         deleteFiles(mSelectedFiles);
+        Log.e("dlt 2","view adapter");
     }
 
     /**
      * Delete single file
      */
     private void deleteFile(int position) {
-        if (position < 0 || position >= mFileList.size())
+        if (position < 0 || position >= mFileList.size()){
+            Log.e("dlt 3","viewfile");
             return;
+        }
+            //return;
 
         ArrayList<Integer> files = new ArrayList<>();
         files.add(position);
         deleteFiles(files);
+
+        Log.e("dlt 4","viewfile");
     }
 
     /**
