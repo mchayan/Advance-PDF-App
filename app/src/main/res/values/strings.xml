@@ -290,7 +290,7 @@
     <string name="ok">OK</string>
     <string name="yes">Yes</string>
     <string name="select_all">Select All</string>
-    <string name="converting_file_message">Converting Your PDF to Images.</string>
+    <string name="converting_file_message">Working On Your File"</string>
     <string name="select_text_file">Select Doc/Text File</string>
     <string name="install_file_manager">Please Install a File Manager</string>
 

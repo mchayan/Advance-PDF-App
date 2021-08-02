@@ -251,6 +251,7 @@ public class ViewFilesFragment extends Fragment
     }
 
     private void displaySortDialog() {
+
         mAlertDialogBuilder.setTitle(R.string.sort_by_title)
                 .setItems(R.array.sort_options, (dialog, which) -> {
                     mCurrentSortingIndex = which;
