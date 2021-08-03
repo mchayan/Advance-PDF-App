@@ -16,7 +16,7 @@ import java.lang.Override;
 public class HistoryFragment_ViewBinding implements Unbinder {
   private HistoryFragment target;
 
-  private View view7f0a00f5;
+  private View view7f0a00f6;
 
   @UiThread
   public HistoryFragment_ViewBinding(final HistoryFragment target, View source) {
@@ -26,7 +26,7 @@ public class HistoryFragment_ViewBinding implements Unbinder {
     target.mEmptyStatusLayout = Utils.findRequiredViewAsType(source, R.id.emptyStatusView, "field 'mEmptyStatusLayout'", ConstraintLayout.class);
     target.mHistoryRecyclerView = Utils.findRequiredViewAsType(source, R.id.historyRecyclerView, "field 'mHistoryRecyclerView'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.getStarted, "method 'loadHome'");
-    view7f0a00f5 = view;
+    view7f0a00f6 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -45,7 +45,7 @@ public class HistoryFragment_ViewBinding implements Unbinder {
     target.mEmptyStatusLayout = null;
     target.mHistoryRecyclerView = null;
 
-    view7f0a00f5.setOnClickListener(null);
-    view7f0a00f5 = null;
+    view7f0a00f6.setOnClickListener(null);
+    view7f0a00f6 = null;
   }
 }

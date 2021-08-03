@@ -96,6 +96,8 @@ public class PdfToImageFragment extends Fragment implements BottomSheetPopulate,
     RelativeLayout mLayout;
     @BindView(R.id.recyclerViewFiles)
     RecyclerView mRecyclerViewFiles;
+    @BindView(R.id.fileLocation)
+    TextView fileLocation;
 
     /**
      * inflates the layout for the fragment
@@ -277,6 +279,7 @@ public class PdfToImageFragment extends Fragment implements BottomSheetPopulate,
         mPath = path;
         mMorphButtonUtility.setTextAndActivateButtons(path,
                 mSelectFileButton, mCreateImagesButton);
+
     }
 
     /**

@@ -1498,6 +1498,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable documentary
+drawable dot
 drawable due_tone
 drawable fb
 drawable files_divider
@@ -1914,6 +1915,7 @@ id fav_add_fab
 id favourites
 id favourites_text
 id fileDate
+id fileLocation
 id fileName
 id fileRipple
 id fileSize
@@ -1996,6 +1998,7 @@ id light
 id line1
 id line3
 id linear
+id linear2
 id linearLayout
 id listMode
 id list_item
@@ -2199,7 +2202,6 @@ id search_voice_btn
 id seekbar
 id seekbar_value
 id selectFile
-id selectFile1
 id selectFile2
 id selectFiles
 id select_all

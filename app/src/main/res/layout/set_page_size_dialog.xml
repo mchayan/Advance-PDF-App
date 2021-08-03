@@ -103,7 +103,6 @@
             android:id="@+id/createImages1"
             android:layout_width="220dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/selectFile1"
             app:cardBackgroundColor="@color/colorAccent1"
             android:elevation="10dp"
             app:cardElevation="4dp"
@@ -122,7 +121,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="220dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/selectFile1"
+
             app:cardBackgroundColor="@color/colorAccent1"
             android:elevation="10dp"
             app:cardElevation="4dp"
