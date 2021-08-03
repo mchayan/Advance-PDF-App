@@ -122,6 +122,8 @@ public class PdfToImageFragment extends Fragment implements BottomSheetPopulate,
         mSheetBehavior.setBottomSheetCallback(new BottomSheetCallback(mUpArrow, isAdded()));
         mLottieProgress.setVisibility(View.VISIBLE);
         mBottomSheetUtils.populateBottomSheetWithPDFs(this);
+        //prothomeo hide hoia thake
+        mSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
         resetView();
         return rootView;
     }
