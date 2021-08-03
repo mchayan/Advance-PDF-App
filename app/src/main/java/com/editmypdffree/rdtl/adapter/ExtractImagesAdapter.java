@@ -4,6 +4,9 @@ import android.app.Activity;
 import android.graphics.Bitmap;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -44,9 +47,13 @@ public class ExtractImagesAdapter extends RecyclerView.Adapter<ExtractImagesAdap
     @Override
     public void onBindViewHolder(@NonNull ViewMergeFilesHolder holder, int position) {
         holder.mFileName.setText(getFileName(mFilePaths.get(position)));
-        Bitmap bitmap = ImageUtils.getInstance().getRoundBitmapFromPath(mFilePaths.get(position));
-        if (bitmap != null)
-            holder.mImagePreview.setImageBitmap(bitmap);
+
+        //holder.mImagePreview.setImageURI();
+
+        //Bitmap bitmap = ImageUtils.getInstance().getRoundBitmapFromPath(mFilePaths.get(position));
+        Bitmap bitmap2 = BitmapFactory.decodeFile(mFilePaths.get(position));
+        if (bitmap2 != null)
+            holder.mImagePreview.setImageBitmap(bitmap2);
     }
 
     @Override
