@@ -96,6 +96,8 @@ public class AddImagesFragment extends Fragment implements BottomSheetPopulate, 
     RecyclerView mRecyclerViewFiles;
     @BindView(R.id.tvNoOfImages)
     TextView mNoOfImages;
+    @BindView(R.id.idSelectImgLL)
+    LinearLayout selectImageLL;
 
 //    @BindView(R.id.select_excel_file2)
 //    MorphingButton selectexlfile2;
@@ -166,6 +168,7 @@ public class AddImagesFragment extends Fragment implements BottomSheetPopulate, 
                     mNoOfImages.setVisibility(View.VISIBLE);
                     // StringUtils.getInstance().showSnackbar(mActivity, R.string.snackbar_images_added);
                     mCreatePdf.setEnabled(true);
+                    mCreatePdf.setVisibility(View.VISIBLE);
                     recyclerImges();
 
                 } else {
@@ -180,10 +183,10 @@ public class AddImagesFragment extends Fragment implements BottomSheetPopulate, 
                 break;
         }
 
-        if (mCreatePdf.getVisibility() == View.GONE)
-        {
-            mCreatePdf.setVisibility(View.VISIBLE);
-        }
+
+
+
+
     }
 
     @Override
@@ -258,8 +261,8 @@ public class AddImagesFragment extends Fragment implements BottomSheetPopulate, 
     private void resetValues() {
         mPath = null;
         mImagesUri.clear();
-        mMorphButtonUtility.initializeButton(selectFileButton, mCreatePdf);
-        mMorphButtonUtility.initializeButton(selectFileButton, addImages);
+        mMorphButtonUtility.initializeButton2(selectFileButton, mCreatePdf);
+        mMorphButtonUtility.initializeButton2(selectFileButton, addImages);
         mNoOfImages.setVisibility(View.GONE);
     }
 
@@ -308,18 +311,20 @@ public class AddImagesFragment extends Fragment implements BottomSheetPopulate, 
         mSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
         setTextAndActivateButtons(path);
 
-        if (addImages.getVisibility() == View.GONE)
-        {
-            addImages.setVisibility(View.VISIBLE);
-        }
+//        if (addImages.getVisibility() == View.GONE)
+//        {
+//            addImages.setVisibility(View.VISIBLE);
+//        }
 
-        PopUp.setVisibility(View.GONE);
-        rltvall.setVisibility(View.VISIBLE);
+        selectImageLL.setVisibility(View.VISIBLE);
+
+//        PopUp.setVisibility(View.GONE);
+//        rltvall.setVisibility(View.VISIBLE);
     }
 
     private void setTextAndActivateButtons(String path) {
         mPath = path;
-        mMorphButtonUtility.setTextAndActivateButtons(path,
+        mMorphButtonUtility.setTextAndActivateButtons2(path,
                 selectFileButton, addImages);
 
     }

@@ -36,14 +36,14 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int fp_btn_new = 0x7f0a00ed;
-        public static final int fp_btn_select = 0x7f0a00ee;
-        public static final int fp_buttonsLayout = 0x7f0a00ef;
-        public static final int fp_iv_icon = 0x7f0a00f0;
-        public static final int fp_listView = 0x7f0a00f1;
-        public static final int fp_tv_location = 0x7f0a00f2;
-        public static final int fp_tv_name = 0x7f0a00f3;
-        public static final int fp_tv_title = 0x7f0a00f4;
+        public static final int fp_btn_new = 0x7f0a00ec;
+        public static final int fp_btn_select = 0x7f0a00ed;
+        public static final int fp_buttonsLayout = 0x7f0a00ee;
+        public static final int fp_iv_icon = 0x7f0a00ef;
+        public static final int fp_listView = 0x7f0a00f0;
+        public static final int fp_tv_location = 0x7f0a00f1;
+        public static final int fp_tv_name = 0x7f0a00f2;
+        public static final int fp_tv_title = 0x7f0a00f3;
     }
     public static final class layout {
         private layout() {}

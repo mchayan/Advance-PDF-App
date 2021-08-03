@@ -39,21 +39,21 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int centerCrop = 0x7f0a007e;
-        public static final int fitCenter = 0x7f0a00e8;
-        public static final int fitXY = 0x7f0a00e9;
-        public static final int zxing_back_button = 0x7f0a0285;
-        public static final int zxing_barcode_scanner = 0x7f0a0286;
-        public static final int zxing_barcode_surface = 0x7f0a0287;
-        public static final int zxing_camera_error = 0x7f0a0288;
-        public static final int zxing_decode = 0x7f0a0289;
-        public static final int zxing_decode_failed = 0x7f0a028a;
-        public static final int zxing_decode_succeeded = 0x7f0a028b;
-        public static final int zxing_possible_result_points = 0x7f0a028c;
-        public static final int zxing_preview_failed = 0x7f0a028d;
-        public static final int zxing_prewiew_size_ready = 0x7f0a028e;
-        public static final int zxing_status_view = 0x7f0a028f;
-        public static final int zxing_viewfinder_view = 0x7f0a0290;
+        public static final int centerCrop = 0x7f0a007d;
+        public static final int fitCenter = 0x7f0a00e7;
+        public static final int fitXY = 0x7f0a00e8;
+        public static final int zxing_back_button = 0x7f0a0286;
+        public static final int zxing_barcode_scanner = 0x7f0a0287;
+        public static final int zxing_barcode_surface = 0x7f0a0288;
+        public static final int zxing_camera_error = 0x7f0a0289;
+        public static final int zxing_decode = 0x7f0a028a;
+        public static final int zxing_decode_failed = 0x7f0a028b;
+        public static final int zxing_decode_succeeded = 0x7f0a028c;
+        public static final int zxing_possible_result_points = 0x7f0a028d;
+        public static final int zxing_preview_failed = 0x7f0a028e;
+        public static final int zxing_prewiew_size_ready = 0x7f0a028f;
+        public static final int zxing_status_view = 0x7f0a0290;
+        public static final int zxing_viewfinder_view = 0x7f0a0291;
     }
     public static final class layout {
         private layout() {}

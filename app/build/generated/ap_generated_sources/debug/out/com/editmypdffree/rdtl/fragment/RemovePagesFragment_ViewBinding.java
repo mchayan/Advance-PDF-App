@@ -23,11 +23,11 @@ import java.lang.Override;
 public class RemovePagesFragment_ViewBinding implements Unbinder {
   private RemovePagesFragment target;
 
-  private View view7f0a01fa;
+  private View view7f0a01fb;
 
-  private View view7f0a01a6;
+  private View view7f0a01a7;
 
-  private View view7f0a026b;
+  private View view7f0a026c;
 
   @UiThread
   public RemovePagesFragment_ViewBinding(final RemovePagesFragment target, View source) {
@@ -37,7 +37,7 @@ public class RemovePagesFragment_ViewBinding implements Unbinder {
     target.mLottieProgress = Utils.findRequiredViewAsType(source, R.id.lottie_progress, "field 'mLottieProgress'", LottieAnimationView.class);
     view = Utils.findRequiredView(source, R.id.selectFile, "field 'selectFileButton' and method 'showFileChooser'");
     target.selectFileButton = Utils.castView(view, R.id.selectFile, "field 'selectFileButton'", MorphingButton.class);
-    view7f0a01fa = view;
+    view7f0a01fb = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -46,7 +46,7 @@ public class RemovePagesFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.pdfCreate, "field 'createPdf' and method 'parse'");
     target.createPdf = Utils.castView(view, R.id.pdfCreate, "field 'createPdf'", MorphingButton.class);
-    view7f0a01a6 = view;
+    view7f0a01a7 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -63,7 +63,7 @@ public class RemovePagesFragment_ViewBinding implements Unbinder {
     target.mCompressionInfoText = Utils.findRequiredViewAsType(source, R.id.compressionInfoText, "field 'mCompressionInfoText'", TextView.class);
     target.mViewPdf = Utils.findRequiredViewAsType(source, R.id.view_pdf, "field 'mViewPdf'", Button.class);
     view = Utils.findRequiredView(source, R.id.viewFiles, "method 'onViewFilesClick'");
-    view7f0a026b = view;
+    view7f0a026c = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -92,11 +92,11 @@ public class RemovePagesFragment_ViewBinding implements Unbinder {
     target.mCompressionInfoText = null;
     target.mViewPdf = null;
 
-    view7f0a01fa.setOnClickListener(null);
-    view7f0a01fa = null;
-    view7f0a01a6.setOnClickListener(null);
-    view7f0a01a6 = null;
-    view7f0a026b.setOnClickListener(null);
-    view7f0a026b = null;
+    view7f0a01fb.setOnClickListener(null);
+    view7f0a01fb = null;
+    view7f0a01a7.setOnClickListener(null);
+    view7f0a01a7 = null;
+    view7f0a026c.setOnClickListener(null);
+    view7f0a026c = null;
   }
 }

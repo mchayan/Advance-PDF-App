@@ -1772,7 +1772,6 @@ id activity_chooser_view_content
 id activity_settings
 id add
 id addImages
-id addImages1
 id addImages2
 id add_images
 id add_images_all
@@ -1962,6 +1961,8 @@ id idCard1stWhite2
 id idLV1st
 id idLV1st2
 id idListIV
+id idSelectImgLL
+id idSelectPdfLL
 id idbtnCard1st
 id idbtnCard1st2
 id idbtnCard2nd

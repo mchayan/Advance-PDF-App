@@ -17,13 +17,13 @@ import java.lang.Override;
 public class CropImageActivity_ViewBinding implements Unbinder {
   private CropImageActivity target;
 
-  private View view7f0a009f;
+  private View view7f0a009e;
 
-  private View view7f0a01dd;
+  private View view7f0a01de;
 
-  private View view7f0a0175;
+  private View view7f0a0176;
 
-  private View view7f0a01b0;
+  private View view7f0a01b1;
 
   @UiThread
   public CropImageActivity_ViewBinding(CropImageActivity target) {
@@ -39,7 +39,7 @@ public class CropImageActivity_ViewBinding implements Unbinder {
     target.mCropImageView = Utils.findRequiredViewAsType(source, R.id.cropImageView, "field 'mCropImageView'", CropImageView.class);
     view = Utils.findRequiredView(source, R.id.cropButton, "field 'cropImageButton' and method 'cropButtonClicked'");
     target.cropImageButton = Utils.castView(view, R.id.cropButton, "field 'cropImageButton'", Button.class);
-    view7f0a009f = view;
+    view7f0a009e = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -47,7 +47,7 @@ public class CropImageActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.rotateButton, "method 'rotateButtonClicked'");
-    view7f0a01dd = view;
+    view7f0a01de = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -55,7 +55,7 @@ public class CropImageActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.nextimageButton, "method 'nextImageClicked'");
-    view7f0a0175 = view;
+    view7f0a0176 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -63,7 +63,7 @@ public class CropImageActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.previousImageButton, "method 'prevImgBtnClicked'");
-    view7f0a01b0 = view;
+    view7f0a01b1 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -83,13 +83,13 @@ public class CropImageActivity_ViewBinding implements Unbinder {
     target.mCropImageView = null;
     target.cropImageButton = null;
 
-    view7f0a009f.setOnClickListener(null);
-    view7f0a009f = null;
-    view7f0a01dd.setOnClickListener(null);
-    view7f0a01dd = null;
-    view7f0a0175.setOnClickListener(null);
-    view7f0a0175 = null;
-    view7f0a01b0.setOnClickListener(null);
-    view7f0a01b0 = null;
+    view7f0a009e.setOnClickListener(null);
+    view7f0a009e = null;
+    view7f0a01de.setOnClickListener(null);
+    view7f0a01de = null;
+    view7f0a0176.setOnClickListener(null);
+    view7f0a0176 = null;
+    view7f0a01b1.setOnClickListener(null);
+    view7f0a01b1 = null;
   }
 }

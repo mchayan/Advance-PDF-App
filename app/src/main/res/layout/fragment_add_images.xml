@@ -40,9 +40,10 @@
                     android:elevation="10dp"
                     app:cardElevation="4dp"
                     app:cardCornerRadius="20dp"
-                    android:layout_margin="4dp">
+                    android:layout_margin="4dp"
+                    android:visibility="gone">
                     <com.dd.morphingbutton.MorphingButton
-                        android:id="@+id/addImages"
+                        android:id="@+id/addImages2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:maxWidth="30dp"
@@ -65,10 +66,13 @@
 
 
             <LinearLayout
+                android:id="@+id/idSelectPdfLL"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center">
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
@@ -107,11 +111,14 @@
                 </TextView>
             </LinearLayout>
                 <LinearLayout
+                    android:id="@+id/idSelectImgLL"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:visibility="gone">
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="wrap_content"
@@ -121,7 +128,7 @@
                         app:cardCornerRadius="20dp"
                         android:layout_margin="10dp">
                         <com.dd.morphingbutton.MorphingButton
-                            android:id="@+id/addImages1"
+                            android:id="@+id/addImages"
                             android:layout_width="match_parent"
                             android:layout_height="80dp"
                             android:fontFamily="@font/sarabunregular"
@@ -164,7 +171,8 @@
                         android:elevation="10dp"
                         app:cardElevation="4dp"
                         app:cardCornerRadius="20dp"
-                        android:layout_margin="4dp">
+                        android:layout_margin="4dp"
+                        >
                         <com.dd.morphingbutton.MorphingButton
                             android:id="@+id/pdfCreate"
                             android:layout_width="match_parent"
@@ -176,7 +184,7 @@
                             android:text="@string/create_pdf"
                             android:background="@color/colorAccent1"
                             android:backgroundTint="@color/colorAccent1"
-                            android:visibility="visible"/>
+                            android:visibility="gone"/>
                     </androidx.cardview.widget.CardView>
 
                 </RelativeLayout>

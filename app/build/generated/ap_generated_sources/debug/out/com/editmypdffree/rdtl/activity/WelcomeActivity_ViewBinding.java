@@ -17,7 +17,7 @@ import java.lang.Override;
 public class WelcomeActivity_ViewBinding implements Unbinder {
   private WelcomeActivity target;
 
-  private View view7f0a0073;
+  private View view7f0a0072;
 
   @UiThread
   public WelcomeActivity_ViewBinding(WelcomeActivity target) {
@@ -33,7 +33,7 @@ public class WelcomeActivity_ViewBinding implements Unbinder {
     target.mDotsLayout = Utils.findRequiredViewAsType(source, R.id.layoutDots, "field 'mDotsLayout'", LinearLayout.class);
     view = Utils.findRequiredView(source, R.id.btn_skip, "field 'mBtnSkip' and method 'openMainActivity'");
     target.mBtnSkip = Utils.castView(view, R.id.btn_skip, "field 'mBtnSkip'", Button.class);
-    view7f0a0073 = view;
+    view7f0a0072 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -53,7 +53,7 @@ public class WelcomeActivity_ViewBinding implements Unbinder {
     target.mDotsLayout = null;
     target.mBtnSkip = null;
 
-    view7f0a0073.setOnClickListener(null);
-    view7f0a0073 = null;
+    view7f0a0072.setOnClickListener(null);
+    view7f0a0072 = null;
   }
 }

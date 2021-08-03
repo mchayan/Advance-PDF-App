@@ -19,9 +19,9 @@ import java.lang.Override;
 public class ViewFilesFragment_ViewBinding implements Unbinder {
   private ViewFilesFragment target;
 
-  private View view7f0a00f6;
+  private View view7f0a00f5;
 
-  private View view7f0a01b4;
+  private View view7f0a01b5;
 
   @UiThread
   public ViewFilesFragment_ViewBinding(final ViewFilesFragment target, View source) {
@@ -30,7 +30,7 @@ public class ViewFilesFragment_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.getStarted, "field 'getStarted' and method 'loadHome'");
     target.getStarted = Utils.castView(view, R.id.getStarted, "field 'getStarted'", Button.class);
-    view7f0a00f6 = view;
+    view7f0a00f5 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -42,7 +42,7 @@ public class ViewFilesFragment_ViewBinding implements Unbinder {
     target.emptyView = Utils.findRequiredViewAsType(source, R.id.emptyStatusView, "field 'emptyView'", ConstraintLayout.class);
     target.noPermissionsLayout = Utils.findRequiredViewAsType(source, R.id.no_permissions_view, "field 'noPermissionsLayout'", RelativeLayout.class);
     view = Utils.findRequiredView(source, R.id.provide_permissions, "method 'providePermissions'");
-    view7f0a01b4 = view;
+    view7f0a01b5 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -64,9 +64,9 @@ public class ViewFilesFragment_ViewBinding implements Unbinder {
     target.emptyView = null;
     target.noPermissionsLayout = null;
 
-    view7f0a00f6.setOnClickListener(null);
-    view7f0a00f6 = null;
-    view7f0a01b4.setOnClickListener(null);
-    view7f0a01b4 = null;
+    view7f0a00f5.setOnClickListener(null);
+    view7f0a00f5 = null;
+    view7f0a01b5.setOnClickListener(null);
+    view7f0a01b5 = null;
   }
 }
