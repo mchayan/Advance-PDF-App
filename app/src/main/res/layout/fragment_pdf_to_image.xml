@@ -236,6 +236,8 @@
                         android:id="@+id/pdfToImagesText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
                         android:layout_margin="10dp"
                         android:fontFamily="@font/sarabunregular"
                         android:text="@string/extract_images_success1"
@@ -247,7 +249,7 @@
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/created_images"
                         android:layout_width="match_parent"
-                        android:layout_height="200dp"
+                        android:layout_height="160dp"
                         android:layout_above="@id/options"
                         android:layout_below="@id/pdfToImagesText" />
                     <LinearLayout
