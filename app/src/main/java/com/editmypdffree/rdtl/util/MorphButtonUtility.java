@@ -98,9 +98,26 @@ public class MorphButtonUtility {
         morphToSquare(toEnable, integer());
     }
 
+    public void setTextAndActivateButtons2(String path,
+                                          MorphingButton toSetPathOn,
+                                          MorphingButton toEnable) {
+        //toSetPathOn.setText(path);
+        toSetPathOn.setBackgroundColor(mActivity.getResources().getColor(R.color.mb_green_dark));
+        toEnable.setEnabled(true);
+        morphToSquare(toEnable, integer());
+    }
+
     public void initializeButton(MorphingButton button,
                                  MorphingButton buttonToDisable) {
         button.setText(R.string.merge_file_select);
+        button.setBackgroundColor(mActivity.getResources().getColor(R.color.mb_blue));
+        morphToGrey(buttonToDisable, integer());
+        buttonToDisable.setEnabled(false);
+    }
+
+    public void initializeButton2(MorphingButton button,
+                                 MorphingButton buttonToDisable) {
+        //button.setText(R.string.merge_file_select);
         button.setBackgroundColor(mActivity.getResources().getColor(R.color.mb_blue));
         morphToGrey(buttonToDisable, integer());
         buttonToDisable.setEnabled(false);

@@ -65,6 +65,8 @@ public class PdfToImageFragment_ViewBinding implements Unbinder {
     target.mLayout = Utils.findRequiredViewAsType(source, R.id.layout, "field 'mLayout'", RelativeLayout.class);
     target.mRecyclerViewFiles = Utils.findRequiredViewAsType(source, R.id.recyclerViewFiles, "field 'mRecyclerViewFiles'", RecyclerView.class);
     target.fileLocation = Utils.findRequiredViewAsType(source, R.id.fileLocation, "field 'fileLocation'", TextView.class);
+    target.firstPopup = Utils.findRequiredViewAsType(source, R.id.popup, "field 'firstPopup'", LinearLayout.class);
+    target.SecondPopup = Utils.findRequiredViewAsType(source, R.id.popup2, "field 'SecondPopup'", LinearLayout.class);
     view = Utils.findRequiredView(source, R.id.viewImagesInGallery, "method 'onImagesInGalleryClick'");
     view7f0a026d = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
@@ -117,6 +119,8 @@ public class PdfToImageFragment_ViewBinding implements Unbinder {
     target.mLayout = null;
     target.mRecyclerViewFiles = null;
     target.fileLocation = null;
+    target.firstPopup = null;
+    target.SecondPopup = null;
 
     view7f0a01fa.setOnClickListener(null);
     view7f0a01fa = null;

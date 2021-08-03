@@ -25,6 +25,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.airbnb.lottie.LottieAnimationView;
 import com.dd.morphingbutton.MorphingButton;
@@ -98,6 +99,10 @@ public class PdfToImageFragment extends Fragment implements BottomSheetPopulate,
     RecyclerView mRecyclerViewFiles;
     @BindView(R.id.fileLocation)
     TextView fileLocation;
+    @BindView(R.id.popup)
+    LinearLayout firstPopup;
+    @BindView(R.id.popup2)
+    LinearLayout SecondPopup;
 
     /**
      * inflates the layout for the fragment
@@ -200,6 +205,7 @@ public class PdfToImageFragment extends Fragment implements BottomSheetPopulate,
     @OnClick(R.id.createImages)
     public void parse() {
         if (mPDFUtils.isPDFEncrypted(mPath)) {
+
             mInputPassword = new String[1];
             new MaterialDialog.Builder(mActivity)
                     .title(R.string.enter_password)
@@ -215,8 +221,16 @@ public class PdfToImageFragment extends Fragment implements BottomSheetPopulate,
                         }
                     })
                     .show();
+
+
+
+
+
         } else {
+
             pdfToImage(mInputPassword);
+
+
         }
     }
 
@@ -230,8 +244,10 @@ public class PdfToImageFragment extends Fragment implements BottomSheetPopulate,
         if (mOperation.equals(PDF_TO_IMAGES)) {
             new PdfToImages(mContext, mInputPassword, mPath, mUri, this)
                     .execute();
+
         } else
             new ExtractImages(mPath, this).execute();
+
     }
 
     @Override
@@ -277,8 +293,10 @@ public class PdfToImageFragment extends Fragment implements BottomSheetPopulate,
         options.setVisibility(View.GONE);
         mCreateImagesSuccessText.setVisibility(View.GONE);
         mPath = path;
-        mMorphButtonUtility.setTextAndActivateButtons(path,
+        mMorphButtonUtility.setTextAndActivateButtons2(path,
                 mSelectFileButton, mCreateImagesButton);
+
+        fileLocation.setText(path);
 
     }
 
@@ -298,7 +316,7 @@ public class PdfToImageFragment extends Fragment implements BottomSheetPopulate,
     @Override
     public void resetView() {
         mPath = null;
-        mMorphButtonUtility.initializeButton(mSelectFileButton, mCreateImagesButton);
+        mMorphButtonUtility.initializeButton2(mSelectFileButton, mCreateImagesButton);
     }
 
     /**
@@ -325,6 +343,11 @@ public class PdfToImageFragment extends Fragment implements BottomSheetPopulate,
 
         CommonCodeUtils.getInstance().updateView(mActivity, imageCount, outputFilePaths,
                 mCreateImagesSuccessText, options, mCreatedImages, this);
+
+        if (imageCount!=0){
+            firstPopup.setVisibility(View.GONE);
+            SecondPopup.setVisibility(View.VISIBLE);
+        }
     }
 
     /**
