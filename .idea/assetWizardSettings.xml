@@ -339,7 +339,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/add/baseline_add_24.xml" />
+                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/auto_delete/baseline_auto_delete_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -350,7 +350,7 @@
                         <option name="values">
                           <map>
                             <entry key="color" value="fff0f5" />
-                            <entry key="outputName" value="pluse" />
+                            <entry key="outputName" value="ic_baseline_auto_delete_24" />
                             <entry key="sourceFile" value="C:\Users\RlabM.2\Downloads\Compressed\advance-pdf-tool\codecanyon-28587991-advance-pdf-tool\Advance PDF App" />
                           </map>
                         </option>

@@ -66,7 +66,7 @@ public class CommonCodeUtils {
         options.setVisibility(View.VISIBLE);
         ExtractImagesAdapter extractImagesAdapter = new ExtractImagesAdapter(mActivity, outputFilePaths, listener);
         // init recycler view for displaying generated image list
-        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(mActivity);
+        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(mActivity, LinearLayoutManager.HORIZONTAL, false);
         successTextView.setText(text);
         mCreatedImages.setVisibility(View.VISIBLE);
         mCreatedImages.setLayoutManager(mLayoutManager);
