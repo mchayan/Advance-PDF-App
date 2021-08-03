@@ -1,7 +1,9 @@
 package com.editmypdffree.rdtl.fragment.texttopdf;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -10,6 +12,8 @@ import android.os.Environment;
 import androidx.annotation.NonNull;
 import androidx.core.widget.NestedScrollView;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -29,7 +33,9 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import com.editmypdffree.rdtl.R;
 import com.editmypdffree.rdtl.adapter.EnhancementOptionsAdapter;
+import com.editmypdffree.rdtl.fragment.HomeFragment;
 import com.editmypdffree.rdtl.interfaces.Enhancer;
+import com.editmypdffree.rdtl.interfaces.IOnBackPressed;
 import com.editmypdffree.rdtl.interfaces.OnItemClickListener;
 import com.editmypdffree.rdtl.interfaces.OnTextToPdfInterface;
 import com.editmypdffree.rdtl.model.EnhancementOptionsEntity;
@@ -49,7 +55,7 @@ import static android.app.Activity.RESULT_OK;
 import static com.editmypdffree.rdtl.util.Constants.READ_WRITE_PERMISSIONS;
 
 public class TextToPdfFragment extends Fragment implements OnItemClickListener,
-        OnTextToPdfInterface, TextToPdfContract.View {
+        OnTextToPdfInterface, IOnBackPressed, TextToPdfContract.View {
 
     private Activity mActivity;
     private FileUtils mFileUtils;
@@ -371,4 +377,42 @@ public class TextToPdfFragment extends Fragment implements OnItemClickListener,
     public void updateView() {
         mTextEnhancementOptionsAdapter.notifyDataSetChanged();
     }
+
+    public boolean onBackPressed() {
+        if (mTextFileUri !=null) {
+            //action not popBackStack
+            // Toast.makeText(mActivity, "backpress clicked", Toast.LENGTH_SHORT).show();
+            AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+            builder.setMessage("If You Discard Now, You'll Lose Changes You've Made to It." )
+                    .setTitle("Discard PDF?")
+                    .setCancelable(false)
+                    .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+//                            Intent intent=new Intent(getContext(), MainActivity.class);
+//                            startActivity(intent);
+
+                            HomeFragment myfragment;
+                            myfragment = new HomeFragment();
+                            FragmentManager fm = getFragmentManager();
+                            FragmentTransaction fragmentTransaction = fm.beginTransaction();
+                            fragmentTransaction.replace(R.id.content, myfragment);
+                            fragmentTransaction.addToBackStack(null);
+                            fragmentTransaction.commit();
+
+                        }
+                    })
+                    .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            dialog.cancel();
+                        }
+                    });
+            AlertDialog alert = builder.create();
+            alert.show();
+            return true;
+        } else {
+            // Toast.makeText(mActivity, "clicked", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+    }
+
 }
