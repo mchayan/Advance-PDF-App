@@ -1,12 +1,18 @@
 package com.editmypdffree.rdtl.fragment;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
+
+import com.editmypdffree.rdtl.interfaces.IOnBackPressed;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -45,7 +51,7 @@ import com.editmypdffree.rdtl.util.StringUtils;
 import static android.app.Activity.RESULT_OK;
 
 public class InvertPdfFragment extends Fragment implements MergeFilesAdapter.OnClickListener,
-        FilesListAdapter.OnFileItemClickedListener, BottomSheetPopulate, OnPDFCreatedInterface, OnBackPressedInterface {
+        FilesListAdapter.OnFileItemClickedListener, BottomSheetPopulate, OnPDFCreatedInterface, IOnBackPressed, OnBackPressedInterface {
 
     private Activity mActivity;
     private String mPath;
@@ -190,6 +196,48 @@ public class InvertPdfFragment extends Fragment implements MergeFilesAdapter.OnC
 
     public boolean checkSheetBehaviour() {
         return CommonCodeUtils.getInstance().checkSheetBehaviourUtil(mSheetBehavior);
+    }
+
+    @Override
+    public boolean onBackPressed() {
+
+        //IOnBackPressed,
+
+        if (mPath != null) {
+            //action not popBackStack
+            // Toast.makeText(mActivity, "backpress clicked", Toast.LENGTH_SHORT).show();
+            AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+            builder.setMessage("If You Discard Now, You'll Lose Changes You've Made to It." )
+                    .setTitle("Discard PDF?")
+                    .setCancelable(false)
+                    .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+//                            Intent intent=new Intent(getContext(), MainActivity.class);
+//                            startActivity(intent);
+
+                            HomeFragment myfragment;
+                            myfragment = new HomeFragment();
+                            FragmentManager fm = getFragmentManager();
+                            FragmentTransaction fragmentTransaction = fm.beginTransaction();
+                            fragmentTransaction.replace(R.id.content, myfragment);
+                            //fragmentTransaction.addToBackStack(null);
+                            fragmentTransaction.commit();
+
+                        }
+                    })
+                    .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            dialog.cancel();
+                        }
+                    });
+            AlertDialog alert = builder.create();
+            alert.show();
+            return true;
+        } else {
+            // Toast.makeText(mActivity, "clicked", Toast.LENGTH_SHORT).show();
+            mPath = null;
+            return false;
+        }
     }
 }
 
