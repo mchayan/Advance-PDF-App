@@ -38,6 +38,10 @@
         <item>Add Watermark</item>
     </array>
 
+    <array name="itemswatermark">
+        <item>Add Watermark</item>
+    </array>
+
     <array name="itemIds" translatable="false">
         <item>Open</item>
         <item>Delete</item>

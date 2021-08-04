@@ -10,8 +10,10 @@ import android.net.Uri;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 
+import com.editmypdffree.rdtl.adapter.ViewFilesAdapter;
 import com.editmypdffree.rdtl.interfaces.IOnBackPressed;
 import com.editmypdffree.rdtl.util.PDFRotationUtils;
+import com.editmypdffree.rdtl.util.WatermarkUtils;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -60,6 +62,7 @@ import com.editmypdffree.rdtl.util.StringUtils;
 
 import static android.app.Activity.RESULT_OK;
 import static com.editmypdffree.rdtl.util.Constants.ADD_PWD;
+import static com.editmypdffree.rdtl.util.Constants.ADD_WATERMARK2;
 import static com.editmypdffree.rdtl.util.Constants.BUNDLE_DATA;
 import static com.editmypdffree.rdtl.util.Constants.COMPRESS_PDF;
 import static com.editmypdffree.rdtl.util.Constants.REMOVE_PAGES;
@@ -84,6 +87,7 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
     private MaterialDialog mMaterialDialog;
     private BottomSheetBehavior mSheetBehavior;
     private PDFRotationUtils mPDFRotationUtils;
+    private WatermarkUtils mWatermarkUtils;
 
     @BindView(R.id.lottie_progress)
     LottieAnimationView mLottieProgress;
@@ -117,6 +121,7 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
         View rootview = inflater.inflate(R.layout.fragment_remove_pages, container, false);
         ButterKnife.bind(this, rootview);
         mPDFRotationUtils = new PDFRotationUtils(mActivity);
+        mWatermarkUtils = new WatermarkUtils(mActivity);
         mSheetBehavior = BottomSheetBehavior.from(layoutBottomSheet);
         mSheetBehavior.setBottomSheetCallback(new BottomSheetCallback(mUpArrow, isAdded()));
         mOperation = getArguments().getString(BUNDLE_DATA);
@@ -245,10 +250,16 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
             return;
         }
 
+        if (mOperation.equals(ADD_WATERMARK2)){
+            mWatermarkUtils.setWatermark(mPath, null);
+        }
+
         if (mOperation.equals(REORDER_PAGES)){
 
             mPDFUtils.reorderPdfPages(mUri, mPath, this);
         }
+
+
         //mPDFUtils.reorderPdfPages(mUri, mPath, this);
     }
 
@@ -278,6 +289,7 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
             case REMOVE_PAGES:
             case ROTATE_PAGE:
             case ADD_PWD:
+            case ADD_WATERMARK2:
             case REMOVE_PWd:
                 mInfoText.setVisibility(View.GONE);
                 pagesInput.setVisibility(View.GONE);

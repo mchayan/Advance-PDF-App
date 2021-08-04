@@ -28,7 +28,7 @@ public final class R {
     public static final class array {
         private array() {}
 
-        public static final int photo_editor_emoji = 0x7f030009;
+        public static final int photo_editor_emoji = 0x7f03000a;
     }
     public static final class attr {
         private attr() {}

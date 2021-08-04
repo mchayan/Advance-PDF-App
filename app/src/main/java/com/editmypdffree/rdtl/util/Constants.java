@@ -41,6 +41,7 @@ public class Constants {
     public static final String PG_NUM_STYLE_X = "pg_num_style_x";
     public static final String MASTER_PWD_STRING = "master_password";
     public static final String ROTATE_PAGE = "Rotate Page";
+    public static final String ADD_WATERMARK2 = "Add Watermark";
 
     public static final String IMAGE_TO_PDF_KEY = "Images to PDF";
     public static final String TEXT_TO_PDF_KEY = "Text To PDF";

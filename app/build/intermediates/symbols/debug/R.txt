@@ -50,9 +50,10 @@ int array filter_options_history 0x7f030005
 int array fontStyles 0x7f030006
 int array itemIds 0x7f030007
 int array items 0x7f030008
-int array photo_editor_emoji 0x7f030009
-int array sort_options 0x7f03000a
-int array sort_options_images 0x7f03000b
+int array itemswatermark 0x7f030009
+int array photo_editor_emoji 0x7f03000a
+int array sort_options 0x7f03000b
+int array sort_options_images 0x7f03000c
 int attr actionBarDivider 0x7f040000
 int attr actionBarItemBackground 0x7f040001
 int attr actionBarPopupTheme 0x7f040002

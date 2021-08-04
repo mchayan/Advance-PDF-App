@@ -4954,7 +4954,9 @@
         <item>Can I convert pdf into PPT, PPTX, ODT, DOC or DOCX format?#####No, As of now you can not convert that using this app.</item>
         <item>Where can I download R PDF Editor Offline App?#####It\'s available on google app store so there you can easily download on your android device.</item>
 
-    </string-array></file><file path="D:\PDF\08-02-2021\Advance-PDF-App\app\src\main\res\values\styles.xml" qualifiers=""><style name="AppThemeWhite" parent="Theme.AppCompat.Light.NoActionBar">
+    </string-array><array name="itemswatermark">
+        <item>Add Watermark</item>
+    </array></file><file path="D:\PDF\08-02-2021\Advance-PDF-App\app\src\main\res\values\styles.xml" qualifiers=""><style name="AppThemeWhite" parent="Theme.AppCompat.Light.NoActionBar">
         
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>

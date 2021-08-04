@@ -51,6 +51,7 @@ array filter_options_history
 array fontStyles
 array itemIds
 array items
+array itemswatermark
 array photo_editor_emoji
 array sort_options
 array sort_options_images
