@@ -15,7 +15,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="400dp"
+            android:layout_height="450dp"
             android:layout_margin="30dp"
             android:elevation="10dp"
             app:cardBackgroundColor="@color/colorAccent1"
@@ -99,7 +99,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/fileLocation"
+                            android:id="@+id/idloctionofpdf"
                             android:layout_margin="10dp"
                             android:textSize="16dp"
                             android:text="Your Selected PDF File Location "
@@ -111,27 +111,40 @@
 
                 <TextView
                     android:id="@+id/infoText"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="24dp"
                     android:layout_marginTop="15dp"
                     android:fontFamily="@font/sarabunregular"
                     android:text="@string/compress_pdf_prompt"
-                    android:textColor="@color/colorAccent1" />
+                    android:textColor="@color/black" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/idEdTxtCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    app:cardBackgroundColor="@color/colorAccent1"
+                    app:cardCornerRadius="8dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="20dp"
+                    app:cardElevation="3dp">
                 <EditText
                     android:id="@+id/pages"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="24dp"
-                    android:layout_marginTop="15dp"
-                    android:autofillHints=""
-                    android:fontFamily="@font/sarabunregular"
+                    android:padding="10dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/colorAccent1"
                     android:hint="@string/prompt_input"
                     android:inputType="number"
                     android:labelFor="@id/infoText"
                     android:maxLines="1"
                     android:textColor="@color/black"
                     android:textColorHint="#BD3C3838" />
+
+                </androidx.cardview.widget.CardView>
 
                 <TextView
                     android:id="@+id/compressionInfoText"
@@ -145,11 +158,15 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="4dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="4dp"
                     android:elevation="10dp"
                     app:cardBackgroundColor="@color/colorPrimary"
                     app:cardCornerRadius="20dp"
-                    app:cardElevation="4dp">
+                    app:cardElevation="4dp"
+                    android:padding="3dp">
 
                     <com.dd.morphingbutton.MorphingButton
                         android:id="@+id/pdfCreate"

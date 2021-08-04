@@ -1960,6 +1960,7 @@ id icon_group
 id icon_only
 id idCard1stWhite
 id idCard1stWhite2
+id idEdTxtCard
 id idLV1st
 id idLV1st2
 id idListIV
@@ -1968,6 +1969,7 @@ id idSelectPdfLL
 id idbtnCard1st
 id idbtnCard1st2
 id idbtnCard2nd
+id idloctionofpdf
 id ifRoom
 id image
 id imagePreview

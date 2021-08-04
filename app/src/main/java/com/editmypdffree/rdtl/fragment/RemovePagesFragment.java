@@ -15,6 +15,8 @@ import com.editmypdffree.rdtl.interfaces.IOnBackPressed;
 import com.editmypdffree.rdtl.util.PDFRotationUtils;
 import com.editmypdffree.rdtl.util.WatermarkUtils;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
+
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -89,6 +91,7 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
     private PDFRotationUtils mPDFRotationUtils;
     private WatermarkUtils mWatermarkUtils;
 
+
     @BindView(R.id.lottie_progress)
     LottieAnimationView mLottieProgress;
     @BindView(R.id.selectFile)
@@ -113,6 +116,10 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
     TextView mCompressionInfoText;
     @BindView(R.id.view_pdf)
     Button mViewPdf;
+    @BindView(R.id.idloctionofpdf)
+    TextView tvloctionofpdf;
+    @BindView(R.id.idEdTxtCard)
+    CardView EdTxtCard;
     private Uri mUri;
 
     @Override
@@ -283,7 +290,9 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
     private void resetValues() {
         mPath = null;
         pagesInput.setText(null);
-        mMorphButtonUtility.initializeButton(selectFileButton, createPdf);
+
+        mMorphButtonUtility.initializeButton2(selectFileButton, createPdf);
+       // tvloctionofpdf.setText(mPath);
         switch (mOperation) {
             case REORDER_PAGES:
             case REMOVE_PAGES:
@@ -330,8 +339,9 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
         mPath = path;
         mCompressionInfoText.setVisibility(View.GONE);
         mViewPdf.setVisibility(View.GONE);
-        mMorphButtonUtility.setTextAndActivateButtons(path,
+        mMorphButtonUtility.setTextAndActivateButtons2(path,
                 selectFileButton, createPdf);
+        tvloctionofpdf.setText(mPath);
     }
 
     @Override
