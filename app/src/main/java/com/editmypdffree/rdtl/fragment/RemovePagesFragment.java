@@ -118,7 +118,7 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootview = inflater.inflate(R.layout.fragment_remove_pages, container, false);
+        View rootview = inflater.inflate(R.layout.fragment_remove_pages2, container, false);
         ButterKnife.bind(this, rootview);
         mPDFRotationUtils = new PDFRotationUtils(mActivity);
         mWatermarkUtils = new WatermarkUtils(mActivity);

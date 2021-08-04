@@ -2482,6 +2482,7 @@ layout fragment_preview_item
 layout fragment_qrcode_barcode
 layout fragment_remove_duplicate_pages
 layout fragment_remove_pages
+layout fragment_remove_pages2
 layout fragment_settings
 layout fragment_split_files
 layout fragment_step_create_pdf
