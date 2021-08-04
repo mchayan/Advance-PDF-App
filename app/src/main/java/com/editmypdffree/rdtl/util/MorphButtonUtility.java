@@ -107,6 +107,7 @@ public class MorphButtonUtility {
         morphToSquare(toEnable, integer());
     }
 
+
     public void initializeButton(MorphingButton button,
                                  MorphingButton buttonToDisable) {
         button.setText(R.string.merge_file_select);
