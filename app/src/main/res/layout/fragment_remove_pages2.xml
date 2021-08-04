@@ -118,7 +118,6 @@
                     android:fontFamily="@font/sarabunregular"
                     android:text="@string/compress_pdf_prompt"
                     android:textColor="@color/colorAccent1" />
-
                 <EditText
                     android:id="@+id/pages"
                     android:layout_width="match_parent"
