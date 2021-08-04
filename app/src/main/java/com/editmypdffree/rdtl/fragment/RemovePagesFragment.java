@@ -323,11 +323,12 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
     public void onItemClick(String path) {
         mSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
         setTextAndActivateButtons(path);
+        createPdf.setVisibility(View.VISIBLE);
 
-        if (createPdf.getVisibility() == View.GONE)
-        {
-            createPdf.setVisibility(View.VISIBLE);
-        }
+//        if (createPdf.getVisibility() == View.GONE)
+//        {
+//
+//        }
     }
 
     private void setTextAndActivateButtons(String path) {
