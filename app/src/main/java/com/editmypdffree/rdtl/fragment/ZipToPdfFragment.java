@@ -2,6 +2,8 @@ package com.editmypdffree.rdtl.fragment;
 
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -10,6 +12,9 @@ import android.os.Environment;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +26,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import com.editmypdffree.rdtl.R;
+import com.editmypdffree.rdtl.interfaces.IOnBackPressed;
 import com.editmypdffree.rdtl.util.PermissionsUtils;
 import com.editmypdffree.rdtl.util.RealPathUtil;
 import com.editmypdffree.rdtl.util.ResultUtils;
@@ -29,7 +35,7 @@ import com.editmypdffree.rdtl.util.ZipToPdf;
 
 import static com.editmypdffree.rdtl.util.Constants.READ_WRITE_PERMISSIONS;
 
-public class ZipToPdfFragment extends Fragment {
+public class ZipToPdfFragment extends Fragment implements IOnBackPressed {
     private static final int INTENT_REQUEST_PICK_FILE_CODE = 10;
     private static final int PERMISSION_REQUEST_WRITE_EXTERNAL_STORAGE_RESULT = 145;
     private String mPath;
@@ -112,6 +118,48 @@ public class ZipToPdfFragment extends Fragment {
                 showFileChooser();
             } else
                 StringUtils.getInstance().showSnackbar(mActivity, R.string.snackbar_insufficient_permissions);
+        }
+    }
+
+    @Override
+    public boolean onBackPressed() {
+
+        //IOnBackPressed,
+
+        if (mPath != null) {
+            //action not popBackStack
+            // Toast.makeText(mActivity, "backpress clicked", Toast.LENGTH_SHORT).show();
+            AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+            builder.setMessage("If You Discard Now, You'll Lose Changes You've Made to It." )
+                    .setTitle("Discard PDF?")
+                    .setCancelable(false)
+                    .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+//                            Intent intent=new Intent(getContext(), MainActivity.class);
+//                            startActivity(intent);
+
+                            HomeFragment myfragment;
+                            myfragment = new HomeFragment();
+                            FragmentManager fm = getFragmentManager();
+                            FragmentTransaction fragmentTransaction = fm.beginTransaction();
+                            fragmentTransaction.replace(R.id.content, myfragment);
+                            //fragmentTransaction.addToBackStack(null);
+                            fragmentTransaction.commit();
+
+                        }
+                    })
+                    .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            dialog.cancel();
+                        }
+                    });
+            AlertDialog alert = builder.create();
+            alert.show();
+            return true;
+        } else {
+            // Toast.makeText(mActivity, "clicked", Toast.LENGTH_SHORT).show();
+            mPath = null;
+            return false;
         }
     }
 }
