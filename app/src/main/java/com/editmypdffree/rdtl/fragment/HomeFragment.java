@@ -319,92 +319,92 @@ public class  HomeFragment extends Fragment implements View.OnClickListener {
 
         switch (v.getId()) {
             case R.id.images_to_pdf:
-                AdLoader.getAds().showFBFirst(mActivity);
+                //AdLoader.getAds().showFBFirst(mActivity);
                 //Toast.makeText(mActivity, "images_to_pdf", Toast.LENGTH_SHORT).show();
                 fragment = new ImageToPdfFragment();
 
                 break;
             case R.id.qr_barcode_to_pdf:
-                AdLoader.getAds().showFBFirst(mActivity);
+               //AdLoader.getAds().showFBFirst(mActivity);
                 //Toast.makeText(mActivity, "qr_barcode_to_pdf", Toast.LENGTH_SHORT).show();
                 fragment = new QrBarcodeScanFragment();
                 break;
             case R.id.text_to_pdf:
-                AdLoader.getAds().showFBFirst(mActivity);
+               // AdLoader.getAds().showFBFirst(mActivity);
                 //Toast.makeText(mActivity, "text_to_pdf", Toast.LENGTH_SHORT).show();
                 fragment = new TextToPdfFragment();
                 break;
             case R.id.view_files:
-                AdLoader.getAds().showFBFirst(mActivity);
+               // AdLoader.getAds().showFBFirst(mActivity);
                 //Toast.makeText(mActivity, "view_files", Toast.LENGTH_SHORT).show();
                 fragment = new ViewFilesFragment();
                 break;
             case R.id.view_history:
-                AdLoader.getAds().showFBFirst(mActivity);
+               // AdLoader.getAds().showFBFirst(mActivity);
                 //Toast.makeText(mActivity, "view_history", Toast.LENGTH_SHORT).show();
                 fragment = new HistoryFragment();
                 break;
             case R.id.merge_pdf:
-                AdLoader.getAds().showFBFirst(mActivity);
+               // AdLoader.getAds().showFBFirst(mActivity);
                 //Toast.makeText(mActivity, "merge_pdf", Toast.LENGTH_SHORT).show();
                 fragment = new MergeFilesFragment();
                 break;
             case R.id.split_pdf:
-                AdLoader.getAds().showFBFirst(mActivity);
+               // AdLoader.getAds().showFBFirst(mActivity);
                 //Toast.makeText(mActivity, "split_pdf", Toast.LENGTH_SHORT).show();
                 fragment = new SplitFilesFragment();
                 break;
             case R.id.compress_pdf:
-                AdLoader.getAds().showFBFirst(mActivity);
+               // AdLoader.getAds().showFBFirst(mActivity);
                 //Toast.makeText(mActivity, "compress_pdf", Toast.LENGTH_SHORT).show();
                 fragment = new RemovePagesFragment();
                 bundle.putString(BUNDLE_DATA, COMPRESS_PDF);
                 fragment.setArguments(bundle);
                 break;
             case R.id.extract_images:
-                AdLoader.getAds().showFBFirst(mActivity);
+                //AdLoader.getAds().showFBFirst(mActivity);
                 //Toast.makeText(mActivity, "extract_images", Toast.LENGTH_SHORT).show();
                 fragment = new PdfToImageFragment();
                 bundle.putString(BUNDLE_DATA, EXTRACT_IMAGES);
                 fragment.setArguments(bundle);
                 break;
             case R.id.pdf_to_images:
-                AdLoader.getAds().showFBFirst(mActivity);
+                //AdLoader.getAds().showFBFirst(mActivity);
                 //Toast.makeText(mActivity, "pdf_to_images", Toast.LENGTH_SHORT).show();
                 fragment = new PdfToImageFragment();
                 bundle.putString(BUNDLE_DATA, PDF_TO_IMAGES);
                 fragment.setArguments(bundle);
                 break;
             case R.id.remove_pages:
-                AdLoader.getAds().showFBFirst(mActivity);
+               // AdLoader.getAds().showFBFirst(mActivity);
                 //Toast.makeText(mActivity, "remove_pages", Toast.LENGTH_SHORT).show();
                 fragment = new RemovePagesFragment();
                 bundle.putString(BUNDLE_DATA, REMOVE_PAGES);
                 fragment.setArguments(bundle);
                 break;
             case R.id.rearrange_pages:
-                AdLoader.getAds().showFBFirst(mActivity);
+               // AdLoader.getAds().showFBFirst(mActivity);
                 //Toast.makeText(mActivity, "rearrange_pages", Toast.LENGTH_SHORT).show();
                 fragment = new RemovePagesFragment();
                 bundle.putString(BUNDLE_DATA, REORDER_PAGES);
                 fragment.setArguments(bundle);
                 break;
             case R.id.add_password:
-                AdLoader.getAds().showFBFirst(mActivity);
+               // AdLoader.getAds().showFBFirst(mActivity);
                 //Toast.makeText(mActivity, "add_password", Toast.LENGTH_SHORT).show();
                 fragment = new RemovePagesFragment();
                 bundle.putString(BUNDLE_DATA, ADD_PWD);
                 fragment.setArguments(bundle);
                 break;
             case R.id.remove_password:
-                AdLoader.getAds().showFBFirst(mActivity);
+                //AdLoader.getAds().showFBFirst(mActivity);
                 //Toast.makeText(mActivity, "remove_password", Toast.LENGTH_SHORT).show();
                 fragment = new RemovePagesFragment();
                 bundle.putString(BUNDLE_DATA, REMOVE_PWd);
                 fragment.setArguments(bundle);
                 break;
             case R.id.rotate_pages:
-                AdLoader.getAds().showFBFirst(mActivity);
+               // AdLoader.getAds().showFBFirst(mActivity);
                 //Toast.makeText(mActivity, "rotate_pages", Toast.LENGTH_SHORT).show();
 //                fragment = new ViewFilesFragment();
 //                bundle.putInt(BUNDLE_DATA, ROTATE_PAGES);
@@ -415,7 +415,7 @@ public class  HomeFragment extends Fragment implements View.OnClickListener {
                 fragment.setArguments(bundle);
                 break;
             case R.id.add_watermark:
-                AdLoader.getAds().showFBFirst(mActivity);
+               // AdLoader.getAds().showFBFirst(mActivity);
                 //Toast.makeText(mActivity, "add_watermark", Toast.LENGTH_SHORT).show();
 //                fragment = new ViewFilesFragment();
 //                bundle.putInt(BUNDLE_DATA, ADD_WATERMARK);
@@ -428,7 +428,7 @@ public class  HomeFragment extends Fragment implements View.OnClickListener {
                 fragment.setArguments(bundle);
                 break;
             case R.id.add_images:
-                AdLoader.getAds().showFBFirst(mActivity);
+               // AdLoader.getAds().showFBFirst(mActivity);
                 //Toast.makeText(mActivity, "add_images", Toast.LENGTH_SHORT).show();
                 fragment = new AddImagesFragment();
                 bundle.putString(BUNDLE_DATA, ADD_IMAGES);
@@ -436,31 +436,31 @@ public class  HomeFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.remove_duplicates_pages_pdf:
                 //Toast.makeText(mActivity, "remove_duplicates_pages_pdf", Toast.LENGTH_SHORT).show();
-                AdLoader.getAds().showFBFirst(mActivity);
+               // AdLoader.getAds().showFBFirst(mActivity);
                 fragment = new RemoveDuplicatePagesFragment();
                 break;
             case R.id.invert_pdf:
                 //Toast.makeText(mActivity, "invert_pdf", Toast.LENGTH_SHORT).show();
-                AdLoader.getAds().showFBFirst(mActivity);
+               // AdLoader.getAds().showFBFirst(mActivity);
                 fragment = new InvertPdfFragment();
                 break;
             case R.id.zip_to_pdf:
-                AdLoader.getAds().showFBFirst(mActivity);
+                //AdLoader.getAds().showFBFirst(mActivity);
                 //Toast.makeText(mActivity, "zip_to_pdf", Toast.LENGTH_SHORT).show();
                 fragment = new ZipToPdfFragment();
                 break;
             case R.id.excel_to_pdf:
-                AdLoader.getAds().showFBFirst(mActivity);
+               // AdLoader.getAds().showFBFirst(mActivity);
                 //Toast.makeText(mActivity, "excel_to_pdf", Toast.LENGTH_SHORT).show();
                 fragment = new ExceltoPdfFragment();
                 break;
             case R.id.extract_text:
-                AdLoader.getAds().showFBFirst(mActivity);
+               // AdLoader.getAds().showFBFirst(mActivity);
                 //Toast.makeText(mActivity, "extract_text", Toast.LENGTH_SHORT).show();
                 fragment = new ExtractTextFragment();
                 break;
             case R.id.add_text:
-                AdLoader.getAds().showFBFirst(mActivity);
+              //  AdLoader.getAds().showFBFirst(mActivity);
                 //Toast.makeText(mActivity, "add_text", Toast.LENGTH_SHORT).show();
                 fragment = new AddTextFragment();
                 break;
