@@ -422,6 +422,7 @@ public class  HomeFragment extends Fragment implements View.OnClickListener {
 //                fragment.setArguments(bundle);
 
                 //Toast.makeText(mActivity, "clicked", Toast.LENGTH_SHORT).show();
+                //ak now
 
                 fragment = new RemovePagesFragment();
                 bundle.putString(BUNDLE_DATA, ADD_WATERMARK2);
