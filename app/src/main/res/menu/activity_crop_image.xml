@@ -10,6 +10,7 @@
     <item
         android:id="@+id/action_skip"
         android:title="@string/skip_text"
+        android:icon="@drawable/ic_baseline_undo_24"
         android:iconTint="@color/colorAccent1"
         app:showAsAction="ifRoom"/>
 </menu>
