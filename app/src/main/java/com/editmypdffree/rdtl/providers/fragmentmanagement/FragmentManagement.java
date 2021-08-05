@@ -44,6 +44,7 @@ import static com.editmypdffree.rdtl.util.Constants.ACTION_VIEW_FILES;
 import static com.editmypdffree.rdtl.util.Constants.ADD_IMAGES;
 import static com.editmypdffree.rdtl.util.Constants.ADD_PWD;
 import static com.editmypdffree.rdtl.util.Constants.ADD_WATERMARK;
+import static com.editmypdffree.rdtl.util.Constants.ADD_WATERMARK2;
 import static com.editmypdffree.rdtl.util.Constants.BUNDLE_DATA;
 import static com.editmypdffree.rdtl.util.Constants.COMPRESS_PDF;
 import static com.editmypdffree.rdtl.util.Constants.EXTRACT_IMAGES;
@@ -232,8 +233,8 @@ public class FragmentManagement implements IFragmentManagement {
                 fragment = new InvertPdfFragment();
                 break;
             case R.id.nav_add_watermark:
-                fragment = new ViewFilesFragment();
-                bundle.putInt(BUNDLE_DATA, ADD_WATERMARK);
+                fragment = new RemovePagesFragment();
+                bundle.putString(BUNDLE_DATA, ADD_WATERMARK2);
                 fragment.setArguments(bundle);
                 break;
             case R.id.nav_zip_to_pdf:

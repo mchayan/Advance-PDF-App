@@ -178,7 +178,7 @@
                         android:fontFamily="@font/sarabunregular"
                         android:text="@string/create_pdf"
                         android:textColor="@color/colorPrimary"
-                        android:visibility="visible"
+                        android:visibility="gone"
 
                         app:layout_constraintBottom_toTopOf="@id/recyclerView"
                         app:layout_constraintEnd_toEndOf="parent"
