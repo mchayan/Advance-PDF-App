@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -211,11 +212,18 @@ public class PDFEncryptionUtility {
             // our master password & their user password
             // their master password
 
+
+
             if (!removePasswordUsingDefMasterPassword(file, dataSetChanged, input_password)) {
+
                 if (!removePasswordUsingInputMasterPassword(file, dataSetChanged, input_password)) {
                     StringUtils.getInstance().showSnackbar(mContext, R.string.master_password_changed);
+
                 }
             }
+
+
+
             mDialog.dismiss();
         });
     }
@@ -283,6 +291,7 @@ public class PDFEncryptionUtility {
                 StringUtils.getInstance().getSnackbarwithAction(mContext, R.string.snackbar_pdfCreated)
                         .setAction(R.string.snackbar_viewAction,
                                 v2 -> mFileUtils.openFile(filepath, FileUtils.FileType.e_PDF)).show();
+                RemovePagesFragment.getInstance().myMethod(filepath);
                 return true;
             }
         } catch (DocumentException | IOException e) {

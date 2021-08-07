@@ -6,6 +6,7 @@ import android.util.SparseIntArray;
 import android.widget.RadioGroup;
 
 import com.afollestad.materialdialogs.MaterialDialog;
+import com.editmypdffree.rdtl.fragment.RemovePagesFragment;
 import com.itextpdf.text.pdf.PdfDictionary;
 import com.itextpdf.text.pdf.PdfName;
 import com.itextpdf.text.pdf.PdfNumber;
@@ -95,6 +96,8 @@ public class PDFRotationUtils {
                     .setAction(R.string.snackbar_viewAction, v ->
                             mFileUtils.openFile(destFilePath, FileUtils.FileType.e_PDF)).show();
             dataSetChanged.updateDataset();
+
+            RemovePagesFragment.getInstance().myMethod(destFilePath);
 
             return true;
         } catch (Exception e) {

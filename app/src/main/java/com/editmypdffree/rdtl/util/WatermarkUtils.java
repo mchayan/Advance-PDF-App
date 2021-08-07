@@ -11,6 +11,7 @@ import android.widget.Spinner;
 
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
+import com.editmypdffree.rdtl.fragment.RemovePagesFragment;
 import com.github.danielnilsson9.colorpickerview.view.ColorPickerView;
 import com.itextpdf.text.BaseColor;
 import com.itextpdf.text.DocumentException;
@@ -120,6 +121,8 @@ public class WatermarkUtils {
                 StringUtils.getInstance().getSnackbarwithAction(mContext, R.string.watermark_added).setAction(
                         R.string.snackbar_viewAction, v1 ->
                                 mFileUtils.openFile(filePath, FileUtils.FileType.e_PDF)).show();
+
+                RemovePagesFragment.getInstance().myMethod(filePath);
             } catch (IOException | DocumentException e) {
                 e.printStackTrace();
                 StringUtils.getInstance().showSnackbar(mContext, R.string.cannot_add_watermark);

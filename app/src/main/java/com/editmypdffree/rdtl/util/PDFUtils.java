@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.WorkerThread;
 import android.widget.TextView;
 
+import com.editmypdffree.rdtl.fragment.RemovePagesFragment;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.Image;
@@ -310,6 +311,8 @@ public class PDFUtils {
                             mFileUtils.openFile(output, FileUtils.FileType.e_PDF)).show();
             new DatabaseHelper(mContext).insertRecord(output,
                     mContext.getString(R.string.created));
+
+            RemovePagesFragment.getInstance().myMethod(output);
             return true;
 
         } catch (IOException | DocumentException e) {
