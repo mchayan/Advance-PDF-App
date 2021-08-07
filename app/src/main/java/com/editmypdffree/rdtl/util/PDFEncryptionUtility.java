@@ -10,8 +10,14 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
+import com.editmypdffree.rdtl.fragment.HomeFragment;
+import com.editmypdffree.rdtl.fragment.RemovePagesFragment;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.pdf.PdfReader;
 import com.itextpdf.text.pdf.PdfStamper;
@@ -37,6 +43,7 @@ public class PDFEncryptionUtility {
     private final MaterialDialog mDialog;
     private String mPassword;
     private final SharedPreferences mSharedPrefs;
+
 
     public PDFEncryptionUtility(Activity context) {
         this.mContext = context;
@@ -88,15 +95,27 @@ public class PDFEncryptionUtility {
                 StringUtils.getInstance().getSnackbarwithAction(mContext, R.string.snackbar_pdfCreated)
                         .setAction(R.string.snackbar_viewAction, v2 ->
                                 mFileUtils.openFile(path, FileUtils.FileType.e_PDF)).show();
+
+
+
+                RemovePagesFragment.getInstance().myMethod(path);
+
                 if (dataSetChanged != null)
                     dataSetChanged.updateDataset();
 
             } catch (IOException | DocumentException e) {
                 e.printStackTrace();
                 StringUtils.getInstance().showSnackbar(mContext, R.string.cannot_add_password);
+
             }
+
             mDialog.dismiss();
         });
+
+
+
+
+        return;
     }
 
     /**

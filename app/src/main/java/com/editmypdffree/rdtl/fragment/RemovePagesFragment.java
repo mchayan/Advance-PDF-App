@@ -23,6 +23,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -96,6 +98,8 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
     private PDFRotationUtils mPDFRotationUtils;
     private WatermarkUtils mWatermarkUtils;
 
+    private static RemovePagesFragment instance;
+
 
     @BindView(R.id.lottie_progress)
     LottieAnimationView mLottieProgress;
@@ -127,7 +131,14 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
     CardView EdTxtCard;
     @BindView(R.id.idLocationLV)
     LinearLayout loccationLV;
+    @BindView(R.id.popup)
+    LinearLayout choosefilePP;
+    @BindView(R.id.popup2)
+    LinearLayout openpdfPP;
+    @BindView(R.id.openpdf)
+    MorphingButton opnPDF;
     private Uri mUri;
+    String SuccessOrNot = null;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
@@ -142,7 +153,12 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
         mLottieProgress.setVisibility(View.VISIBLE);
         mBottomSheetUtils.populateBottomSheetWithPDFs(this);
 
+        instance = this;
+
         resetValues();
+
+
+
         return rootview;
     }
 
@@ -165,11 +181,15 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
     public void onActivityResult(int requestCode, int resultCode, Intent data) throws NullPointerException {
         if (data == null || resultCode != RESULT_OK)
             return;
+
+        Log.e("req code","pk fl "+requestCode);
+
         if (requestCode == INTENT_REQUEST_PICKFILE_CODE) {
             mUri = data.getData();
             //Getting Absolute Path
             String path = RealPathUtil.getInstance().getRealPath(getContext(), data.getData());
             setTextAndActivateButtons(path);
+
         } else if (requestCode == INTENT_REQUEST_REARRANGE_PDF) {
             String pages = data.getStringExtra(RESULT);
             boolean sameFile = data.getBooleanExtra("SameFile", false);
@@ -213,6 +233,8 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
                     "_edited" + pages + mActivity.getString(R.string.pdf_ext));
 
         }
+//        mFileUtils.openFile(mPath, FileUtils.FileType.e_PDF;
+        Log.e("output",""+outputPath);
         return outputPath;
     }
 
@@ -229,8 +251,10 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
         if (mOperation.equals(ADD_PWD)) {
             if (!mPDFUtils.isPDFEncrypted(mPath)) {
                 pdfEncryptionUtility.setPassword(mPath, null);
+
             } else {
                 StringUtils.getInstance().showSnackbar(mActivity, R.string.encrypted_pdf);
+
             }
 
             // delete file previous
@@ -249,6 +273,7 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
                 ex.printStackTrace();
             }
 
+            //hndlr();
             return;
         }
 
@@ -275,6 +300,16 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
 
             mPDFUtils.reorderPdfPages(mUri, mPath, this);
         }
+
+        if (mOperation.equals(REMOVE_PAGES)) {
+
+
+            mPDFUtils.reorderPdfPages(mUri, mPath, this);
+//            mPDFUtils.reorderPdfPages(mUri, mPath, this);
+        }
+
+
+
 
 
         //mPDFUtils.reorderPdfPages(mUri, mPath, this);
@@ -353,6 +388,12 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
 //        {
 //
 //        }
+    }
+
+    @OnClick(R.id.openpdf)
+    public void opnmypdf(){
+
+        mFileUtils.openFile(SuccessOrNot, FileUtils.FileType.e_PDF);
     }
 
     private void setTextAndActivateButtons(String path) {
@@ -466,6 +507,7 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
                             //fragmentTransaction.addToBackStack(null);
                             fragmentTransaction.commit();
 
+
                         }
                     })
                     .setNegativeButton("No", new DialogInterface.OnClickListener() {
@@ -481,5 +523,21 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
             mPath = null;
             return false;
         }
+    }
+
+
+
+
+    public static RemovePagesFragment getInstance() {
+        return instance;
+    }
+
+    public void myMethod(String ppth) {
+        // do something...
+
+        choosefilePP.setVisibility(View.GONE);
+        openpdfPP.setVisibility(View.VISIBLE);
+        SuccessOrNot = ppth;
+
     }
 }

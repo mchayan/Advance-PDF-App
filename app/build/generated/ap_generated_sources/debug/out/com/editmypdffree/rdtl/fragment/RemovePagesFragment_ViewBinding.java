@@ -28,6 +28,8 @@ public class RemovePagesFragment_ViewBinding implements Unbinder {
 
   private View view7f0a01aa;
 
+  private View view7f0a0184;
+
   private View view7f0a026f;
 
   @UiThread
@@ -66,6 +68,17 @@ public class RemovePagesFragment_ViewBinding implements Unbinder {
     target.tvloctionofpdf = Utils.findRequiredViewAsType(source, R.id.idloctionofpdf, "field 'tvloctionofpdf'", TextView.class);
     target.EdTxtCard = Utils.findRequiredViewAsType(source, R.id.idEdTxtCard, "field 'EdTxtCard'", CardView.class);
     target.loccationLV = Utils.findRequiredViewAsType(source, R.id.idLocationLV, "field 'loccationLV'", LinearLayout.class);
+    target.choosefilePP = Utils.findRequiredViewAsType(source, R.id.popup, "field 'choosefilePP'", LinearLayout.class);
+    target.openpdfPP = Utils.findRequiredViewAsType(source, R.id.popup2, "field 'openpdfPP'", LinearLayout.class);
+    view = Utils.findRequiredView(source, R.id.openpdf, "field 'opnPDF' and method 'opnmypdf'");
+    target.opnPDF = Utils.castView(view, R.id.openpdf, "field 'opnPDF'", MorphingButton.class);
+    view7f0a0184 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.opnmypdf();
+      }
+    });
     view = Utils.findRequiredView(source, R.id.viewFiles, "method 'onViewFilesClick'");
     view7f0a026f = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
@@ -98,11 +111,16 @@ public class RemovePagesFragment_ViewBinding implements Unbinder {
     target.tvloctionofpdf = null;
     target.EdTxtCard = null;
     target.loccationLV = null;
+    target.choosefilePP = null;
+    target.openpdfPP = null;
+    target.opnPDF = null;
 
     view7f0a01fe.setOnClickListener(null);
     view7f0a01fe = null;
     view7f0a01aa.setOnClickListener(null);
     view7f0a01aa = null;
+    view7f0a0184.setOnClickListener(null);
+    view7f0a0184 = null;
     view7f0a026f.setOnClickListener(null);
     view7f0a026f = null;
   }
