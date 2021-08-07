@@ -2217,8 +2217,10 @@ id select_excel_file
 id select_excel_file2
 id select_pdf_file
 id select_pdf_file1
+id select_pdf_file_popup
 id select_text_file
 id select_text_file1
+id select_text_file_popup
 id selected
 id selected_album
 id selected_files

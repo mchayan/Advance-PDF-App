@@ -25,7 +25,7 @@ public class InvertPdfFragment_ViewBinding implements Unbinder {
 
   private View view7f0a011e;
 
-  private View view7f0a026f;
+  private View view7f0a0271;
 
   @UiThread
   public InvertPdfFragment_ViewBinding(final InvertPdfFragment target, View source) {
@@ -57,7 +57,7 @@ public class InvertPdfFragment_ViewBinding implements Unbinder {
     target.mRecyclerViewFiles = Utils.findRequiredViewAsType(source, R.id.recyclerViewFiles, "field 'mRecyclerViewFiles'", RecyclerView.class);
     target.mViewPdf = Utils.findRequiredViewAsType(source, R.id.view_pdf, "field 'mViewPdf'", Button.class);
     view = Utils.findRequiredView(source, R.id.viewFiles, "method 'onViewFilesClick'");
-    view7f0a026f = view;
+    view7f0a0271 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -86,7 +86,7 @@ public class InvertPdfFragment_ViewBinding implements Unbinder {
     view7f0a01fe = null;
     view7f0a011e.setOnClickListener(null);
     view7f0a011e = null;
-    view7f0a026f.setOnClickListener(null);
-    view7f0a026f = null;
+    view7f0a0271.setOnClickListener(null);
+    view7f0a0271 = null;
   }
 }

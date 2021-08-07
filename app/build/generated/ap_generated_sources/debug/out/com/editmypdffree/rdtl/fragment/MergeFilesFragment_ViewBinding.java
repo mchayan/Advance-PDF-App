@@ -25,7 +25,7 @@ public class MergeFilesFragment_ViewBinding implements Unbinder {
 
   private View view7f0a0200;
 
-  private View view7f0a026f;
+  private View view7f0a0271;
 
   @UiThread
   public MergeFilesFragment_ViewBinding(final MergeFilesFragment target, View source) {
@@ -59,7 +59,7 @@ public class MergeFilesFragment_ViewBinding implements Unbinder {
     target.mSelectedFiles = Utils.findRequiredViewAsType(source, R.id.selected_files, "field 'mSelectedFiles'", RecyclerView.class);
     target.mEnhancementOptionsRecycleView = Utils.findRequiredViewAsType(source, R.id.enhancement_options_recycle_view, "field 'mEnhancementOptionsRecycleView'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.viewFiles, "method 'onViewFilesClick'");
-    view7f0a026f = view;
+    view7f0a0271 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -90,7 +90,7 @@ public class MergeFilesFragment_ViewBinding implements Unbinder {
     view7f0a0150 = null;
     view7f0a0200.setOnClickListener(null);
     view7f0a0200 = null;
-    view7f0a026f.setOnClickListener(null);
-    view7f0a026f = null;
+    view7f0a0271.setOnClickListener(null);
+    view7f0a0271 = null;
   }
 }

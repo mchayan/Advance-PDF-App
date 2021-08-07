@@ -24,9 +24,9 @@ public class SplitFilesFragment_ViewBinding implements Unbinder {
 
   private View view7f0a01fe;
 
-  private View view7f0a021f;
+  private View view7f0a0221;
 
-  private View view7f0a026f;
+  private View view7f0a0271;
 
   @UiThread
   public SplitFilesFragment_ViewBinding(final SplitFilesFragment target, View source) {
@@ -45,7 +45,7 @@ public class SplitFilesFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.splitFiles, "field 'splitFilesButton' and method 'parse'");
     target.splitFilesButton = Utils.castView(view, R.id.splitFiles, "field 'splitFilesButton'", MorphingButton.class);
-    view7f0a021f = view;
+    view7f0a0221 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -61,7 +61,7 @@ public class SplitFilesFragment_ViewBinding implements Unbinder {
     target.splitFilesSuccessText = Utils.findRequiredViewAsType(source, R.id.splitfiles_text, "field 'splitFilesSuccessText'", TextView.class);
     target.mSplitConfitEditText = Utils.findRequiredViewAsType(source, R.id.split_config, "field 'mSplitConfitEditText'", EditText.class);
     view = Utils.findRequiredView(source, R.id.viewFiles, "method 'onViewFilesClick'");
-    view7f0a026f = view;
+    view7f0a0271 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -91,9 +91,9 @@ public class SplitFilesFragment_ViewBinding implements Unbinder {
 
     view7f0a01fe.setOnClickListener(null);
     view7f0a01fe = null;
-    view7f0a021f.setOnClickListener(null);
-    view7f0a021f = null;
-    view7f0a026f.setOnClickListener(null);
-    view7f0a026f = null;
+    view7f0a0221.setOnClickListener(null);
+    view7f0a0221 = null;
+    view7f0a0271.setOnClickListener(null);
+    view7f0a0271 = null;
   }
 }

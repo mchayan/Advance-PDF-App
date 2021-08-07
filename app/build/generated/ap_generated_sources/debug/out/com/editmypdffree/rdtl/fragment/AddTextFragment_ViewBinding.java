@@ -22,11 +22,11 @@ public class AddTextFragment_ViewBinding implements Unbinder {
 
   private View view7f0a0205;
 
-  private View view7f0a0207;
+  private View view7f0a0208;
 
   private View view7f0a009b;
 
-  private View view7f0a026f;
+  private View view7f0a0271;
 
   @UiThread
   public AddTextFragment_ViewBinding(final AddTextFragment target, View source) {
@@ -44,7 +44,7 @@ public class AddTextFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.select_text_file, "field 'mSelectText' and method 'showTextFileChooser'");
     target.mSelectText = Utils.castView(view, R.id.select_text_file, "field 'mSelectText'", MorphingButton.class);
-    view7f0a0207 = view;
+    view7f0a0208 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -67,7 +67,7 @@ public class AddTextFragment_ViewBinding implements Unbinder {
     target.mLottieProgress = Utils.findRequiredViewAsType(source, R.id.lottie_progress, "field 'mLottieProgress'", LottieAnimationView.class);
     target.mTextEnhancementOptionsRecycleView = Utils.findRequiredViewAsType(source, R.id.enhancement_options_recycle_view_text, "field 'mTextEnhancementOptionsRecycleView'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.viewFiles, "method 'onViewFilesClick'");
-    view7f0a026f = view;
+    view7f0a0271 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -95,11 +95,11 @@ public class AddTextFragment_ViewBinding implements Unbinder {
 
     view7f0a0205.setOnClickListener(null);
     view7f0a0205 = null;
-    view7f0a0207.setOnClickListener(null);
-    view7f0a0207 = null;
+    view7f0a0208.setOnClickListener(null);
+    view7f0a0208 = null;
     view7f0a009b.setOnClickListener(null);
     view7f0a009b = null;
-    view7f0a026f.setOnClickListener(null);
-    view7f0a026f = null;
+    view7f0a0271.setOnClickListener(null);
+    view7f0a0271 = null;
   }
 }

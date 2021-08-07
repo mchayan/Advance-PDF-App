@@ -25,13 +25,13 @@ public class PdfToImageFragment_ViewBinding implements Unbinder {
 
   private View view7f0a0098;
 
+  private View view7f0a0273;
+
+  private View view7f0a0211;
+
   private View view7f0a0271;
 
-  private View view7f0a020f;
-
-  private View view7f0a026f;
-
-  private View view7f0a0270;
+  private View view7f0a0272;
 
   @UiThread
   public PdfToImageFragment_ViewBinding(final PdfToImageFragment target, View source) {
@@ -68,7 +68,7 @@ public class PdfToImageFragment_ViewBinding implements Unbinder {
     target.firstPopup = Utils.findRequiredViewAsType(source, R.id.popup, "field 'firstPopup'", LinearLayout.class);
     target.SecondPopup = Utils.findRequiredViewAsType(source, R.id.popup2, "field 'SecondPopup'", LinearLayout.class);
     view = Utils.findRequiredView(source, R.id.viewImagesInGallery, "method 'onImagesInGalleryClick'");
-    view7f0a0271 = view;
+    view7f0a0273 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -76,7 +76,7 @@ public class PdfToImageFragment_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.shareImages, "method 'onShareFilesClick'");
-    view7f0a020f = view;
+    view7f0a0211 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -84,7 +84,7 @@ public class PdfToImageFragment_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.viewFiles, "method 'onViewFilesClick'");
-    view7f0a026f = view;
+    view7f0a0271 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -92,7 +92,7 @@ public class PdfToImageFragment_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.viewImages, "method 'onViewImagesClicked'");
-    view7f0a0270 = view;
+    view7f0a0272 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -126,13 +126,13 @@ public class PdfToImageFragment_ViewBinding implements Unbinder {
     view7f0a01fe = null;
     view7f0a0098.setOnClickListener(null);
     view7f0a0098 = null;
+    view7f0a0273.setOnClickListener(null);
+    view7f0a0273 = null;
+    view7f0a0211.setOnClickListener(null);
+    view7f0a0211 = null;
     view7f0a0271.setOnClickListener(null);
     view7f0a0271 = null;
-    view7f0a020f.setOnClickListener(null);
-    view7f0a020f = null;
-    view7f0a026f.setOnClickListener(null);
-    view7f0a026f = null;
-    view7f0a0270.setOnClickListener(null);
-    view7f0a0270 = null;
+    view7f0a0272.setOnClickListener(null);
+    view7f0a0272 = null;
   }
 }

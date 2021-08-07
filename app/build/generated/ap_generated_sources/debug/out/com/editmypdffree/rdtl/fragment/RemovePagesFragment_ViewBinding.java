@@ -28,7 +28,7 @@ public class RemovePagesFragment_ViewBinding implements Unbinder {
 
   private View view7f0a01aa;
 
-  private View view7f0a026f;
+  private View view7f0a0271;
 
   @UiThread
   public RemovePagesFragment_ViewBinding(final RemovePagesFragment target, View source) {
@@ -67,7 +67,7 @@ public class RemovePagesFragment_ViewBinding implements Unbinder {
     target.EdTxtCard = Utils.findRequiredViewAsType(source, R.id.idEdTxtCard, "field 'EdTxtCard'", CardView.class);
     target.loccationLV = Utils.findRequiredViewAsType(source, R.id.idLocationLV, "field 'loccationLV'", LinearLayout.class);
     view = Utils.findRequiredView(source, R.id.viewFiles, "method 'onViewFilesClick'");
-    view7f0a026f = view;
+    view7f0a0271 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -103,7 +103,7 @@ public class RemovePagesFragment_ViewBinding implements Unbinder {
     view7f0a01fe = null;
     view7f0a01aa.setOnClickListener(null);
     view7f0a01aa = null;
-    view7f0a026f.setOnClickListener(null);
-    view7f0a026f = null;
+    view7f0a0271.setOnClickListener(null);
+    view7f0a0271 = null;
   }
 }

@@ -18,7 +18,7 @@ public class ZipToPdfFragment_ViewBinding implements Unbinder {
 
   private View view7f0a01fe;
 
-  private View view7f0a0287;
+  private View view7f0a0289;
 
   @UiThread
   public ZipToPdfFragment_ViewBinding(final ZipToPdfFragment target, View source) {
@@ -36,7 +36,7 @@ public class ZipToPdfFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.zip_to_pdf, "field 'convertButton' and method 'convertZipToPdf'");
     target.convertButton = Utils.castView(view, R.id.zip_to_pdf, "field 'convertButton'", MorphingButton.class);
-    view7f0a0287 = view;
+    view7f0a0289 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -59,7 +59,7 @@ public class ZipToPdfFragment_ViewBinding implements Unbinder {
 
     view7f0a01fe.setOnClickListener(null);
     view7f0a01fe = null;
-    view7f0a0287.setOnClickListener(null);
-    view7f0a0287 = null;
+    view7f0a0289.setOnClickListener(null);
+    view7f0a0289 = null;
   }
 }
