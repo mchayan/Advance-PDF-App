@@ -182,7 +182,7 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
         if (data == null || resultCode != RESULT_OK)
             return;
 
-        Log.e("req code","pk fl "+requestCode);
+
 
         if (requestCode == INTENT_REQUEST_PICKFILE_CODE) {
             mUri = data.getData();
@@ -234,7 +234,7 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
 
         }
 //        mFileUtils.openFile(mPath, FileUtils.FileType.e_PDF;
-        Log.e("output",""+outputPath);
+
         return outputPath;
     }
 
@@ -250,11 +250,11 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
         PDFEncryptionUtility pdfEncryptionUtility = new PDFEncryptionUtility(mActivity);
         if (mOperation.equals(ADD_PWD)) {
             if (!mPDFUtils.isPDFEncrypted(mPath)) {
-                pdfEncryptionUtility.setPassword(mPath, null);
-
+                SuccessOrNot = pdfEncryptionUtility.setPassword(mPath, null);
+                Toast.makeText(mActivity, "SuccessOrNot 2", Toast.LENGTH_SHORT).show();
             } else {
                 StringUtils.getInstance().showSnackbar(mActivity, R.string.encrypted_pdf);
-
+                SuccessOrNot = null;
             }
 
             // delete file previous
@@ -393,6 +393,7 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
     @OnClick(R.id.openpdf)
     public void opnmypdf(){
 
+        Toast.makeText(mActivity, ""+SuccessOrNot, Toast.LENGTH_SHORT).show();
         mFileUtils.openFile(SuccessOrNot, FileUtils.FileType.e_PDF);
     }
 
@@ -525,6 +526,32 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
         }
     }
 
+    private void hndlr(){
+
+        final Handler handler = new Handler(Looper.getMainLooper());
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                //Do something after 100ms
+
+
+
+                if (SuccessOrNot != null){
+                    openpdfPP.setVisibility(View.VISIBLE);
+                    choosefilePP.setVisibility(View.GONE);
+                }else {
+                    openpdfPP.setVisibility(View.GONE);
+                    choosefilePP.setVisibility(View.VISIBLE);
+
+                }
+
+
+
+
+                //hndlr();
+            }
+        }, 300);
+    }
 
 
 
@@ -535,9 +562,18 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
     public void myMethod(String ppth) {
         // do something...
 
+//        HomeFragment myfragment;
+//        myfragment = new HomeFragment();
+//        FragmentManager fm = getFragmentManager();
+//        FragmentTransaction fragmentTransaction = fm.beginTransaction();
+//        fragmentTransaction.replace(R.id.content, myfragment);
+//        //fragmentTransaction.addToBackStack(null);
+//        fragmentTransaction.commit();
+
         choosefilePP.setVisibility(View.GONE);
         openpdfPP.setVisibility(View.VISIBLE);
         SuccessOrNot = ppth;
+        //Toast.makeText(mActivity, "cccccccccc", Toast.LENGTH_SHORT).show();
 
     }
 }

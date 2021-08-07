@@ -44,6 +44,7 @@ public class PDFEncryptionUtility {
     private String mPassword;
     private final SharedPreferences mSharedPrefs;
 
+    String SuccessOrNot = null;
 
     public PDFEncryptionUtility(Activity context) {
         this.mContext = context;
@@ -61,7 +62,7 @@ public class PDFEncryptionUtility {
      *
      * @param filePath Path of file to be encrypted
      */
-    public void setPassword(final String filePath, final DataSetChanged dataSetChanged) {
+    public String setPassword(final String filePath, final DataSetChanged dataSetChanged) {
 
         mDialog.setTitle(R.string.set_password);
         final View mPositiveAction = mDialog.getActionButton(DialogAction.POSITIVE);
@@ -96,9 +97,9 @@ public class PDFEncryptionUtility {
                         .setAction(R.string.snackbar_viewAction, v2 ->
                                 mFileUtils.openFile(path, FileUtils.FileType.e_PDF)).show();
 
+                SuccessOrNot = path;
 
-
-                RemovePagesFragment.getInstance().myMethod(path);
+                RemovePagesFragment.getInstance().myMethod(SuccessOrNot);
 
                 if (dataSetChanged != null)
                     dataSetChanged.updateDataset();
@@ -106,8 +107,9 @@ public class PDFEncryptionUtility {
             } catch (IOException | DocumentException e) {
                 e.printStackTrace();
                 StringUtils.getInstance().showSnackbar(mContext, R.string.cannot_add_password);
-
+                SuccessOrNot = null;
             }
+
 
             mDialog.dismiss();
         });
@@ -115,7 +117,7 @@ public class PDFEncryptionUtility {
 
 
 
-        return;
+        return SuccessOrNot;
     }
 
     /**
