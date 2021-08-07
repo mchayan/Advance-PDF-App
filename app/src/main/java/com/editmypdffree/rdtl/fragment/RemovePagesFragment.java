@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
+
 import androidx.annotation.NonNull;
 
 import com.editmypdffree.rdtl.adapter.ViewFilesAdapter;
@@ -30,8 +31,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.airbnb.lottie.LottieAnimationView;
@@ -40,9 +43,11 @@ import com.dd.morphingbutton.MorphingButton;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+
 import com.editmypdffree.rdtl.R;
 import com.editmypdffree.rdtl.activity.RearrangePdfPages;
 import com.editmypdffree.rdtl.adapter.MergeFilesAdapter;
@@ -120,6 +125,8 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
     TextView tvloctionofpdf;
     @BindView(R.id.idEdTxtCard)
     CardView EdTxtCard;
+    @BindView(R.id.idLocationLV)
+    LinearLayout loccationLV;
     private Uri mUri;
 
     @Override
@@ -186,10 +193,13 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
             }
             resetValues();
         }
+
+
     }
 
     /**
      * This method returns new  pdf name.
+     *
      * @param pages The pages String that contains page numbers
      * @return Returns the new pdf name
      */
@@ -233,9 +243,9 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
                     } else {
                         Log.e("File", "File Contain no match: " + name);
                     }
-                    Log.e("Delete" , filePath.getAbsolutePath());
+                    Log.e("Delete", filePath.getAbsolutePath());
                 }
-            } catch (Exception  ex) {
+            } catch (Exception ex) {
                 ex.printStackTrace();
             }
 
@@ -251,17 +261,17 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
             return;
         }
 
-        if (mOperation.equals(ROTATE_PAGE)){
+        if (mOperation.equals(ROTATE_PAGE)) {
 
             mPDFRotationUtils.rotatePages(mPath, null);
             return;
         }
 
-        if (mOperation.equals(ADD_WATERMARK2)){
+        if (mOperation.equals(ADD_WATERMARK2)) {
             mWatermarkUtils.setWatermark(mPath, null);
         }
 
-        if (mOperation.equals(REORDER_PAGES)){
+        if (mOperation.equals(REORDER_PAGES)) {
 
             mPDFUtils.reorderPdfPages(mUri, mPath, this);
         }
@@ -292,7 +302,7 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
         pagesInput.setText(null);
 
         mMorphButtonUtility.initializeButton2(selectFileButton, createPdf);
-       // tvloctionofpdf.setText(mPath);
+        // tvloctionofpdf.setText(mPath);
         switch (mOperation) {
             case REORDER_PAGES:
             case REMOVE_PAGES:
@@ -324,6 +334,20 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
         mSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
         setTextAndActivateButtons(path);
         createPdf.setVisibility(View.VISIBLE);
+
+        if (mPath != null) {
+            loccationLV.setVisibility(View.VISIBLE);
+
+            EdTxtCard.setVisibility(View.VISIBLE);
+            if (mOperation.equals("Compress PDF")){
+                mInfoText.setVisibility(View.VISIBLE);
+            }
+
+        } else {
+            loccationLV.setVisibility(View.GONE);
+            mInfoText.setVisibility(View.GONE);
+            EdTxtCard.setVisibility(View.GONE);
+        }
 
 //        if (createPdf.getVisibility() == View.GONE)
 //        {
@@ -426,7 +450,7 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
             //action not popBackStack
             // Toast.makeText(mActivity, "backpress clicked", Toast.LENGTH_SHORT).show();
             AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-            builder.setMessage("If You Discard Now, You'll Lose Changes You've Made to It." )
+            builder.setMessage("If You Discard Now, You'll Lose Changes You've Made to It.")
                     .setTitle("Discard PDF?")
                     .setCancelable(false)
                     .setPositiveButton("Yes", new DialogInterface.OnClickListener() {

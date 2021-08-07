@@ -24,11 +24,11 @@ import java.lang.Override;
 public class RemovePagesFragment_ViewBinding implements Unbinder {
   private RemovePagesFragment target;
 
-  private View view7f0a01fd;
+  private View view7f0a01fe;
 
-  private View view7f0a01a9;
+  private View view7f0a01aa;
 
-  private View view7f0a026e;
+  private View view7f0a026f;
 
   @UiThread
   public RemovePagesFragment_ViewBinding(final RemovePagesFragment target, View source) {
@@ -38,7 +38,7 @@ public class RemovePagesFragment_ViewBinding implements Unbinder {
     target.mLottieProgress = Utils.findRequiredViewAsType(source, R.id.lottie_progress, "field 'mLottieProgress'", LottieAnimationView.class);
     view = Utils.findRequiredView(source, R.id.selectFile, "field 'selectFileButton' and method 'showFileChooser'");
     target.selectFileButton = Utils.castView(view, R.id.selectFile, "field 'selectFileButton'", MorphingButton.class);
-    view7f0a01fd = view;
+    view7f0a01fe = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -47,7 +47,7 @@ public class RemovePagesFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.pdfCreate, "field 'createPdf' and method 'parse'");
     target.createPdf = Utils.castView(view, R.id.pdfCreate, "field 'createPdf'", MorphingButton.class);
-    view7f0a01a9 = view;
+    view7f0a01aa = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -65,8 +65,9 @@ public class RemovePagesFragment_ViewBinding implements Unbinder {
     target.mViewPdf = Utils.findRequiredViewAsType(source, R.id.view_pdf, "field 'mViewPdf'", Button.class);
     target.tvloctionofpdf = Utils.findRequiredViewAsType(source, R.id.idloctionofpdf, "field 'tvloctionofpdf'", TextView.class);
     target.EdTxtCard = Utils.findRequiredViewAsType(source, R.id.idEdTxtCard, "field 'EdTxtCard'", CardView.class);
+    target.loccationLV = Utils.findRequiredViewAsType(source, R.id.idLocationLV, "field 'loccationLV'", LinearLayout.class);
     view = Utils.findRequiredView(source, R.id.viewFiles, "method 'onViewFilesClick'");
-    view7f0a026e = view;
+    view7f0a026f = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -96,12 +97,13 @@ public class RemovePagesFragment_ViewBinding implements Unbinder {
     target.mViewPdf = null;
     target.tvloctionofpdf = null;
     target.EdTxtCard = null;
+    target.loccationLV = null;
 
-    view7f0a01fd.setOnClickListener(null);
-    view7f0a01fd = null;
-    view7f0a01a9.setOnClickListener(null);
-    view7f0a01a9 = null;
-    view7f0a026e.setOnClickListener(null);
-    view7f0a026e = null;
+    view7f0a01fe.setOnClickListener(null);
+    view7f0a01fe = null;
+    view7f0a01aa.setOnClickListener(null);
+    view7f0a01aa = null;
+    view7f0a026f.setOnClickListener(null);
+    view7f0a026f = null;
   }
 }

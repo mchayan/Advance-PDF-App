@@ -86,9 +86,11 @@
                     </TextView>
 
                     <LinearLayout
+                        android:id="@+id/idLocationLV"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:visibility="gone">
 
                         <ImageView
                             android:layout_width="wrap_content"
@@ -118,7 +120,8 @@
                     android:layout_marginTop="15dp"
                     android:fontFamily="@font/sarabunregular"
                     android:text="@string/compress_pdf_prompt"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/black"
+                    android:visibility="gone"/>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/idEdTxtCard"
@@ -129,7 +132,8 @@
                     app:cardCornerRadius="8dp"
                     android:layout_marginBottom="5dp"
                     android:layout_marginTop="20dp"
-                    app:cardElevation="3dp">
+                    app:cardElevation="3dp"
+                    android:visibility="gone">
                 <EditText
                     android:id="@+id/pages"
                     android:layout_width="match_parent"
