@@ -358,9 +358,9 @@
     <string name="rotated">Rotated</string>
     <string name="encrypted">Encrypted</string>
     <string name="decrypted">Decrypted</string>
-    <string name="history"> <font color="#7263E2"> History</font></string>
+    <string name="history"> <font color="#7263E2"> Activity Log</font></string>
     <string name="history1" translatable="false" tools:ignore="DuplicateDefinition"> <font color="#ffffff"> History</font></string>
-    <string name="no_history_message">No History to Show</string>
+    <string name="no_history_message">No Activity to Show</string>
     <string name="view_history_here_message">View All Your Converted Files History Here!</string>
     <string name="delete_history_message">Are You Sure You Want to Delete History?</string>
 
@@ -375,7 +375,7 @@
     <string name="extract_text"><font color="#7263E2">Extract Text</font></string>
     <string name="extract_text1" translatable="false" tools:ignore="DuplicateDefinition"><font color="#ffffff">Extract Text</font></string>
     <string name="pdf_selected">PDF file selected: </string>
-    <string name="file_info">\n  File Name : %1$s \n\n  Path : %2$s \n\n  Size : %3$s \n\n  Date Modified %4$s</string>
+    <string name="file_info">\n\t  File Name : %1$s \n\n\t  Path : %2$s \n\n\t  Size : %3$s \n\n\t  Date Modified %4$s</string>
 
 
     <!-- Text To PDF   FontFamily-->

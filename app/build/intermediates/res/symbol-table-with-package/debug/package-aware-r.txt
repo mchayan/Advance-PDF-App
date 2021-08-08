@@ -1969,6 +1969,7 @@ id idListIV
 id idLocationLV
 id idSelectImgLL
 id idSelectPdfLL
+id idSpinnerText
 id idbtnCard1st
 id idbtnCard1st2
 id idbtnCard2nd
@@ -2514,6 +2515,7 @@ layout item_preview_image_options
 layout item_rearrange_images
 layout item_recent_used
 layout item_view_enhancement_option
+layout justvtforspinnr
 layout layout_item_history
 layout list_item_filter
 layout lottie_anim_dialog

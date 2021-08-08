@@ -69,7 +69,7 @@ public class PDFUtils {
                 (mContext.getResources().getString(R.string.file_info), name, path, size, lastModDate));
         message.setTextIsSelectable(true);
         title.setText(R.string.details);
-        title.setPadding(20, 10, 10, 10);
+        title.setPadding(30, 30, 30, 30);
         title.setTextSize(30);
         title.setTextColor(mContext.getResources().getColor(R.color.black));
         final AlertDialog.Builder builder = new AlertDialog.Builder(mContext);

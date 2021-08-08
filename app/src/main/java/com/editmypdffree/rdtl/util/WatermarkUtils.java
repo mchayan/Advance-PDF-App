@@ -63,9 +63,12 @@ public class WatermarkUtils {
         final Spinner fontFamilyInput = mDialog.getCustomView().findViewById(R.id.watermarkFontFamily);
         final Spinner styleInput = mDialog.getCustomView().findViewById(R.id.watermarkStyle);
 
-        fontFamilyInput.setAdapter(new ArrayAdapter<>(mContext, android.R.layout.simple_spinner_dropdown_item,
+//        fontFamilyInput.setAdapter(new ArrayAdapter<>(mContext, android.R.layout.simple_spinner_dropdown_item,
+//                Font.FontFamily.values()));
+
+        fontFamilyInput.setAdapter(new ArrayAdapter<>(mContext, R.layout.justvtforspinnr, R.id.idSpinnerText,
                 Font.FontFamily.values()));
-        styleInput.setAdapter(new ArrayAdapter<>(mContext, android.R.layout.simple_spinner_dropdown_item,
+        styleInput.setAdapter(new ArrayAdapter<>(mContext, R.layout.justvtforspinnr, R.id.idSpinnerText,
                 mContext.getResources().getStringArray(R.array.fontStyles)));
 
         angleInput.setText("0");
