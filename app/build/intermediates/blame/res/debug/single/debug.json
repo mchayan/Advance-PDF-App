@@ -1768,6 +1768,10 @@
         "source": "D:\\PDF\\08-02-2021\\Advance-PDF-App\\app\\src\\main\\res\\mipmap-mdpi\\ic_launchers.png"
     },
     {
+        "merged": "D:\\PDF\\08-02-2021\\Advance-PDF-App\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_keyboard_backspace_24.xml.flat",
+        "source": "D:\\PDF\\08-02-2021\\Advance-PDF-App\\app\\src\\main\\res\\drawable\\ic_baseline_keyboard_backspace_24.xml"
+    },
+    {
         "merged": "D:\\PDF\\08-02-2021\\Advance-PDF-App\\app\\build\\intermediates\\res\\merged\\debug\\layout_preference_recyclerview.xml.flat",
         "source": "C:\\Users\\Farhad\\.gradle\\caches\\transforms-2\\files-2.1\\a8a0517b4e7756c435bc7522bc33fb11\\preference-1.0.0\\res\\layout\\preference_recyclerview.xml"
     },

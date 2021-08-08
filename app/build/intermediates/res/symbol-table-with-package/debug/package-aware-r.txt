@@ -1531,6 +1531,7 @@ drawable ic_arrow_up_black_24dp
 drawable ic_arrow_upward_black_24dp
 drawable ic_barcode
 drawable ic_baseline_auto_delete_24
+drawable ic_baseline_keyboard_backspace_24
 drawable ic_baseline_undo_24
 drawable ic_branding_watermark_black_24dp
 drawable ic_broken_image_black_24dp
@@ -3564,6 +3565,7 @@ style ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense
 style Toolbar_Dracula
 style Toolbar_Zhihu
 style ToolbarTheme
+style ToolbarTheme2
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar

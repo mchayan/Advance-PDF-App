@@ -47,8 +47,8 @@ public final class R {
     public static final class style {
         private style() {}
 
-        public static final int colorpickerview__ColorPickerViewStyle = 0x7f130233;
-        public static final int colorpickerview__PickerDialogButtonStyle = 0x7f130234;
+        public static final int colorpickerview__ColorPickerViewStyle = 0x7f130234;
+        public static final int colorpickerview__PickerDialogButtonStyle = 0x7f130235;
     }
     public static final class styleable {
         private styleable() {}

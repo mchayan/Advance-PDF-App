@@ -26,7 +26,7 @@
                 app:titleTextColor="@color/colorPrimary"
                 android:layout_width="match_parent"
                 android:layout_height="?android:attr/actionBarSize"
-                />
+                app:navigationIcon="@drawable/ic_baseline_keyboard_backspace_24"/>
         </com.google.android.material.appbar.AppBarLayout>
         <FrameLayout
             android:id="@+id/content"

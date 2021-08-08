@@ -66,8 +66,15 @@
     </style>
 
     <style name="ToolbarTheme">
+        <item name="android:textColorSecondary">@color/Bgcolor</item>
+<!--        <item name="android:textColorSecondary">@color/white_color</item>-->
+
+        <item name="android:textColor">@color/Bgcolor</item>
+    </style>
+
+    <style name="ToolbarTheme2">
 <!--        <item name="android:textColorSecondary">@color/Bgcolor</item>-->
-        <item name="android:textColorSecondary">@color/white_color</item>
+                <item name="android:textColorSecondary">@color/white_color</item>
 
         <item name="android:textColor">@color/Bgcolor</item>
     </style>
