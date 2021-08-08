@@ -94,10 +94,10 @@ public class AddImagesFragment extends Fragment implements BottomSheetPopulate, 
     RelativeLayout mLayout;
     @BindView(R.id.recyclerViewFiles)
     RecyclerView mRecyclerViewFiles;
-    @BindView(R.id.tvNoOfImages)
-    TextView mNoOfImages;
-    @BindView(R.id.idSelectImgLL)
-    LinearLayout selectImageLL;
+   // @BindView(R.id.tvNoOfImages)
+    //TextView mNoOfImages;
+//    @BindView(R.id.idSelectImgLL)
+  //  LinearLayout selectImageLL;
 
 //    @BindView(R.id.select_excel_file2)
 //    MorphingButton selectexlfile2;
@@ -163,16 +163,16 @@ public class AddImagesFragment extends Fragment implements BottomSheetPopulate, 
                 mImagesUri.addAll(Matisse.obtainPathResult(data));
 
                 if (mImagesUri.size() > 0) {
-                    mNoOfImages.setText(String.format(mActivity.getResources()
-                            .getString(R.string.images_selected), mImagesUri.size()));
-                    mNoOfImages.setVisibility(View.VISIBLE);
+                  //  mNoOfImages.setText(String.format(mActivity.getResources()
+                           // .getString(R.string.images_selected), mImagesUri.size()));
+                  //  mNoOfImages.setVisibility(View.VISIBLE);
                     // StringUtils.getInstance().showSnackbar(mActivity, R.string.snackbar_images_added);
                     mCreatePdf.setEnabled(true);
                     mCreatePdf.setVisibility(View.VISIBLE);
                     recyclerImges();
 
                 } else {
-                    mNoOfImages.setVisibility(View.GONE);
+                   // mNoOfImages.setVisibility(View.GONE);
                 }
 
                 mMorphButtonUtility.morphToSquare(mCreatePdf, mMorphButtonUtility.integer());
@@ -263,7 +263,7 @@ public class AddImagesFragment extends Fragment implements BottomSheetPopulate, 
         mImagesUri.clear();
         mMorphButtonUtility.initializeButton2(selectFileButton, mCreatePdf);
         mMorphButtonUtility.initializeButton2(selectFileButton, addImages);
-        mNoOfImages.setVisibility(View.GONE);
+        //mNoOfImages.setVisibility(View.GONE);
     }
 
     /**
@@ -316,7 +316,7 @@ public class AddImagesFragment extends Fragment implements BottomSheetPopulate, 
 //            addImages.setVisibility(View.VISIBLE);
 //        }
 
-        selectImageLL.setVisibility(View.VISIBLE);
+        //selectImageLL.setVisibility(View.VISIBLE);
 
 //        PopUp.setVisibility(View.GONE);
 //        rltvall.setVisibility(View.VISIBLE);

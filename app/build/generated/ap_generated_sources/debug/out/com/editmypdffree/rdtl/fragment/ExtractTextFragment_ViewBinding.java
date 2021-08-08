@@ -21,7 +21,7 @@ import java.lang.Override;
 public class ExtractTextFragment_ViewBinding implements Unbinder {
   private ExtractTextFragment target;
 
-  private View view7f0a00d4;
+  private View view7f0a00d5;
 
   private View view7f0a0271;
 
@@ -35,7 +35,7 @@ public class ExtractTextFragment_ViewBinding implements Unbinder {
     target.mTextView = Utils.findRequiredViewAsType(source, R.id.tv_extract_text_bottom, "field 'mTextView'", TextView.class);
     view = Utils.findRequiredView(source, R.id.extract_text, "field 'extractText' and method 'openExtractText'");
     target.extractText = Utils.castView(view, R.id.extract_text, "field 'extractText'", MorphingButton.class);
-    view7f0a00d4 = view;
+    view7f0a00d5 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -80,8 +80,8 @@ public class ExtractTextFragment_ViewBinding implements Unbinder {
     target.mLayout = null;
     target.mLottieProgress = null;
 
-    view7f0a00d4.setOnClickListener(null);
-    view7f0a00d4 = null;
+    view7f0a00d5.setOnClickListener(null);
+    view7f0a00d5 = null;
     view7f0a0271.setOnClickListener(null);
     view7f0a0271 = null;
     view7f0a0205.setOnClickListener(null);

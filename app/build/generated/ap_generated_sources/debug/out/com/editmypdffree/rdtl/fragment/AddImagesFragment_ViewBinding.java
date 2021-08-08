@@ -5,7 +5,6 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 import androidx.annotation.CallSuper;
 import androidx.annotation.UiThread;
 import androidx.recyclerview.widget.RecyclerView;
@@ -64,8 +63,6 @@ public class AddImagesFragment_ViewBinding implements Unbinder {
     target.mUpArrow = Utils.findRequiredViewAsType(source, R.id.upArrow, "field 'mUpArrow'", ImageView.class);
     target.mLayout = Utils.findRequiredViewAsType(source, R.id.layout, "field 'mLayout'", RelativeLayout.class);
     target.mRecyclerViewFiles = Utils.findRequiredViewAsType(source, R.id.recyclerViewFiles, "field 'mRecyclerViewFiles'", RecyclerView.class);
-    target.mNoOfImages = Utils.findRequiredViewAsType(source, R.id.tvNoOfImages, "field 'mNoOfImages'", TextView.class);
-    target.selectImageLL = Utils.findRequiredViewAsType(source, R.id.idSelectImgLL, "field 'selectImageLL'", LinearLayout.class);
     target.PopUp = Utils.findRequiredViewAsType(source, R.id.popup, "field 'PopUp'", LinearLayout.class);
     target.rltvall = Utils.findRequiredViewAsType(source, R.id.rltvall, "field 'rltvall'", RelativeLayout.class);
   }
@@ -85,8 +82,6 @@ public class AddImagesFragment_ViewBinding implements Unbinder {
     target.mUpArrow = null;
     target.mLayout = null;
     target.mRecyclerViewFiles = null;
-    target.mNoOfImages = null;
-    target.selectImageLL = null;
     target.PopUp = null;
     target.rltvall = null;
 
