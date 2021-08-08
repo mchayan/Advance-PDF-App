@@ -103,6 +103,8 @@ public class PdfToImageFragment extends Fragment implements BottomSheetPopulate,
     LinearLayout firstPopup;
     @BindView(R.id.popup2)
     LinearLayout SecondPopup;
+    @BindView(R.id.idLoctiontxtLLinpdftoimg)
+    LinearLayout LoctiontxtLLinpdftoimg;
 
     /**
      * inflates the layout for the fragment
@@ -277,6 +279,7 @@ public class PdfToImageFragment extends Fragment implements BottomSheetPopulate,
         if (mCreateImagesButton.getVisibility() == View.GONE)
         {
             mCreateImagesButton.setVisibility(View.VISIBLE);
+            LoctiontxtLLinpdftoimg.setVisibility(View.VISIBLE);
         }
     }
 
