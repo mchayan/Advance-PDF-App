@@ -30,7 +30,7 @@ public class Constants {
     public static final String DEFAULT_PAGE_SIZE_TEXT = "DefaultPageSize";
     public static final String DEFAULT_PAGE_SIZE = "A4";
     public static final String CHOICE_REMOVE_IMAGE = "CHOICE_REMOVE_IMAGE";
-    public static final int DEFAULT_QUALITY_VALUE = 30;
+    public static final int DEFAULT_QUALITY_VALUE = 0;
     public static final int DEFAULT_BORDER_WIDTH = 0;
     public static final String STORAGE_LOCATION = "storage_location";
     public static final String DEFAULT_IMAGE_SCALE_TYPE_TEXT = "image_scale_type";

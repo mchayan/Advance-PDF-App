@@ -21,11 +21,11 @@ import java.lang.Override;
 public class InvertPdfFragment_ViewBinding implements Unbinder {
   private InvertPdfFragment target;
 
-  private View view7f0a01fe;
+  private View view7f0a01ff;
 
-  private View view7f0a011e;
+  private View view7f0a011f;
 
-  private View view7f0a0271;
+  private View view7f0a0272;
 
   @UiThread
   public InvertPdfFragment_ViewBinding(final InvertPdfFragment target, View source) {
@@ -35,7 +35,7 @@ public class InvertPdfFragment_ViewBinding implements Unbinder {
     target.mLottieProgress = Utils.findRequiredViewAsType(source, R.id.lottie_progress, "field 'mLottieProgress'", LottieAnimationView.class);
     view = Utils.findRequiredView(source, R.id.selectFile, "field 'selectFileButton' and method 'showFileChooser'");
     target.selectFileButton = Utils.castView(view, R.id.selectFile, "field 'selectFileButton'", MorphingButton.class);
-    view7f0a01fe = view;
+    view7f0a01ff = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -44,7 +44,7 @@ public class InvertPdfFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.invert, "field 'invertPdfButton' and method 'parse'");
     target.invertPdfButton = Utils.castView(view, R.id.invert, "field 'invertPdfButton'", MorphingButton.class);
-    view7f0a011e = view;
+    view7f0a011f = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -57,7 +57,7 @@ public class InvertPdfFragment_ViewBinding implements Unbinder {
     target.mRecyclerViewFiles = Utils.findRequiredViewAsType(source, R.id.recyclerViewFiles, "field 'mRecyclerViewFiles'", RecyclerView.class);
     target.mViewPdf = Utils.findRequiredViewAsType(source, R.id.view_pdf, "field 'mViewPdf'", Button.class);
     view = Utils.findRequiredView(source, R.id.viewFiles, "method 'onViewFilesClick'");
-    view7f0a0271 = view;
+    view7f0a0272 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -82,11 +82,11 @@ public class InvertPdfFragment_ViewBinding implements Unbinder {
     target.mRecyclerViewFiles = null;
     target.mViewPdf = null;
 
-    view7f0a01fe.setOnClickListener(null);
-    view7f0a01fe = null;
-    view7f0a011e.setOnClickListener(null);
-    view7f0a011e = null;
-    view7f0a0271.setOnClickListener(null);
-    view7f0a0271 = null;
+    view7f0a01ff.setOnClickListener(null);
+    view7f0a01ff = null;
+    view7f0a011f.setOnClickListener(null);
+    view7f0a011f = null;
+    view7f0a0272.setOnClickListener(null);
+    view7f0a0272 = null;
   }
 }

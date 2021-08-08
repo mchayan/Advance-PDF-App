@@ -1531,6 +1531,7 @@ drawable ic_arrow_up_black_24dp
 drawable ic_arrow_upward_black_24dp
 drawable ic_barcode
 drawable ic_baseline_auto_delete_24
+drawable ic_baseline_keyboard_backspace_24
 drawable ic_baseline_undo_24
 drawable ic_branding_watermark_black_24dp
 drawable ic_broken_image_black_24dp
@@ -1898,7 +1899,6 @@ id encryptionImage
 id end
 id end_padder
 id enhancement_options_recycle_view
-id enhancement_options_recycle_view2
 id enhancement_options_recycle_view_text
 id enterAlways
 id enterAlwaysCollapsed
@@ -1968,6 +1968,8 @@ id idLV1st2
 id idListIV
 id idLocationLV
 id idSelectImgLL
+id idSelectPdfLL
+id idSpinnerText
 id idbtnCard1st
 id idbtnCard1st2
 id idbtnCard2nd
@@ -2472,7 +2474,6 @@ layout fp_filerow
 layout fp_main_layout
 layout fragment_about_us
 layout fragment_add_images
-layout fragment_add_images2
 layout fragment_add_text
 layout fragment_excelto_pdf
 layout fragment_extract_text
@@ -2484,7 +2485,6 @@ layout fragment_images_to_pdf
 layout fragment_invert_pdf
 layout fragment_media_selection
 layout fragment_merge_files
-layout fragment_merge_files2
 layout fragment_pdf_to_image
 layout fragment_preview_item
 layout fragment_qrcode_barcode
@@ -2515,7 +2515,7 @@ layout item_preview_image_options
 layout item_rearrange_images
 layout item_recent_used
 layout item_view_enhancement_option
-layout item_view_enhancement_option2
+layout justvtforspinnr
 layout layout_item_history
 layout list_item_filter
 layout lottie_anim_dialog
@@ -3567,6 +3567,7 @@ style ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense
 style Toolbar_Dracula
 style Toolbar_Zhihu
 style ToolbarTheme
+style ToolbarTheme2
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar

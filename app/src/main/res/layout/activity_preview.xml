@@ -30,8 +30,8 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_above="@id/recyclerView"
         android:gravity="center"
         android:paddingTop="3dp"
@@ -40,10 +40,11 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_above="@+id/info"
-        android:orientation="horizontal" />
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"/>
 
     <View
         android:layout_width="match_parent"
@@ -53,8 +54,8 @@
 
     <TextView
         android:id="@+id/info"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal"

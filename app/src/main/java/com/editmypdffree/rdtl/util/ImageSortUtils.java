@@ -1,5 +1,8 @@
 package com.editmypdffree.rdtl.util;
 
+import android.util.Log;
+import android.widget.Toast;
+
 import java.io.File;
 import java.util.Collections;
 import java.util.List;
@@ -30,15 +33,19 @@ public class ImageSortUtils {
         switch (option) {
             case NAME_ASC:
                 sortByNameAsc(images);
+                Log.e("rear","ac n");
                 break;
             case NAME_DESC:
                 sortByNameDesc(images);
+                Log.e("rear","dc n");
                 break;
             case DATE_ASC:
                 sortByDateAsc(images);
+                Log.e("rear","ac d");
                 break;
             case DATE_DESC:
                 sortByDateDesc(images);
+                Log.e("rear","dc d");
                 break;
         }
     }
