@@ -17,7 +17,7 @@ import java.lang.Override;
 public class MergeFilesAdapter$ViewMergeFilesHolder_ViewBinding implements Unbinder {
   private MergeFilesAdapter.ViewMergeFilesHolder target;
 
-  private View view7f0a0125;
+  private View view7f0a0124;
 
   @UiThread
   public MergeFilesAdapter$ViewMergeFilesHolder_ViewBinding(
@@ -29,7 +29,7 @@ public class MergeFilesAdapter$ViewMergeFilesHolder_ViewBinding implements Unbin
     target.mEncryptionImage = Utils.findRequiredViewAsType(source, R.id.encryptionImage, "field 'mEncryptionImage'", ImageView.class);
     view = Utils.findRequiredView(source, R.id.itemMerge_checkbox, "field 'mCheckbox' and method 'onCheckboxClick'");
     target.mCheckbox = Utils.castView(view, R.id.itemMerge_checkbox, "field 'mCheckbox'", AppCompatCheckBox.class);
-    view7f0a0125 = view;
+    view7f0a0124 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -49,7 +49,7 @@ public class MergeFilesAdapter$ViewMergeFilesHolder_ViewBinding implements Unbin
     target.mEncryptionImage = null;
     target.mCheckbox = null;
 
-    view7f0a0125.setOnClickListener(null);
-    view7f0a0125 = null;
+    view7f0a0124.setOnClickListener(null);
+    view7f0a0124 = null;
   }
 }

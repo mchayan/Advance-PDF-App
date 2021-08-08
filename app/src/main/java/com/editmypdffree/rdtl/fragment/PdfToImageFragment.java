@@ -106,6 +106,8 @@ public class PdfToImageFragment extends Fragment implements BottomSheetPopulate,
     @BindView(R.id.idLoctiontxtLLinpdftoimg)
     LinearLayout LoctiontxtLLinpdftoimg;
 
+
+
     /**
      * inflates the layout for the fragment
      *

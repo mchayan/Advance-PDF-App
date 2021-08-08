@@ -1969,7 +1969,6 @@ id idListIV
 id idLocationLV
 id idLoctiontxtLLinpdftoimg
 id idSelectImgLL
-id idSelectPdfLL
 id idSpinnerText
 id idbtnCard1st
 id idbtnCard1st2
@@ -2475,6 +2474,7 @@ layout fp_filerow
 layout fp_main_layout
 layout fragment_about_us
 layout fragment_add_images
+layout fragment_add_images2
 layout fragment_add_text
 layout fragment_excelto_pdf
 layout fragment_extract_text
@@ -2486,6 +2486,7 @@ layout fragment_images_to_pdf
 layout fragment_invert_pdf
 layout fragment_media_selection
 layout fragment_merge_files
+layout fragment_merge_files2
 layout fragment_pdf_to_image
 layout fragment_preview_item
 layout fragment_qrcode_barcode
@@ -2516,6 +2517,7 @@ layout item_preview_image_options
 layout item_rearrange_images
 layout item_recent_used
 layout item_view_enhancement_option
+layout item_view_enhancement_option2
 layout justvtforspinnr
 layout layout_item_history
 layout list_item_filter

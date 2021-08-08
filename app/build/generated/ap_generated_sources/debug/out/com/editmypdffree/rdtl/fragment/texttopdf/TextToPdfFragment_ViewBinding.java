@@ -19,11 +19,11 @@ import java.lang.Override;
 public class TextToPdfFragment_ViewBinding implements Unbinder {
   private TextToPdfFragment target;
 
-  private View view7f0a0200;
+  private View view7f0a01ff;
 
   private View view7f0a009d;
 
-  private View view7f0a0201;
+  private View view7f0a0200;
 
   @UiThread
   public TextToPdfFragment_ViewBinding(final TextToPdfFragment target, View source) {
@@ -33,7 +33,7 @@ public class TextToPdfFragment_ViewBinding implements Unbinder {
     target.mTextEnhancementOptionsRecycleView = Utils.findRequiredViewAsType(source, R.id.enhancement_options_recycle_view_text, "field 'mTextEnhancementOptionsRecycleView'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.selectFile, "field 'mSelectFile' and method 'selectTextFile'");
     target.mSelectFile = Utils.castView(view, R.id.selectFile, "field 'mSelectFile'", MorphingButton.class);
-    view7f0a0200 = view;
+    view7f0a01ff = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -53,7 +53,7 @@ public class TextToPdfFragment_ViewBinding implements Unbinder {
     target.tvAdi = Utils.findRequiredViewAsType(source, R.id.aditionid, "field 'tvAdi'", TextView.class);
     view = Utils.findRequiredView(source, R.id.selectFile2, "field 'mSelectFile2' and method 'selectTextFile2'");
     target.mSelectFile2 = Utils.castView(view, R.id.selectFile2, "field 'mSelectFile2'", MorphingButton.class);
-    view7f0a0201 = view;
+    view7f0a0200 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -84,11 +84,11 @@ public class TextToPdfFragment_ViewBinding implements Unbinder {
     target.NestedScrollView = null;
     target.openpdf = null;
 
-    view7f0a0200.setOnClickListener(null);
-    view7f0a0200 = null;
+    view7f0a01ff.setOnClickListener(null);
+    view7f0a01ff = null;
     view7f0a009d.setOnClickListener(null);
     view7f0a009d = null;
-    view7f0a0201.setOnClickListener(null);
-    view7f0a0201 = null;
+    view7f0a0200.setOnClickListener(null);
+    view7f0a0200 = null;
   }
 }

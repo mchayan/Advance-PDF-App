@@ -21,11 +21,11 @@ import java.lang.Override;
 public class MergeFilesFragment_ViewBinding implements Unbinder {
   private MergeFilesFragment target;
 
-  private View view7f0a0152;
+  private View view7f0a0151;
 
-  private View view7f0a0202;
+  private View view7f0a0201;
 
-  private View view7f0a0273;
+  private View view7f0a0272;
 
   @UiThread
   public MergeFilesFragment_ViewBinding(final MergeFilesFragment target, View source) {
@@ -35,7 +35,7 @@ public class MergeFilesFragment_ViewBinding implements Unbinder {
     target.mLottieProgress = Utils.findRequiredViewAsType(source, R.id.lottie_progress, "field 'mLottieProgress'", LottieAnimationView.class);
     view = Utils.findRequiredView(source, R.id.mergebtn, "field 'mergeBtn' and method 'mergeFiles'");
     target.mergeBtn = Utils.castView(view, R.id.mergebtn, "field 'mergeBtn'", MorphingButton.class);
-    view7f0a0152 = view;
+    view7f0a0151 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -49,7 +49,7 @@ public class MergeFilesFragment_ViewBinding implements Unbinder {
     target.layoutBottomSheet = Utils.findRequiredViewAsType(source, R.id.bottom_sheet, "field 'layoutBottomSheet'", LinearLayout.class);
     view = Utils.findRequiredView(source, R.id.selectFiles, "field 'mSelectFiles' and method 'startAddingPDF'");
     target.mSelectFiles = Utils.castView(view, R.id.selectFiles, "field 'mSelectFiles'", Button.class);
-    view7f0a0202 = view;
+    view7f0a0201 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -59,7 +59,7 @@ public class MergeFilesFragment_ViewBinding implements Unbinder {
     target.mSelectedFiles = Utils.findRequiredViewAsType(source, R.id.selected_files, "field 'mSelectedFiles'", RecyclerView.class);
     target.mEnhancementOptionsRecycleView = Utils.findRequiredViewAsType(source, R.id.enhancement_options_recycle_view, "field 'mEnhancementOptionsRecycleView'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.viewFiles, "method 'onViewFilesClick'");
-    view7f0a0273 = view;
+    view7f0a0272 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -86,11 +86,11 @@ public class MergeFilesFragment_ViewBinding implements Unbinder {
     target.mSelectedFiles = null;
     target.mEnhancementOptionsRecycleView = null;
 
-    view7f0a0152.setOnClickListener(null);
-    view7f0a0152 = null;
-    view7f0a0202.setOnClickListener(null);
-    view7f0a0202 = null;
-    view7f0a0273.setOnClickListener(null);
-    view7f0a0273 = null;
+    view7f0a0151.setOnClickListener(null);
+    view7f0a0151 = null;
+    view7f0a0201.setOnClickListener(null);
+    view7f0a0201 = null;
+    view7f0a0272.setOnClickListener(null);
+    view7f0a0272 = null;
   }
 }
