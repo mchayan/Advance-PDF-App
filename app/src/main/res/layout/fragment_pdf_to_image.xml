@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
+        android:layout_gravity="center"
         android:id="@+id/popup"
         android:visibility="visible"
         >
@@ -30,6 +31,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/linear"
+                android:gravity="center"
                 android:padding="30dp"
                 android:orientation="vertical">
                 <LinearLayout
@@ -428,7 +430,7 @@
                  android:padding="15dp"
                  android:text="@string/view_images"
                 android:textSize="24dp"
-                 android:textColor="@color/black" />
+                 android:textColor="@color/black"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
         </LinearLayout>

@@ -32,6 +32,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/linear"
+                    android:gravity="center"
                     android:padding="30dp"
                     android:orientation="vertical">
                     <LinearLayout
@@ -95,7 +96,9 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            android:id="@+id/locationtext"
+                            android:visibility="gone">
 
                             <ImageView
                                 android:layout_width="wrap_content"
@@ -151,7 +154,7 @@
                             android:text="@string/invert_pdf"
                             android:background="@color/colorAccent1"
                             android:backgroundTint="@color/colorAccent1"
-                            android:visibility="visible"/>
+                            android:visibility="gone"/>
                     </androidx.cardview.widget.CardView>
 
                 </RelativeLayout>
