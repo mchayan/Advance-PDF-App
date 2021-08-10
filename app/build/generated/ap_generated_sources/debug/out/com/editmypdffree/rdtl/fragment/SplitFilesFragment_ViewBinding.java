@@ -60,6 +60,10 @@ public class SplitFilesFragment_ViewBinding implements Unbinder {
     target.mSplittedFiles = Utils.findRequiredViewAsType(source, R.id.splitted_files, "field 'mSplittedFiles'", RecyclerView.class);
     target.splitFilesSuccessText = Utils.findRequiredViewAsType(source, R.id.splitfiles_text, "field 'splitFilesSuccessText'", TextView.class);
     target.mSplitConfitEditText = Utils.findRequiredViewAsType(source, R.id.split_config, "field 'mSplitConfitEditText'", EditText.class);
+    target.mlocationtext = Utils.findRequiredViewAsType(source, R.id.locationtext, "field 'mlocationtext'", LinearLayout.class);
+    target.mlcTxt = Utils.findRequiredViewAsType(source, R.id.tv_extract_text_bottom, "field 'mlcTxt'", TextView.class);
+    target.mrelativebtmcreate = Utils.findRequiredViewAsType(source, R.id.relativebtmcreate, "field 'mrelativebtmcreate'", RelativeLayout.class);
+    target.mpopup2 = Utils.findRequiredViewAsType(source, R.id.popup, "field 'mpopup2'", LinearLayout.class);
     view = Utils.findRequiredView(source, R.id.viewFiles, "method 'onViewFilesClick'");
     view7f0a0272 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
@@ -88,6 +92,10 @@ public class SplitFilesFragment_ViewBinding implements Unbinder {
     target.mSplittedFiles = null;
     target.splitFilesSuccessText = null;
     target.mSplitConfitEditText = null;
+    target.mlocationtext = null;
+    target.mlcTxt = null;
+    target.mrelativebtmcreate = null;
+    target.mpopup2 = null;
 
     view7f0a01ff.setOnClickListener(null);
     view7f0a01ff = null;
