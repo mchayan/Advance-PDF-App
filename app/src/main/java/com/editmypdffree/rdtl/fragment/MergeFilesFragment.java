@@ -13,6 +13,9 @@ import androidx.annotation.Nullable;
 
 import com.editmypdffree.rdtl.interfaces.IOnBackPressed;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
+
+import androidx.cardview.widget.CardView;
+import androidx.core.widget.NestedScrollView;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -28,6 +31,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
@@ -87,6 +91,7 @@ public class MergeFilesFragment extends Fragment implements MergeFilesAdapter.On
     private String mPassword;
     private SharedPreferences mSharedPrefs;
     private BottomSheetBehavior mSheetBehavior;
+    String savepath=null;
 
     @BindView(R.id.lottie_progress)
     LottieAnimationView mLottieProgress;
@@ -108,6 +113,18 @@ public class MergeFilesFragment extends Fragment implements MergeFilesAdapter.On
     RecyclerView mSelectedFiles;
     @BindView(R.id.enhancement_options_recycle_view)
     RecyclerView mEnhancementOptionsRecycleView;
+    @BindView(R.id.idNestedSV)
+    NestedScrollView mNestedScrollView;
+    @BindView(R.id.relativebtmcreate)
+    RelativeLayout mrelativebtmcreate;
+    @BindView(R.id.popup)
+    LinearLayout popup1s;
+    @BindView(R.id.popup2)
+    LinearLayout popup2n;
+    @BindView(R.id.openpdf)
+    MorphingButton mopenpdf;
+    @BindView(R.id.idCard1stWhite)
+    CardView midCard1stWhite;
 
     public MergeFilesFragment() {
     }
@@ -134,6 +151,8 @@ public class MergeFilesFragment extends Fragment implements MergeFilesAdapter.On
         mSheetBehavior.setBottomSheetCallback(new BottomSheetCallback(mUpArrow, isAdded()));
         setMorphingButtonState(false);
 
+        mSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
+
         return root;
     }
 
@@ -158,6 +177,11 @@ public class MergeFilesFragment extends Fragment implements MergeFilesAdapter.On
         if (position == 0) {
             setPassword();
         }
+    }
+
+    @OnClick(R.id.openpdf)
+    public void opnpdf(){
+        mFileUtils.openFile(savepath, FileUtils.FileType.e_PDF);
     }
 
     private void setPassword() {
@@ -227,8 +251,9 @@ public class MergeFilesFragment extends Fragment implements MergeFilesAdapter.On
 
     @OnClick(R.id.selectFiles)
     void startAddingPDF(View v) {
-        startActivityForResult(mFileUtils.getFileChooser(),
-                INTENT_REQUEST_PICK_FILE_CODE);
+//        startActivityForResult(mFileUtils.getFileChooser(),
+//                INTENT_REQUEST_PICK_FILE_CODE);
+        mBottomSheetUtils.showHideSheet(mSheetBehavior);
     }
 
     @OnClick(R.id.mergebtn)
@@ -245,17 +270,29 @@ public class MergeFilesFragment extends Fragment implements MergeFilesAdapter.On
                         if (!mFileUtils.isFileExist(input + getString(R.string.pdf_ext))) {
                             new MergePdf(input.toString(), mHomePath, mPasswordProtected,
                                     mPassword, this, masterpwd).execute(pdfpaths);
+                            popup1s.setVisibility(View.GONE);
+                            popup2n.setVisibility(View.VISIBLE);
                         } else {
                             MaterialDialog.Builder builder = DialogUtils.getInstance().createOverwriteDialog(mActivity);
-                            builder.onPositive((dialog12, which) -> new MergePdf(input.toString(),
-                                    mHomePath, mPasswordProtected, mPassword,
-                                    this, masterpwd).execute(pdfpaths))
+                            builder.onPositive((dialog12, which) -> {
+                                new MergePdf(input.toString(),
+                                        mHomePath, mPasswordProtected, mPassword,
+                                        this, masterpwd).execute(pdfpaths);
+                                onpositiviefor2nd();
+                            })
                                     .onNegative((dialog1, which) -> mergeFiles(view)).show();
                         }
                     }
                 })
                 .show();
     }
+
+    private void onpositiviefor2nd(){
+        popup1s.setVisibility(View.GONE);
+        popup2n.setVisibility(View.VISIBLE);
+
+    }
+
 
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (data == null || resultCode != RESULT_OK || data.getData() == null)
@@ -306,9 +343,15 @@ public class MergeFilesFragment extends Fragment implements MergeFilesAdapter.On
         mMergeSelectedFilesAdapter.notifyDataSetChanged();
         if (mFilePaths.size() > 1) {
             if (!mergeBtn.isEnabled()) setMorphingButtonState(true);
+            mNestedScrollView.setVisibility(View.VISIBLE);
+            mrelativebtmcreate.setVisibility(View.VISIBLE);
         } else {
             if (mergeBtn.isEnabled()) setMorphingButtonState(false);
+            mNestedScrollView.setVisibility(View.GONE);
+            mrelativebtmcreate.setVisibility(View.GONE);
         }
+
+        //addMoreHeight();
     }
 
     /**
@@ -319,11 +362,14 @@ public class MergeFilesFragment extends Fragment implements MergeFilesAdapter.On
         mMaterialDialog.dismiss();
 
         if (isPDFMerged) {
+            savepath = path;
             StringUtils.getInstance().getSnackbarwithAction(mActivity, R.string.pdf_merged)
                     .setAction(R.string.snackbar_viewAction,
                             v -> mFileUtils.openFile(path, FileUtils.FileType.e_PDF)).show();
             new DatabaseHelper(mActivity).insertRecord(path,
                     mActivity.getString(R.string.created));
+
+            Toast.makeText(mActivity, "DLONE", Toast.LENGTH_SHORT).show();
         } else
             StringUtils.getInstance().showSnackbar(mActivity, R.string.file_access_error);
 
@@ -431,5 +477,13 @@ public class MergeFilesFragment extends Fragment implements MergeFilesAdapter.On
             //mFilePaths = null;
             return false;
         }
+    }
+
+    private void addMoreHeight(){
+
+
+//        midCard1stWhite.setMinimumHeight(midCard1stWhite.getHeight()+100);
+        //midCard1stWhite.setLayoutParams(new RelativeLayout.LayoutParams(MATCH_PARENT, 650));
+        midCard1stWhite.setLayoutParams(new LinearLayout.LayoutParams(midCard1stWhite.getWidth(),midCard1stWhite.getHeight()+100));
     }
 }

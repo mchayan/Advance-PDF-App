@@ -141,6 +141,8 @@ public class  AddTextFragment extends Fragment implements MergeFilesAdapter.OnCl
     private EnhancementOptionsAdapter mTextEnhancementOptionsAdapter;
     private Font.FontFamily mFontFamily;
 
+    int i = 0;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -276,7 +278,14 @@ public class  AddTextFragment extends Fragment implements MergeFilesAdapter.OnCl
             midlocLL2.setVisibility(View.VISIBLE);
             mfileLocation2.setText(mTextPath);
             mpdfCreate.setVisibility(View.VISIBLE);
-            addMoreHeight();
+
+            i++;
+
+            if (i==1){
+                addMoreHeight();
+            }
+
+
             textPathforif = mTextPath;
         }
         //setTextAndActivateButtons(mPdfpath, mTextPath);
