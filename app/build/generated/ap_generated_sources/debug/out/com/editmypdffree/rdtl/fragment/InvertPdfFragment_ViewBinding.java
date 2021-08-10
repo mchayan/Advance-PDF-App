@@ -6,6 +6,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import androidx.annotation.CallSuper;
 import androidx.annotation.UiThread;
 import androidx.recyclerview.widget.RecyclerView;
@@ -24,6 +25,8 @@ public class InvertPdfFragment_ViewBinding implements Unbinder {
   private View view7f0a0204;
 
   private View view7f0a0123;
+
+  private View view7f0a0281;
 
   private View view7f0a0277;
 
@@ -55,7 +58,19 @@ public class InvertPdfFragment_ViewBinding implements Unbinder {
     target.mUpArrow = Utils.findRequiredViewAsType(source, R.id.upArrow, "field 'mUpArrow'", ImageView.class);
     target.mLayout = Utils.findRequiredViewAsType(source, R.id.layout, "field 'mLayout'", RelativeLayout.class);
     target.mRecyclerViewFiles = Utils.findRequiredViewAsType(source, R.id.recyclerViewFiles, "field 'mRecyclerViewFiles'", RecyclerView.class);
-    target.mViewPdf = Utils.findRequiredViewAsType(source, R.id.view_pdf, "field 'mViewPdf'", Button.class);
+    view = Utils.findRequiredView(source, R.id.view_pdf, "field 'mViewPdf' and method 'vpdf'");
+    target.mViewPdf = Utils.castView(view, R.id.view_pdf, "field 'mViewPdf'", Button.class);
+    view7f0a0281 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.vpdf();
+      }
+    });
+    target.mlocationtext = Utils.findRequiredViewAsType(source, R.id.locationtext, "field 'mlocationtext'", LinearLayout.class);
+    target.mlcTxt = Utils.findRequiredViewAsType(source, R.id.tv_extract_text_bottom, "field 'mlcTxt'", TextView.class);
+    target.mrelativebtmcreate = Utils.findRequiredViewAsType(source, R.id.relativebtmcreate, "field 'mrelativebtmcreate'", RelativeLayout.class);
+    target.mpopup2 = Utils.findRequiredViewAsType(source, R.id.popup2, "field 'mpopup2'", LinearLayout.class);
     view = Utils.findRequiredView(source, R.id.viewFiles, "method 'onViewFilesClick'");
     view7f0a0277 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
@@ -81,11 +96,17 @@ public class InvertPdfFragment_ViewBinding implements Unbinder {
     target.mLayout = null;
     target.mRecyclerViewFiles = null;
     target.mViewPdf = null;
+    target.mlocationtext = null;
+    target.mlcTxt = null;
+    target.mrelativebtmcreate = null;
+    target.mpopup2 = null;
 
     view7f0a0204.setOnClickListener(null);
     view7f0a0204 = null;
     view7f0a0123.setOnClickListener(null);
     view7f0a0123 = null;
+    view7f0a0281.setOnClickListener(null);
+    view7f0a0281 = null;
     view7f0a0277.setOnClickListener(null);
     view7f0a0277 = null;
   }

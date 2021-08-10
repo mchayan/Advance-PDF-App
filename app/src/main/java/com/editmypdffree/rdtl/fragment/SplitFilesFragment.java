@@ -99,6 +99,8 @@ public class SplitFilesFragment extends Fragment implements MergeFilesAdapter.On
         mBottomSheetUtils.populateBottomSheetWithPDFs(this);
 
         resetValues();
+        mSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
+
         return rootview;
     }
 
@@ -112,8 +114,9 @@ public class SplitFilesFragment extends Fragment implements MergeFilesAdapter.On
      */
     @OnClick(R.id.selectFile)
     public void showFileChooser() {
-        startActivityForResult(mFileUtils.getFileChooser(),
-                INTENT_REQUEST_PICKFILE_CODE);
+//        startActivityForResult(mFileUtils.getFileChooser(),
+//                INTENT_REQUEST_PICKFILE_CODE);
+        mBottomSheetUtils.showHideSheet(mSheetBehavior);
     }
 
     public void onActivityResult(int requestCode, int resultCode, Intent data) throws NullPointerException {
@@ -152,7 +155,7 @@ public class SplitFilesFragment extends Fragment implements MergeFilesAdapter.On
 
     private void resetValues() {
         mPath = null;
-        mMorphButtonUtility.initializeButton(selectFileButton, splitFilesButton);
+        mMorphButtonUtility.initializeButton2(selectFileButton, splitFilesButton);
     }
 
     @Override
