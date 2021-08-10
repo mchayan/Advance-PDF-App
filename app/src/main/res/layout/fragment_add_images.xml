@@ -158,6 +158,7 @@
                                 android:fontFamily="@font/sarabunregular"
                                 android:background="@color/Bgcolor"
                                 android:backgroundTint="@color/Bgcolor"
+                                android:src="@drawable/pluse"
                                 android:visibility="visible"
                                 />
 
@@ -165,7 +166,7 @@
                                 android:layout_width="80dp"
                                 android:layout_height="80dp"
                                 android:backgroundTint="@color/colorAccent1"
-                                android:background="@drawable/ic_pdf_to_image"
+                                android:background="@drawable/ic_text_to_pdf"
                                 android:layout_gravity="center"
                                 android:translationZ="2dp"
                                 />
@@ -177,7 +178,7 @@
                             android:layout_height="match_parent"
                             android:layout_marginTop="10dp"
                             android:textSize="24dp"
-                            android:text="Select Doc/Text"
+                            android:text="Select Images"
                             android:gravity="center"
                             android:letterSpacing="0.1"
                             android:textColor="@color/colorGray">
