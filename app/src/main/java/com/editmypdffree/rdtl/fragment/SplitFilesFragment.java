@@ -194,7 +194,7 @@ public class SplitFilesFragment extends Fragment implements MergeFilesAdapter.On
         mPath = path;
         String defaultSplitConfig = getDefaultSplitConfig(mPath);
         if (defaultSplitConfig != null) {
-            mMorphButtonUtility.setTextAndActivateButtons(path,
+            mMorphButtonUtility.setTextAndActivateButtons2(path,
                     selectFileButton, splitFilesButton);
             mSplitConfitEditText.setVisibility(View.VISIBLE);
             mSplitConfitEditText.setText(defaultSplitConfig);

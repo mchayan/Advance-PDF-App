@@ -22,11 +22,11 @@ import java.lang.Override;
 public class SplitFilesFragment_ViewBinding implements Unbinder {
   private SplitFilesFragment target;
 
-  private View view7f0a01ff;
+  private View view7f0a0200;
 
-  private View view7f0a0222;
+  private View view7f0a0223;
 
-  private View view7f0a0272;
+  private View view7f0a0273;
 
   @UiThread
   public SplitFilesFragment_ViewBinding(final SplitFilesFragment target, View source) {
@@ -36,7 +36,7 @@ public class SplitFilesFragment_ViewBinding implements Unbinder {
     target.mLottieProgress = Utils.findRequiredViewAsType(source, R.id.lottie_progress, "field 'mLottieProgress'", LottieAnimationView.class);
     view = Utils.findRequiredView(source, R.id.selectFile, "field 'selectFileButton' and method 'showFileChooser'");
     target.selectFileButton = Utils.castView(view, R.id.selectFile, "field 'selectFileButton'", MorphingButton.class);
-    view7f0a01ff = view;
+    view7f0a0200 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -45,7 +45,7 @@ public class SplitFilesFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.splitFiles, "field 'splitFilesButton' and method 'parse'");
     target.splitFilesButton = Utils.castView(view, R.id.splitFiles, "field 'splitFilesButton'", MorphingButton.class);
-    view7f0a0222 = view;
+    view7f0a0223 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -65,7 +65,7 @@ public class SplitFilesFragment_ViewBinding implements Unbinder {
     target.mrelativebtmcreate = Utils.findRequiredViewAsType(source, R.id.relativebtmcreate, "field 'mrelativebtmcreate'", RelativeLayout.class);
     target.mpopup2 = Utils.findRequiredViewAsType(source, R.id.popup, "field 'mpopup2'", LinearLayout.class);
     view = Utils.findRequiredView(source, R.id.viewFiles, "method 'onViewFilesClick'");
-    view7f0a0272 = view;
+    view7f0a0273 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -97,11 +97,11 @@ public class SplitFilesFragment_ViewBinding implements Unbinder {
     target.mrelativebtmcreate = null;
     target.mpopup2 = null;
 
-    view7f0a01ff.setOnClickListener(null);
-    view7f0a01ff = null;
-    view7f0a0222.setOnClickListener(null);
-    view7f0a0222 = null;
-    view7f0a0272.setOnClickListener(null);
-    view7f0a0272 = null;
+    view7f0a0200.setOnClickListener(null);
+    view7f0a0200 = null;
+    view7f0a0223.setOnClickListener(null);
+    view7f0a0223 = null;
+    view7f0a0273.setOnClickListener(null);
+    view7f0a0273 = null;
   }
 }

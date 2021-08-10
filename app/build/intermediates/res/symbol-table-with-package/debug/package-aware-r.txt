@@ -1971,6 +1971,7 @@ id idListIV
 id idLocationLV
 id idLoctiontxtLLinpdftoimg
 id idNestedSV
+id idNstdSV
 id idSelectImgLL
 id idSpinnerText
 id idbtnCard1st
@@ -2513,6 +2514,7 @@ layout item_faq
 layout item_file
 layout item_image_extracted
 layout item_merge_files
+layout item_merge_files2
 layout item_merge_selected_files
 layout item_merge_selected_files2
 layout item_preview_image_options

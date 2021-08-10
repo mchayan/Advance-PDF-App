@@ -33,7 +33,7 @@ public class FilesListAdapter extends RecyclerView.Adapter<FilesListAdapter.View
     @Override
     public ViewMergeFilesHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_merge_files, parent, false);
+                .inflate(R.layout.item_merge_files2, parent, false);
         return new FilesListAdapter.ViewMergeFilesHolder(itemView);
     }
 

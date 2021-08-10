@@ -22,15 +22,15 @@ import java.lang.Override;
 public class AddTextFragment_ViewBinding implements Unbinder {
   private AddTextFragment target;
 
-  private View view7f0a0206;
+  private View view7f0a0207;
 
-  private View view7f0a0209;
+  private View view7f0a020a;
 
-  private View view7f0a01ab;
+  private View view7f0a01ac;
 
-  private View view7f0a0185;
+  private View view7f0a0186;
 
-  private View view7f0a0272;
+  private View view7f0a0273;
 
   @UiThread
   public AddTextFragment_ViewBinding(final AddTextFragment target, View source) {
@@ -39,7 +39,7 @@ public class AddTextFragment_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.select_pdf_file, "field 'mSelectPDF' and method 'showPdfFileChooser'");
     target.mSelectPDF = Utils.castView(view, R.id.select_pdf_file, "field 'mSelectPDF'", MorphingButton.class);
-    view7f0a0206 = view;
+    view7f0a0207 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -48,7 +48,7 @@ public class AddTextFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.select_text_file, "field 'mSelectText' and method 'showTextFileChooser'");
     target.mSelectText = Utils.castView(view, R.id.select_text_file, "field 'mSelectText'", MorphingButton.class);
-    view7f0a0209 = view;
+    view7f0a020a = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -58,7 +58,7 @@ public class AddTextFragment_ViewBinding implements Unbinder {
     target.mCreateTextPDF = Utils.findRequiredViewAsType(source, R.id.create_pdf_added_text, "field 'mCreateTextPDF'", MorphingButton.class);
     view = Utils.findRequiredView(source, R.id.pdfCreate, "field 'mpdfCreate' and method 'openPdfNameDialog'");
     target.mpdfCreate = Utils.castView(view, R.id.pdfCreate, "field 'mpdfCreate'", MorphingButton.class);
-    view7f0a01ab = view;
+    view7f0a01ac = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -79,7 +79,7 @@ public class AddTextFragment_ViewBinding implements Unbinder {
     target.popup2View = Utils.findRequiredViewAsType(source, R.id.popup2, "field 'popup2View'", LinearLayout.class);
     view = Utils.findRequiredView(source, R.id.openpdf, "field 'openpdfTXt' and method 'openmypsf'");
     target.openpdfTXt = Utils.castView(view, R.id.openpdf, "field 'openpdfTXt'", MorphingButton.class);
-    view7f0a0185 = view;
+    view7f0a0186 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -87,7 +87,7 @@ public class AddTextFragment_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.viewFiles, "method 'onViewFilesClick'");
-    view7f0a0272 = view;
+    view7f0a0273 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -121,15 +121,15 @@ public class AddTextFragment_ViewBinding implements Unbinder {
     target.popup2View = null;
     target.openpdfTXt = null;
 
-    view7f0a0206.setOnClickListener(null);
-    view7f0a0206 = null;
-    view7f0a0209.setOnClickListener(null);
-    view7f0a0209 = null;
-    view7f0a01ab.setOnClickListener(null);
-    view7f0a01ab = null;
-    view7f0a0185.setOnClickListener(null);
-    view7f0a0185 = null;
-    view7f0a0272.setOnClickListener(null);
-    view7f0a0272 = null;
+    view7f0a0207.setOnClickListener(null);
+    view7f0a0207 = null;
+    view7f0a020a.setOnClickListener(null);
+    view7f0a020a = null;
+    view7f0a01ac.setOnClickListener(null);
+    view7f0a01ac = null;
+    view7f0a0186.setOnClickListener(null);
+    view7f0a0186 = null;
+    view7f0a0273.setOnClickListener(null);
+    view7f0a0273 = null;
   }
 }
