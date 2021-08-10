@@ -25,13 +25,13 @@ public final class R {
     public static final class drawable {
         private drawable() {}
 
-        public static final int fp_file = 0x7f0800a2;
-        public static final int fp_folder = 0x7f0800a3;
-        public static final int fp_ic_action_add = 0x7f0800a4;
-        public static final int fp_ic_action_back = 0x7f0800a5;
-        public static final int fp_ic_action_cancel = 0x7f0800a6;
-        public static final int fp_ic_action_up = 0x7f0800a7;
-        public static final int fp_outline_black_1dp = 0x7f0800a8;
+        public static final int fp_file = 0x7f0800a3;
+        public static final int fp_folder = 0x7f0800a4;
+        public static final int fp_ic_action_add = 0x7f0800a5;
+        public static final int fp_ic_action_back = 0x7f0800a6;
+        public static final int fp_ic_action_cancel = 0x7f0800a7;
+        public static final int fp_ic_action_up = 0x7f0800a8;
+        public static final int fp_outline_black_1dp = 0x7f0800a9;
     }
     public static final class id {
         private id() {}

@@ -27,8 +27,8 @@ public final class R {
     public static final class drawable {
         private drawable() {}
 
-        public static final int colorpickerview__btn_background = 0x7f080076;
-        public static final int colorpickerview__btn_background_pressed = 0x7f080077;
+        public static final int colorpickerview__btn_background = 0x7f080077;
+        public static final int colorpickerview__btn_background_pressed = 0x7f080078;
     }
     public static final class id {
         private id() {}
