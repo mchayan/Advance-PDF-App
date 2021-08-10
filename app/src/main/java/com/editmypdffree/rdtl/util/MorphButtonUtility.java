@@ -41,7 +41,7 @@ public class MorphButtonUtility {
                 btnMorph.getText().toString();
         square.color(color(R.color.mb_blue));
         square.colorPressed(color(R.color.mb_blue_dark));
-        //square.text(text);
+        square.text(text);
         btnMorph.morph(square);
     }
 

@@ -180,7 +180,7 @@ public class AddImagesFragment extends Fragment implements BottomSheetPopulate, 
                    // mNoOfImages.setVisibility(View.GONE);
                 }
 
-                //mMorphButtonUtility.morphToSquare(mCreatePdf, mMorphButtonUtility.integer());
+                mMorphButtonUtility.morphToSquare(mCreatePdf, mMorphButtonUtility.integer());
                 break;
 
             case INTENT_REQUEST_PICK_FILE_CODE:

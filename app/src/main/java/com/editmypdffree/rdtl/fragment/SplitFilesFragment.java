@@ -88,6 +88,15 @@ public class SplitFilesFragment extends Fragment implements MergeFilesAdapter.On
     @BindView(R.id.split_config)
     EditText mSplitConfitEditText;
 
+    @BindView(R.id.locationtext)
+    LinearLayout mlocationtext;
+    @BindView(R.id.tv_extract_text_bottom)
+    TextView mlcTxt;
+    @BindView(R.id.relativebtmcreate)
+    RelativeLayout mrelativebtmcreate;
+    @BindView(R.id.popup)
+    LinearLayout mpopup2;
+
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -172,6 +181,11 @@ public class SplitFilesFragment extends Fragment implements MergeFilesAdapter.On
     public void onItemClick(String path) {
         mSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
         setTextAndActivateButtons(path);
+
+        mlocationtext.setVisibility(View.VISIBLE);
+        mrelativebtmcreate.setVisibility(View.VISIBLE);
+
+        mlcTxt.setText(path);
     }
 
     private void setTextAndActivateButtons(String path) {
