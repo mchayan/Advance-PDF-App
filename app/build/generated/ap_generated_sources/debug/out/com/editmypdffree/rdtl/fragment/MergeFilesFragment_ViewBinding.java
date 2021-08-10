@@ -25,11 +25,11 @@ public class MergeFilesFragment_ViewBinding implements Unbinder {
 
   private View view7f0a0156;
 
-  private View view7f0a0206;
+  private View view7f0a0201;
 
-  private View view7f0a018a;
+  private View view7f0a0185;
 
-  private View view7f0a0277;
+  private View view7f0a0272;
 
   @UiThread
   public MergeFilesFragment_ViewBinding(final MergeFilesFragment target, View source) {
@@ -53,7 +53,7 @@ public class MergeFilesFragment_ViewBinding implements Unbinder {
     target.layoutBottomSheet = Utils.findRequiredViewAsType(source, R.id.bottom_sheet, "field 'layoutBottomSheet'", LinearLayout.class);
     view = Utils.findRequiredView(source, R.id.selectFiles, "field 'mSelectFiles' and method 'startAddingPDF'");
     target.mSelectFiles = Utils.castView(view, R.id.selectFiles, "field 'mSelectFiles'", Button.class);
-    view7f0a0206 = view;
+    view7f0a0201 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -68,7 +68,7 @@ public class MergeFilesFragment_ViewBinding implements Unbinder {
     target.popup2n = Utils.findRequiredViewAsType(source, R.id.popup2, "field 'popup2n'", LinearLayout.class);
     view = Utils.findRequiredView(source, R.id.openpdf, "field 'mopenpdf' and method 'opnpdf'");
     target.mopenpdf = Utils.castView(view, R.id.openpdf, "field 'mopenpdf'", MorphingButton.class);
-    view7f0a018a = view;
+    view7f0a0185 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -77,7 +77,7 @@ public class MergeFilesFragment_ViewBinding implements Unbinder {
     });
     target.midCard1stWhite = Utils.findRequiredViewAsType(source, R.id.idCard1stWhite, "field 'midCard1stWhite'", CardView.class);
     view = Utils.findRequiredView(source, R.id.viewFiles, "method 'onViewFilesClick'");
-    view7f0a0277 = view;
+    view7f0a0272 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -112,11 +112,11 @@ public class MergeFilesFragment_ViewBinding implements Unbinder {
 
     view7f0a0156.setOnClickListener(null);
     view7f0a0156 = null;
-    view7f0a0206.setOnClickListener(null);
-    view7f0a0206 = null;
-    view7f0a018a.setOnClickListener(null);
-    view7f0a018a = null;
-    view7f0a0277.setOnClickListener(null);
-    view7f0a0277 = null;
+    view7f0a0201.setOnClickListener(null);
+    view7f0a0201 = null;
+    view7f0a0185.setOnClickListener(null);
+    view7f0a0185 = null;
+    view7f0a0272.setOnClickListener(null);
+    view7f0a0272 = null;
   }
 }

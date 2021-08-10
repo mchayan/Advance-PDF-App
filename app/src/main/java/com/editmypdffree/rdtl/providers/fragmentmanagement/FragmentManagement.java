@@ -148,9 +148,9 @@ public class FragmentManagement implements IFragmentManagement {
             case R.id.nav_camera:
                 fragment = new ImageToPdfFragment();
                 break;
-            case R.id.nav_qrcode:
-                fragment = new QrBarcodeScanFragment();
-                break;
+//            case R.id.nav_qrcode:
+//                fragment = new QrBarcodeScanFragment();
+//                break;
             case R.id.nav_gallery:
                 fragment = new ViewFilesFragment();
                 break;
@@ -179,15 +179,15 @@ public class FragmentManagement implements IFragmentManagement {
                 bundle.putString(BUNDLE_DATA, REMOVE_PWd);
                 fragment.setArguments(bundle);
                 break;
-            case R.id.nav_share:
-                mFeedbackUtils.shareApplication();
-                break;
+//            case R.id.nav_share:
+//                mFeedbackUtils.shareApplication();
+//                break;
             case R.id.nav_about:
                 fragment = new AboutUsFragment();
                 break;
-            case R.id.nav_settings:
-                fragment = new SettingsFragment();
-                break;
+//            case R.id.nav_settings:
+//                fragment = new SettingsFragment();
+//                break;
             case R.id.nav_extract_images:
                 fragment = new PdfToImageFragment();
                 bundle.putString(BUNDLE_DATA, EXTRACT_IMAGES);
@@ -237,9 +237,9 @@ public class FragmentManagement implements IFragmentManagement {
                 bundle.putString(BUNDLE_DATA, ADD_WATERMARK2);
                 fragment.setArguments(bundle);
                 break;
-            case R.id.nav_zip_to_pdf:
-                fragment = new ZipToPdfFragment();
-                break;
+//            case R.id.nav_zip_to_pdf:
+//                fragment = new ZipToPdfFragment();
+//                break;
             case R.id.nav_rateus:
                 mFeedbackUtils.openWebPage("https://play.google.com/store/apps/details?id=com.editmypdffree.rdtl");
                 break;
@@ -251,9 +251,9 @@ public class FragmentManagement implements IFragmentManagement {
             case R.id.nav_text_extract:
                 fragment = new ExtractTextFragment();
                 break;
-            case R.id.nav_faq:
-                fragment = new FAQFragment();
-                break;
+//            case R.id.nav_faq:
+//                fragment = new FAQFragment();
+//                break;
         }
 
         try {
@@ -264,7 +264,7 @@ public class FragmentManagement implements IFragmentManagement {
         }
         // if help or share or what's new is clicked then return false, as we don't want
         // them to be selected
-        return itemId != R.id.nav_share;
+        return itemId != R.id.nav_text_extract;
 //        && itemId != R.id.nav_help
                 /*&& itemId != R.id.nav_whatsNew*/
     }

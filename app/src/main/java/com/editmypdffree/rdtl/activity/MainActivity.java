@@ -346,7 +346,7 @@ public class MainActivity extends AppCompatActivity
 
         mFragmentSelectedMap.append(R.id.nav_home, R.string.app_name);
         mFragmentSelectedMap.append(R.id.nav_camera, R.string.images_to_pdf);
-        mFragmentSelectedMap.append(R.id.nav_qrcode, R.string.qr_barcode_pdf);
+//        mFragmentSelectedMap.append(R.id.nav_qrcode, R.string.qr_barcode_pdf);
         mFragmentSelectedMap.append(R.id.nav_add_text, R.string.add_text);
         mFragmentSelectedMap.append(R.id.nav_gallery, R.string.viewFiles);
         mFragmentSelectedMap.append(R.id.nav_merge, R.string.merge_pdf);
@@ -356,7 +356,7 @@ public class MainActivity extends AppCompatActivity
         mFragmentSelectedMap.append(R.id.nav_add_password, R.string.add_password);
         mFragmentSelectedMap.append(R.id.nav_remove_password, R.string.remove_password);
         mFragmentSelectedMap.append(R.id.nav_about, R.string.about_us);
-        mFragmentSelectedMap.append(R.id.nav_settings, R.string.settings);
+       // mFragmentSelectedMap.append(R.id.nav_settings, R.string.settings);
         mFragmentSelectedMap.append(R.id.nav_extract_images, R.string.extract_images);
         mFragmentSelectedMap.append(R.id.nav_pdf_to_images, R.string.pdf_to_images);
         mFragmentSelectedMap.append(R.id.nav_remove_pages, R.string.remove_pages);
@@ -366,10 +366,10 @@ public class MainActivity extends AppCompatActivity
         mFragmentSelectedMap.append(R.id.nav_remove_duplicate_pages, R.string.remove_duplicate_pages);
         mFragmentSelectedMap.append(R.id.nav_invert_pdf, R.string.invert_pdf);
         mFragmentSelectedMap.append(R.id.nav_add_watermark, R.string.add_watermark);
-        mFragmentSelectedMap.append(R.id.nav_zip_to_pdf, R.string.zip_to_pdf);
+       // mFragmentSelectedMap.append(R.id.nav_zip_to_pdf, R.string.zip_to_pdf);
         mFragmentSelectedMap.append(R.id.nav_rotate_pages, R.string.rotate_pages);
         mFragmentSelectedMap.append(R.id.nav_excel_to_pdf, R.string.excel_to_pdf);
-        mFragmentSelectedMap.append(R.id.nav_faq, R.string.faqs);
+       // mFragmentSelectedMap.append(R.id.nav_faq, R.string.faqs);
     }
 
     /**

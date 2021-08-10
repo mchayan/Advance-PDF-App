@@ -21,9 +21,9 @@ import java.lang.Override;
 public class ImageToPdfFragment_ViewBinding implements Unbinder {
   private ImageToPdfFragment target;
 
-  private View view7f0a01b0;
+  private View view7f0a01ab;
 
-  private View view7f0a01b1;
+  private View view7f0a01ac;
 
   private View view7f0a004c;
 
@@ -34,7 +34,7 @@ public class ImageToPdfFragment_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.pdfCreate, "field 'mCreatePdf' and method 'pdfCreateClicked'");
     target.mCreatePdf = Utils.castView(view, R.id.pdfCreate, "field 'mCreatePdf'", MorphingButton.class);
-    view7f0a01b0 = view;
+    view7f0a01ab = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -43,7 +43,7 @@ public class ImageToPdfFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.pdfOpen, "field 'mOpenPdf' and method 'openPdf'");
     target.mOpenPdf = Utils.castView(view, R.id.pdfOpen, "field 'mOpenPdf'", MorphingButton.class);
-    view7f0a01b1 = view;
+    view7f0a01ac = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -96,10 +96,10 @@ public class ImageToPdfFragment_ViewBinding implements Unbinder {
     target.btnC1 = null;
     target.btnC2 = null;
 
-    view7f0a01b0.setOnClickListener(null);
-    view7f0a01b0 = null;
-    view7f0a01b1.setOnClickListener(null);
-    view7f0a01b1 = null;
+    view7f0a01ab.setOnClickListener(null);
+    view7f0a01ab = null;
+    view7f0a01ac.setOnClickListener(null);
+    view7f0a01ac = null;
     view7f0a004c.setOnClickListener(null);
     view7f0a004c = null;
   }

@@ -99,10 +99,10 @@ public class CommonCodeUtils {
                 new HomePageItem(R.id.nav_camera,
                         R.drawable.ic_image_to_pdf,  R.string.images_to_pdf));
 
-        mFragmentPositionMap
-                .put(homePageItems ? R.id.qr_barcode_to_pdf : R.id.qr_barcode_to_pdf_fav,
-                new HomePageItem(R.id.nav_qrcode,
-                        R.drawable.ic_qr_barcode, R.string.qr_barcode_pdf));
+//        mFragmentPositionMap
+//                .put(homePageItems ? R.id.qr_barcode_to_pdf : R.id.qr_barcode_to_pdf_fav,
+//                new HomePageItem(R.id.nav_qrcode,
+//                        R.drawable.ic_qr_barcode, R.string.qr_barcode_pdf));
 
         mFragmentPositionMap.put(homePageItems ? R.id.excel_to_pdf : R.id.excel_to_pdf_fav,
                 new HomePageItem(R.id.nav_excel_to_pdf,
@@ -181,9 +181,9 @@ public class CommonCodeUtils {
                 new HomePageItem(R.id.nav_invert_pdf,
                         R.drawable.ic_invert_pdf, R.string.invert_pdf));
 
-        mFragmentPositionMap.put(homePageItems ? R.id.zip_to_pdf : R.id.zip_to_pdf_fav,
-                new HomePageItem(R.id.nav_zip_to_pdf,
-                        R.drawable.ic_zip_to_pdf, R.string.zip_to_pdf));
+//        mFragmentPositionMap.put(homePageItems ? R.id.zip_to_pdf : R.id.zip_to_pdf_fav,
+//                new HomePageItem(R.id.nav_zip_to_pdf,
+//                        R.drawable.ic_zip_to_pdf, R.string.zip_to_pdf));
 
         mFragmentPositionMap.put(homePageItems ? R.id.add_text : R.id.add_text_fav,
                 new HomePageItem(R.id.nav_add_text,
