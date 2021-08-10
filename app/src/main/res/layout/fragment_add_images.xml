@@ -40,7 +40,7 @@
                     android:layout_height="match_parent"
                     android:id="@+id/linear"
                     android:padding="30dp"
-                    android:gravity="center"
+                    android:gravity="center_vertical"
                     android:orientation="vertical">
                     <LinearLayout
                         android:id="@+id/idLV1st2"
@@ -166,7 +166,7 @@
                                 android:layout_width="80dp"
                                 android:layout_height="80dp"
                                 android:backgroundTint="@color/colorAccent1"
-                                android:background="@drawable/ic_text_to_pdf"
+                                android:background="@drawable/ic_image_to_pdf"
                                 android:layout_gravity="center"
                                 android:translationZ="2dp"
                                 />
@@ -377,24 +377,30 @@
         android:layout_height="match_parent"
         android:id="@+id/rltvall"
         android:visibility="visible">
+
+
+    </RelativeLayout>
+    <include layout="@layout/bottom_sheet2" />
+
     <LinearLayout
+        android:id="@+id/add_images_all"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/add_images_all"
         android:orientation="vertical"
         android:stretchColumns="*"
-        tools:context=".fragment.AddImagesFragment"
-       >
+        app:layout_anchor="@+id/popup"
+        app:layout_anchorGravity="center"
+        tools:context=".fragment.AddImagesFragment">
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
             android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="15dp"
             android:fontFamily="@font/sarabunregular"
             android:gravity="center_horizontal"
-            android:textColor="@color/colorAccent1"/>
+            android:textColor="@color/colorAccent1" />
 
         <TextView
             android:id="@+id/tvNoOfImages"
@@ -404,8 +410,4 @@
             android:padding="8dp"
             android:visibility="gone" />
     </LinearLayout>
-
-
-    </RelativeLayout>
-    <include layout="@layout/bottom_sheet2" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

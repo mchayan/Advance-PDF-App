@@ -45,6 +45,7 @@ public class MorphButtonUtility {
         btnMorph.morph(square);
     }
 
+
     /**
      * Converts morph button into success shape
      *
@@ -102,7 +103,7 @@ public class MorphButtonUtility {
                                           MorphingButton toSetPathOn,
                                           MorphingButton toEnable) {
         //toSetPathOn.setText(path);
-        toSetPathOn.setBackgroundColor(mActivity.getResources().getColor(R.color.mb_green_dark));
+        //toSetPathOn.setBackgroundColor(mActivity.getResources().getColor(R.color.mb_green_dark));
         toEnable.setEnabled(true);
         morphToSquare(toEnable, integer());
     }
@@ -119,8 +120,8 @@ public class MorphButtonUtility {
     public void initializeButton2(MorphingButton button,
                                  MorphingButton buttonToDisable) {
         //button.setText(R.string.merge_file_select);
-        button.setBackgroundColor(mActivity.getResources().getColor(R.color.mb_blue));
-        morphToGrey(buttonToDisable, integer());
+        //button.setBackgroundColor(mActivity.getResources().getColor(R.color.mb_blue));
+       // morphToGrey(buttonToDisable, integer());
         buttonToDisable.setEnabled(false);
     }
     public void initializeButtonForAddText(MorphingButton pdfButton, MorphingButton textButton,

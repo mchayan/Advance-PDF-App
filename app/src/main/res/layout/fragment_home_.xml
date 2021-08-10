@@ -320,8 +320,8 @@
 
                         <com.editmypdffree.rdtl.customviews.MyCardView
                             android:id="@+id/add_images"
-                            android:layout_width="100dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
                             android:layout_marginRight="10dp"
                             app:option_icon="@drawable/ic_add_image"
                             app:option_text="@string/add_images" />

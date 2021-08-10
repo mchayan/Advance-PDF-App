@@ -51,8 +51,8 @@ public class AddImagesFragment_ViewBinding implements Unbinder {
         target.parse();
       }
     });
-    view = Utils.findRequiredView(source, R.id.addImages, "field 'addImages' and method 'startAddingImages'");
-    target.addImages = Utils.castView(view, R.id.addImages, "field 'addImages'", MorphingButton.class);
+    view = Utils.findRequiredView(source, R.id.addImages, "field 'addImages1' and method 'startAddingImages'");
+    target.addImages1 = Utils.castView(view, R.id.addImages, "field 'addImages1'", MorphingButton.class);
     view7f0a004c = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
@@ -80,7 +80,7 @@ public class AddImagesFragment_ViewBinding implements Unbinder {
     target.mLottieProgress = null;
     target.selectFileButton = null;
     target.mCreatePdf = null;
-    target.addImages = null;
+    target.addImages1 = null;
     target.layoutBottomSheet = null;
     target.mUpArrow = null;
     target.mLayout = null;

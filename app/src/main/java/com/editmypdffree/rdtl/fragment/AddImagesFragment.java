@@ -85,7 +85,7 @@ public class AddImagesFragment extends Fragment implements BottomSheetPopulate, 
     @BindView(R.id.pdfCreate)
     MorphingButton mCreatePdf;
     @BindView(R.id.addImages)
-    MorphingButton addImages;
+    MorphingButton addImages1;
     @BindView(R.id.bottom_sheet)
     LinearLayout layoutBottomSheet;
     @BindView(R.id.upArrow)
@@ -267,7 +267,7 @@ public class AddImagesFragment extends Fragment implements BottomSheetPopulate, 
         mPath = null;
         mImagesUri.clear();
         mMorphButtonUtility.initializeButton2(selectFileButton, mCreatePdf);
-        mMorphButtonUtility.initializeButton2(selectFileButton, addImages);
+        mMorphButtonUtility.initializeButton2(selectFileButton, addImages1);
         //mNoOfImages.setVisibility(View.GONE);
     }
 
@@ -333,7 +333,7 @@ public class AddImagesFragment extends Fragment implements BottomSheetPopulate, 
     private void setTextAndActivateButtons(String path) {
         mPath = path;
         mMorphButtonUtility.setTextAndActivateButtons2(path,
-                selectFileButton, addImages);
+                selectFileButton, addImages1);
 
     }
 
