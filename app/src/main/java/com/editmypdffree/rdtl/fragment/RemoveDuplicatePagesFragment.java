@@ -21,6 +21,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.airbnb.lottie.LottieAnimationView;
@@ -61,6 +62,8 @@ public class RemoveDuplicatePagesFragment extends Fragment implements MergeFiles
     private static final int INTENT_REQUEST_PICKFILE_CODE = 10;
     private MaterialDialog mMaterialDialog;
     BottomSheetBehavior mSheetBehavior;
+    String sPath=null;
+
 
     @BindView(R.id.lottie_progress)
     LottieAnimationView mLottieProgress;
@@ -81,6 +84,15 @@ public class RemoveDuplicatePagesFragment extends Fragment implements MergeFiles
     @BindView(R.id.view_pdf)
     Button mViewPdf;
 
+    @BindView(R.id.locationtext)
+    LinearLayout mlocationtext;
+    @BindView(R.id.tv_extract_text_bottom)
+    TextView mlcTxt;
+    @BindView(R.id.relativebtmcreate)
+    RelativeLayout mrelativebtmcreate;
+    @BindView(R.id.popup2)
+    LinearLayout mpopup2;
+
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -92,6 +104,7 @@ public class RemoveDuplicatePagesFragment extends Fragment implements MergeFiles
         mBottomSheetUtils.populateBottomSheetWithPDFs(this);
 
         resetValues();
+        mSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
         return rootview;
     }
     @OnClick(R.id.viewFiles)
@@ -104,8 +117,9 @@ public class RemoveDuplicatePagesFragment extends Fragment implements MergeFiles
      */
     @OnClick(R.id.selectFile)
     public void showFileChooser() {
-        startActivityForResult(mFileUtils.getFileChooser(),
-                INTENT_REQUEST_PICKFILE_CODE);
+//        startActivityForResult(mFileUtils.getFileChooser(),
+//                INTENT_REQUEST_PICKFILE_CODE);
+        mBottomSheetUtils.showHideSheet(mSheetBehavior);
     }
     public void onActivityResult(int requestCode, int resultCode, Intent data) throws NullPointerException {
         if (data == null || resultCode != RESULT_OK || data.getData() == null)
@@ -127,12 +141,12 @@ public class RemoveDuplicatePagesFragment extends Fragment implements MergeFiles
 
     private void resetValues() {
         mPath = null;
-        mMorphButtonUtility.initializeButton(selectFileButton, removeDuplicateButton);
+        mMorphButtonUtility.initializeButton2(selectFileButton, removeDuplicateButton);
     }
 
     private void setTextAndActivateButtons(String path) {
         mPath = path;
-        mMorphButtonUtility.setTextAndActivateButtons(path,
+        mMorphButtonUtility.setTextAndActivateButtons2(path,
                 selectFileButton, removeDuplicateButton);
     }
 
@@ -155,6 +169,10 @@ public class RemoveDuplicatePagesFragment extends Fragment implements MergeFiles
     public void onItemClick(String path) {
         mSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
         setTextAndActivateButtons(path);
+        mlocationtext.setVisibility(View.VISIBLE);
+        mrelativebtmcreate.setVisibility(View.VISIBLE);
+
+        mlcTxt.setText(path);
     }
 
     @Override
@@ -187,6 +205,9 @@ public class RemoveDuplicatePagesFragment extends Fragment implements MergeFiles
                 .setAction(R.string.snackbar_viewAction,
                         v -> mFileUtils.openFile(path, FileUtils.FileType.e_PDF)).show();
         viewPdfButton(path);
+        sPath = path;
+
+        mpopup2.setVisibility(View.VISIBLE);
         resetValues();
     }
 
