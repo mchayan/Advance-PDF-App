@@ -23,9 +23,9 @@ public class ExtractTextFragment_ViewBinding implements Unbinder {
 
   private View view7f0a00d4;
 
-  private View view7f0a0273;
+  private View view7f0a0276;
 
-  private View view7f0a0207;
+  private View view7f0a020a;
 
   @UiThread
   public ExtractTextFragment_ViewBinding(final ExtractTextFragment target, View source) {
@@ -48,7 +48,7 @@ public class ExtractTextFragment_ViewBinding implements Unbinder {
     target.mLayout = Utils.findRequiredViewAsType(source, R.id.layout, "field 'mLayout'", RelativeLayout.class);
     target.mLottieProgress = Utils.findRequiredViewAsType(source, R.id.lottie_progress, "field 'mLottieProgress'", LottieAnimationView.class);
     view = Utils.findRequiredView(source, R.id.viewFiles, "method 'onViewFilesClick'");
-    view7f0a0273 = view;
+    view7f0a0276 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -56,7 +56,7 @@ public class ExtractTextFragment_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.select_pdf_file, "method 'selectPdfFile'");
-    view7f0a0207 = view;
+    view7f0a020a = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -82,9 +82,9 @@ public class ExtractTextFragment_ViewBinding implements Unbinder {
 
     view7f0a00d4.setOnClickListener(null);
     view7f0a00d4 = null;
-    view7f0a0273.setOnClickListener(null);
-    view7f0a0273 = null;
-    view7f0a0207.setOnClickListener(null);
-    view7f0a0207 = null;
+    view7f0a0276.setOnClickListener(null);
+    view7f0a0276 = null;
+    view7f0a020a.setOnClickListener(null);
+    view7f0a020a = null;
   }
 }

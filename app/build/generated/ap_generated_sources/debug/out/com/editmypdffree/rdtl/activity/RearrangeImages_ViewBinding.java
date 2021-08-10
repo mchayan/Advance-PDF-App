@@ -15,7 +15,7 @@ import java.lang.Override;
 public class RearrangeImages_ViewBinding implements Unbinder {
   private RearrangeImages target;
 
-  private View view7f0a021e;
+  private View view7f0a0221;
 
   @UiThread
   public RearrangeImages_ViewBinding(RearrangeImages target) {
@@ -29,7 +29,7 @@ public class RearrangeImages_ViewBinding implements Unbinder {
     View view;
     target.mRecyclerView = Utils.findRequiredViewAsType(source, R.id.recyclerView, "field 'mRecyclerView'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.sort, "method 'sortImg'");
-    view7f0a021e = view;
+    view7f0a0221 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -47,7 +47,7 @@ public class RearrangeImages_ViewBinding implements Unbinder {
 
     target.mRecyclerView = null;
 
-    view7f0a021e.setOnClickListener(null);
-    view7f0a021e = null;
+    view7f0a0221.setOnClickListener(null);
+    view7f0a0221 = null;
   }
 }

@@ -1919,6 +1919,7 @@ id favourites
 id favourites_text
 id fileDate
 id fileLocation
+id fileLocation2
 id fileName
 id fileRipple
 id fileSize
@@ -1973,6 +1974,8 @@ id idSpinnerText
 id idbtnCard1st
 id idbtnCard1st2
 id idbtnCard2nd
+id idlocLL
+id idlocLL2
 id idloctionofpdf
 id ifRoom
 id image
@@ -2220,10 +2223,10 @@ id select_excel_file
 id select_excel_file2
 id select_pdf_file
 id select_pdf_file1
-id select_pdf_file_popup
+id select_pdf_file2
 id select_text_file
 id select_text_file1
-id select_text_file_popup
+id select_text_file2
 id selected
 id selected_album
 id selected_files

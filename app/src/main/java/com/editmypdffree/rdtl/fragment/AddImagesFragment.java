@@ -386,7 +386,9 @@ public class AddImagesFragment extends Fragment implements BottomSheetPopulate, 
                             FragmentTransaction fragmentTransaction = fm.beginTransaction();
                             fragmentTransaction.replace(R.id.content, myfragment);
                             //fragmentTransaction.addToBackStack(null);
+                            fragmentTransaction.remove(myfragment);
                             fragmentTransaction.commit();
+
 
                         }
                     })

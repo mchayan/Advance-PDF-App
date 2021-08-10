@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\SumoN\\Desktop\\pdf project\\New folder2\\Advance-PDF-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
+            "outputFile": "D:\\PDF\\08-02-2021\\Advance-PDF-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\SumoN\\.gradle\\caches\\transforms-2\\files-2.1\\3e123aa37c4752cc568c057fff62e709\\matisse-0.5.3-beta3\\res\\values-zh\\values-zh.xml",
+                    "source": "C:\\Users\\Farhad\\.gradle\\caches\\transforms-2\\files-2.1\\3e123aa37c4752cc568c057fff62e709\\matisse-0.5.3-beta3\\res\\values-zh\\values-zh.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\SumoN\\.gradle\\caches\\transforms-2\\files-2.1\\17e8a05e4e5741354f3c44a0544023c2\\jetified-android-image-cropper-2.7.0\\res\\values-zh\\values-zh.xml",
+                    "source": "C:\\Users\\Farhad\\.gradle\\caches\\transforms-2\\files-2.1\\83a5f674913b53b020b7044d11c1b258\\jetified-android-image-cropper-2.7.0\\res\\values-zh\\values-zh.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
