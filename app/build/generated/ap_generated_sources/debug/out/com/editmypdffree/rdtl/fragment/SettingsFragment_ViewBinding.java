@@ -16,7 +16,7 @@ import java.lang.Override;
 public class SettingsFragment_ViewBinding implements Unbinder {
   private SettingsFragment target;
 
-  private View view7f0a0237;
+  private View view7f0a0232;
 
   @UiThread
   public SettingsFragment_ViewBinding(final SettingsFragment target, View source) {
@@ -26,7 +26,7 @@ public class SettingsFragment_ViewBinding implements Unbinder {
     target.mEnhancementOptionsRecycleView = Utils.findRequiredViewAsType(source, R.id.settings_list, "field 'mEnhancementOptionsRecycleView'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.storagelocation, "field 'storageLocation' and method 'modifyStorageLocation'");
     target.storageLocation = Utils.castView(view, R.id.storagelocation, "field 'storageLocation'", TextView.class);
-    view7f0a0237 = view;
+    view7f0a0232 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -45,7 +45,7 @@ public class SettingsFragment_ViewBinding implements Unbinder {
     target.mEnhancementOptionsRecycleView = null;
     target.storageLocation = null;
 
-    view7f0a0237.setOnClickListener(null);
-    view7f0a0237 = null;
+    view7f0a0232.setOnClickListener(null);
+    view7f0a0232 = null;
   }
 }

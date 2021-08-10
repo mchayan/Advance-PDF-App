@@ -359,7 +359,7 @@
     <string name="encrypted">Encrypted</string>
     <string name="decrypted">Decrypted</string>
     <string name="history"> <font color="#7263E2"> Activity Log</font></string>
-    <string name="history1" translatable="false" tools:ignore="DuplicateDefinition"> <font color="#ffffff"> History</font></string>
+    <string name="history1" translatable="false" tools:ignore="DuplicateDefinition"> <font color="#ffffff"> Activity Log</font></string>
     <string name="no_history_message">No Activity to Show</string>
     <string name="view_history_here_message">View All Your Converted Files History Here!</string>
     <string name="delete_history_message">Are You Sure You Want to Delete History?</string>

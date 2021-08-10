@@ -21,17 +21,17 @@ import java.lang.Override;
 public class PdfToImageFragment_ViewBinding implements Unbinder {
   private PdfToImageFragment target;
 
-  private View view7f0a0204;
+  private View view7f0a01ff;
 
   private View view7f0a0098;
 
-  private View view7f0a0279;
+  private View view7f0a0274;
 
-  private View view7f0a0217;
+  private View view7f0a0212;
 
-  private View view7f0a0277;
+  private View view7f0a0272;
 
-  private View view7f0a0278;
+  private View view7f0a0273;
 
   @UiThread
   public PdfToImageFragment_ViewBinding(final PdfToImageFragment target, View source) {
@@ -43,7 +43,7 @@ public class PdfToImageFragment_ViewBinding implements Unbinder {
     target.mUpArrow = Utils.findRequiredViewAsType(source, R.id.upArrow, "field 'mUpArrow'", ImageView.class);
     view = Utils.findRequiredView(source, R.id.selectFile, "field 'mSelectFileButton' and method 'showFileChooser'");
     target.mSelectFileButton = Utils.castView(view, R.id.selectFile, "field 'mSelectFileButton'", MorphingButton.class);
-    view7f0a0204 = view;
+    view7f0a01ff = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -69,7 +69,7 @@ public class PdfToImageFragment_ViewBinding implements Unbinder {
     target.SecondPopup = Utils.findRequiredViewAsType(source, R.id.popup2, "field 'SecondPopup'", LinearLayout.class);
     target.LoctiontxtLLinpdftoimg = Utils.findRequiredViewAsType(source, R.id.idLoctiontxtLLinpdftoimg, "field 'LoctiontxtLLinpdftoimg'", LinearLayout.class);
     view = Utils.findRequiredView(source, R.id.viewImagesInGallery, "method 'onImagesInGalleryClick'");
-    view7f0a0279 = view;
+    view7f0a0274 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -77,7 +77,7 @@ public class PdfToImageFragment_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.shareImages, "method 'onShareFilesClick'");
-    view7f0a0217 = view;
+    view7f0a0212 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -85,7 +85,7 @@ public class PdfToImageFragment_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.viewFiles, "method 'onViewFilesClick'");
-    view7f0a0277 = view;
+    view7f0a0272 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -93,7 +93,7 @@ public class PdfToImageFragment_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.viewImages, "method 'onViewImagesClicked'");
-    view7f0a0278 = view;
+    view7f0a0273 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -124,17 +124,17 @@ public class PdfToImageFragment_ViewBinding implements Unbinder {
     target.SecondPopup = null;
     target.LoctiontxtLLinpdftoimg = null;
 
-    view7f0a0204.setOnClickListener(null);
-    view7f0a0204 = null;
+    view7f0a01ff.setOnClickListener(null);
+    view7f0a01ff = null;
     view7f0a0098.setOnClickListener(null);
     view7f0a0098 = null;
-    view7f0a0279.setOnClickListener(null);
-    view7f0a0279 = null;
-    view7f0a0217.setOnClickListener(null);
-    view7f0a0217 = null;
-    view7f0a0277.setOnClickListener(null);
-    view7f0a0277 = null;
-    view7f0a0278.setOnClickListener(null);
-    view7f0a0278 = null;
+    view7f0a0274.setOnClickListener(null);
+    view7f0a0274 = null;
+    view7f0a0212.setOnClickListener(null);
+    view7f0a0212 = null;
+    view7f0a0272.setOnClickListener(null);
+    view7f0a0272 = null;
+    view7f0a0273.setOnClickListener(null);
+    view7f0a0273 = null;
   }
 }
