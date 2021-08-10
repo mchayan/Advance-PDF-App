@@ -149,6 +149,7 @@
                             android:textColor="@color/black"/>
 
                         <androidx.core.widget.NestedScrollView
+                            android:id="@+id/idNstdSV"
                             android:layout_width="match_parent"
                             android:layout_height="200dp">
                         <androidx.recyclerview.widget.RecyclerView
@@ -166,6 +167,7 @@
                     android:id="@+id/relativebtmcreate"
                     android:layout_margin="20dp"
                     android:layout_alignBottom="@+id/linear"
+                    android:visibility="gone"
                     >
 
                     <androidx.cardview.widget.CardView
