@@ -527,32 +527,7 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
         }
     }
 
-    private void hndlr(){
 
-        final Handler handler = new Handler(Looper.getMainLooper());
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                //Do something after 100ms
-
-
-
-                if (SuccessOrNot != null){
-                    openpdfPP.setVisibility(View.VISIBLE);
-                    choosefilePP.setVisibility(View.GONE);
-                }else {
-                    openpdfPP.setVisibility(View.GONE);
-                    choosefilePP.setVisibility(View.VISIBLE);
-
-                }
-
-
-
-
-                //hndlr();
-            }
-        }, 300);
-    }
 
 
 
@@ -563,13 +538,7 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
     public void myMethod(String ppth) {
         // do something...
 
-//        HomeFragment myfragment;
-//        myfragment = new HomeFragment();
-//        FragmentManager fm = getFragmentManager();
-//        FragmentTransaction fragmentTransaction = fm.beginTransaction();
-//        fragmentTransaction.replace(R.id.content, myfragment);
-//        //fragmentTransaction.addToBackStack(null);
-//        fragmentTransaction.commit();
+
 
         choosefilePP.setVisibility(View.GONE);
         openpdfPP.setVisibility(View.VISIBLE);

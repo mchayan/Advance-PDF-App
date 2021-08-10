@@ -122,7 +122,8 @@
                                 android:textSize="16dp"
                                 android:text="Your Selected PDF File Location "
                                 android:gravity="left"
-                                android:textColor="@color/black">
+                                android:textColor="@color/black"
+                                android:singleLine="true">
                             </TextView>
                         </LinearLayout>
                     </LinearLayout>

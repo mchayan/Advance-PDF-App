@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import androidx.annotation.CallSuper;
 import androidx.annotation.UiThread;
 import androidx.recyclerview.widget.RecyclerView;
@@ -65,6 +66,8 @@ public class AddImagesFragment_ViewBinding implements Unbinder {
     target.mRecyclerViewFiles = Utils.findRequiredViewAsType(source, R.id.recyclerViewFiles, "field 'mRecyclerViewFiles'", RecyclerView.class);
     target.PopUp = Utils.findRequiredViewAsType(source, R.id.popup, "field 'PopUp'", LinearLayout.class);
     target.rltvall = Utils.findRequiredViewAsType(source, R.id.rltvall, "field 'rltvall'", RelativeLayout.class);
+    target.mlocationtext = Utils.findRequiredViewAsType(source, R.id.locationtext, "field 'mlocationtext'", LinearLayout.class);
+    target.mfileLocation = Utils.findRequiredViewAsType(source, R.id.fileLocation, "field 'mfileLocation'", TextView.class);
   }
 
   @Override
@@ -84,6 +87,8 @@ public class AddImagesFragment_ViewBinding implements Unbinder {
     target.mRecyclerViewFiles = null;
     target.PopUp = null;
     target.rltvall = null;
+    target.mlocationtext = null;
+    target.mfileLocation = null;
 
     view7f0a01ff.setOnClickListener(null);
     view7f0a01ff = null;

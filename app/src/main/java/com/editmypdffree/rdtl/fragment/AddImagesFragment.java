@@ -109,6 +109,11 @@ public class AddImagesFragment extends Fragment implements BottomSheetPopulate, 
     @BindView(R.id.rltvall)
     RelativeLayout rltvall;
 
+    @BindView(R.id.locationtext)
+    LinearLayout mlocationtext;
+    @BindView(R.id.fileLocation)
+    TextView mfileLocation;
+
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -175,7 +180,7 @@ public class AddImagesFragment extends Fragment implements BottomSheetPopulate, 
                    // mNoOfImages.setVisibility(View.GONE);
                 }
 
-                mMorphButtonUtility.morphToSquare(mCreatePdf, mMorphButtonUtility.integer());
+                //mMorphButtonUtility.morphToSquare(mCreatePdf, mMorphButtonUtility.integer());
                 break;
 
             case INTENT_REQUEST_PICK_FILE_CODE:
@@ -311,6 +316,9 @@ public class AddImagesFragment extends Fragment implements BottomSheetPopulate, 
         mSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
         setTextAndActivateButtons(path);
 
+        mlocationtext.setVisibility(View.VISIBLE);
+        mfileLocation.setText(path);
+
 //        if (addImages.getVisibility() == View.GONE)
 //        {
 //            addImages.setVisibility(View.VISIBLE);
@@ -386,7 +394,6 @@ public class AddImagesFragment extends Fragment implements BottomSheetPopulate, 
                             FragmentTransaction fragmentTransaction = fm.beginTransaction();
                             fragmentTransaction.replace(R.id.content, myfragment);
                             //fragmentTransaction.addToBackStack(null);
-                            fragmentTransaction.remove(myfragment);
                             fragmentTransaction.commit();
 
 
