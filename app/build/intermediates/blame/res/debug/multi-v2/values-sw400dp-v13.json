@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\PDF\\08-02-2021\\Advance-PDF-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw400dp-v13\\values-sw400dp-v13.xml",
+            "outputFile": "C:\\Users\\SumoN\\Desktop\\pdf project\\New folder2\\Advance-PDF-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw400dp-v13\\values-sw400dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Farhad\\.gradle\\caches\\transforms-2\\files-2.1\\570a86526af6fd991d1f9c8f560026ae\\color-picker-view-1.4.0\\res\\values-sw400dp\\values-sw400dp.xml",
+                    "source": "C:\\Users\\SumoN\\.gradle\\caches\\transforms-2\\files-2.1\\570a86526af6fd991d1f9c8f560026ae\\color-picker-view-1.4.0\\res\\values-sw400dp\\values-sw400dp.xml",
                     "from": {
                         "startLines": "4,5,8",
                         "startColumns": "4,4,4",

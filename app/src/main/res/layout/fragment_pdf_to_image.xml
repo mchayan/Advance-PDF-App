@@ -253,14 +253,14 @@
                     <com.dd.morphingbutton.MorphingButton
                         android:id="@+id/createImages"
                         android:layout_width="match_parent"
-                        android:textColor="@color/colorAccent1"
+                        android:textColor="@color/colorPrimary"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:enabled="false"
                         android:gravity="center"
                         android:fontFamily="@font/sarabunregular"
                         android:text="@string/create_images"
-                        android:backgroundTint="@color/Bgcolor"
+                        android:backgroundTint="@color/colorAccent1"
                         android:visibility="gone"/>
 
                 </androidx.cardview.widget.CardView>
