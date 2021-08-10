@@ -2514,6 +2514,7 @@ layout item_file
 layout item_image_extracted
 layout item_merge_files
 layout item_merge_selected_files
+layout item_merge_selected_files2
 layout item_preview_image_options
 layout item_rearrange_images
 layout item_recent_used

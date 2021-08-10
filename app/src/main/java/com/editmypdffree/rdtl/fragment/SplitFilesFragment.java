@@ -167,7 +167,7 @@ public class SplitFilesFragment extends Fragment implements MergeFilesAdapter.On
 
     @Override
     public void onItemClick(String path) {
-        mSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+        mSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
         setTextAndActivateButtons(path);
     }
 
