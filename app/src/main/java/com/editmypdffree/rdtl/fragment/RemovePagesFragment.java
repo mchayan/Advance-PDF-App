@@ -157,6 +157,7 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
 
         resetValues();
 
+        mSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
 
 
         return rootview;
@@ -393,7 +394,7 @@ public class RemovePagesFragment extends Fragment implements MergeFilesAdapter.O
     @OnClick(R.id.openpdf)
     public void opnmypdf(){
 
-        Toast.makeText(mActivity, ""+SuccessOrNot, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(mActivity, ""+SuccessOrNot, Toast.LENGTH_SHORT).show();
         mFileUtils.openFile(SuccessOrNot, FileUtils.FileType.e_PDF);
     }
 

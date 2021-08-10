@@ -368,7 +368,7 @@
     <string name="extract_images"><font color="#7263E2">Extract Images</font></string>
     <string name="extract_images1" translatable="false" tools:ignore="DuplicateDefinition"><font color="#ffffff">Extract Images</font></string>
     <string name="extract_images_failed">We Couldn\'t Find Any Images in the Selected Pdf.</string>
-    <string name="extract_images_success1" translatable="false">We Found %1$d Image(S) in the Selected Pdf. They Have Been Saved in the Pdf Files Folder in Root Directory.</string>
+    <string name="extract_images_success1" translatable="false">We Found %1$d Image(s) in the Selected Pdf. They Have Been Saved in the Pdf Files Folder in Root Directory.</string>
 
 
     <!--  Extract Text-->

@@ -109,6 +109,7 @@ public class ExtractTextFragment extends Fragment implements MergeFilesAdapter.O
         mBottomSheetUtils.populateBottomSheetWithPDFs(this);
         mLottieProgress.setVisibility(View.VISIBLE);
         mSheetBehavior.setBottomSheetCallback(new BottomSheetCallback(mUpArrow, isAdded()));
+        mSheetBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
         return rootView;
     }
 
