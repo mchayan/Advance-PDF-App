@@ -574,7 +574,7 @@ public class  AddTextFragment extends Fragment implements MergeFilesAdapter.OnCl
 
 //        midCard1stWhite.setMinimumHeight(midCard1stWhite.getHeight()+100);
         //midCard1stWhite.setLayoutParams(new RelativeLayout.LayoutParams(MATCH_PARENT, 650));
-        midCard1stWhite.setLayoutParams(new LinearLayout.LayoutParams(midCard1stWhite.getWidth(),midCard1stWhite.getHeight()+150));
+        midCard1stWhite.setLayoutParams(new LinearLayout.LayoutParams(midCard1stWhite.getWidth(),midCard1stWhite.getHeight()+200));
     }
 
 

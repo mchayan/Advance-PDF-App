@@ -75,7 +75,7 @@
                             android:background="@drawable/ic_pdf_to_image"
                             android:layout_gravity="center"
                             android:translationZ="2dp"
-                            />
+                            android:elevation="10dp"/>
 
                     </androidx.cardview.widget.CardView>
 
@@ -378,6 +378,7 @@
                 android:background="@drawable/baseline_share_24"
                 android:layout_gravity="center"
                 android:translationZ="2dp"
+                android:elevation="10dp"
                 />
             <!--                                    <Button-->
             <!--                                        android:id="@+id/shareImages"-->

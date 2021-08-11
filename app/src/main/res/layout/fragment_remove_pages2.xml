@@ -69,7 +69,8 @@
                             android:layout_gravity="center"
                             android:background="@drawable/ic_pdf_to_image"
                             android:backgroundTint="@color/colorAccent1"
-                            android:translationZ="2dp" />
+                            android:translationZ="2dp"
+                            android:elevation="10dp"/>
 
                     </androidx.cardview.widget.CardView>
 
@@ -270,7 +271,7 @@
                         android:background="@drawable/ic_pdf_to_image"
                         android:layout_gravity="center"
                         android:translationZ="2dp"
-                        />
+                        android:elevation="10dp"/>
 
                 </androidx.cardview.widget.CardView>
 
