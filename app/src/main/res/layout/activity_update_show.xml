@@ -74,7 +74,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginTop="10dp"
                     android:textSize="24dp"
-                    android:text="Please Update App"
+                    android:text="&quot;Please Update App R PDF to Continue Enjoying Our Latest Features.&quot;"
                     android:gravity="center"
                     android:letterSpacing="0.1"
                     android:textColor="@color/colorGray">
