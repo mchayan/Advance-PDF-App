@@ -9,6 +9,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.CallSuper;
 import androidx.annotation.UiThread;
+import androidx.core.widget.NestedScrollView;
 import androidx.recyclerview.widget.RecyclerView;
 import butterknife.Unbinder;
 import butterknife.internal.DebouncingOnClickListener;
@@ -64,6 +65,7 @@ public class SplitFilesFragment_ViewBinding implements Unbinder {
     target.mlcTxt = Utils.findRequiredViewAsType(source, R.id.tv_extract_text_bottom, "field 'mlcTxt'", TextView.class);
     target.mrelativebtmcreate = Utils.findRequiredViewAsType(source, R.id.relativebtmcreate, "field 'mrelativebtmcreate'", RelativeLayout.class);
     target.mpopup2 = Utils.findRequiredViewAsType(source, R.id.popup, "field 'mpopup2'", LinearLayout.class);
+    target.midNstdSV = Utils.findRequiredViewAsType(source, R.id.idNstdSV, "field 'midNstdSV'", NestedScrollView.class);
     view = Utils.findRequiredView(source, R.id.viewFiles, "method 'onViewFilesClick'");
     view7f0a0273 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
@@ -96,6 +98,7 @@ public class SplitFilesFragment_ViewBinding implements Unbinder {
     target.mlcTxt = null;
     target.mrelativebtmcreate = null;
     target.mpopup2 = null;
+    target.midNstdSV = null;
 
     view7f0a0200.setOnClickListener(null);
     view7f0a0200 = null;

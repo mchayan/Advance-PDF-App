@@ -48,8 +48,8 @@ public final class R {
     public static final class layout {
         private layout() {}
 
-        public static final int fp_filerow = 0x7f0d004f;
-        public static final int fp_main_layout = 0x7f0d0050;
+        public static final int fp_filerow = 0x7f0d0050;
+        public static final int fp_main_layout = 0x7f0d0051;
     }
     public static final class string {
         private string() {}

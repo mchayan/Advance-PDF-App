@@ -12,6 +12,8 @@ import androidx.annotation.NonNull;
 
 import com.editmypdffree.rdtl.interfaces.IOnBackPressed;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
+
+import androidx.core.widget.NestedScrollView;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -96,6 +98,8 @@ public class SplitFilesFragment extends Fragment implements MergeFilesAdapter.On
     RelativeLayout mrelativebtmcreate;
     @BindView(R.id.popup)
     LinearLayout mpopup2;
+    @BindView(R.id.idNstdSV)
+    NestedScrollView midNstdSV;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
@@ -159,6 +163,8 @@ public class SplitFilesFragment extends Fragment implements MergeFilesAdapter.On
         mSplittedFiles.setLayoutManager(mLayoutManager);
         mSplittedFiles.setAdapter(splitFilesAdapter);
         mSplittedFiles.addItemDecoration(new ViewFilesDividerItemDecoration(mActivity));
+
+        midNstdSV.setVisibility(View.VISIBLE);
         resetValues();
     }
 
@@ -184,6 +190,7 @@ public class SplitFilesFragment extends Fragment implements MergeFilesAdapter.On
 
         mlocationtext.setVisibility(View.VISIBLE);
         mrelativebtmcreate.setVisibility(View.VISIBLE);
+//        midNstdSV.setVisibility(View.VISIBLE);
 
         mlcTxt.setText(path);
     }
