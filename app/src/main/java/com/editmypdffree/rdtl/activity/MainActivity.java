@@ -1,6 +1,7 @@
 package com.editmypdffree.rdtl.activity;
 
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
@@ -26,6 +27,7 @@ import androidx.fragment.app.FragmentManager;
 import android.util.SparseIntArray;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import com.editmypdffree.rdtl.R;
@@ -36,7 +38,10 @@ import com.editmypdffree.rdtl.util.FeedbackUtils;
 import com.editmypdffree.rdtl.util.FileUtils;
 import com.editmypdffree.rdtl.util.PermissionsUtils;
 import com.editmypdffree.rdtl.util.ThemeUtils;
+import com.onesignal.OSNotificationOpenedResult;
 import com.onesignal.OneSignal;
+
+import org.json.JSONObject;
 
 import static com.editmypdffree.rdtl.util.Constants.IS_WELCOME_ACTIVITY_SHOWN;
 import static com.editmypdffree.rdtl.util.Constants.LAUNCH_COUNT;
@@ -55,11 +60,22 @@ public class MainActivity extends AppCompatActivity
 
     private static final int PERMISSION_REQUEST_CODE = 0;
 
+
+    String ff;
+
+    SharedPreferences sharedPrefMM;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         ThemeUtils.getInstance().setThemeApp(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        sharedPrefMM = getSharedPreferences("mm", Context.MODE_PRIVATE);
+        ff = sharedPrefMM.getString("key","0");
+
+
+
 
         // Enable verbose OneSignal logging to debug issues if needed.
         OneSignal.setLogLevel(OneSignal.LOG_LEVEL.VERBOSE, OneSignal.LOG_LEVEL.NONE);
@@ -109,6 +125,62 @@ public class MainActivity extends AppCompatActivity
 
         //check for welcome activity
         openWelcomeActivity();
+
+
+        OneSignal.setNotificationOpenedHandler(new OneSignal.OSNotificationOpenedHandler() {
+
+            @Override
+            public void notificationOpened(OSNotificationOpenedResult result) {
+//                        String actionId = result.getAction().getActionId();
+//                        OSNotificationAction.ActionType type = result.getAction().getType(); // "ActionTaken" | "Opened"
+//
+//                        String title = result.getNotification().getTitle();
+                JSONObject data = result.getNotification().getAdditionalData();
+
+                if(data !=null && data.has("Notification Update")){
+
+                    //Toast.makeText(EightDivisonActivity.this, "Farhad", Toast.LENGTH_SHORT).show();
+
+//                    SharedPreferences.Editor editorA = prefUpdate.edit();
+//                    editorA.putString("notificationUpdate", "1");
+//                    editorA.commit();
+
+//                    sharedPrefMM = getSharedPreferences("mm",0);
+//
+//                    String kk = "0";
+//                    SharedPreferences.Editor editor = sharedPrefMM.edit();
+//                    editor.putString("key", "1");
+//
+//                    editor.commit();
+
+                    sharedPrefMM = getSharedPreferences("mm",0);
+
+
+                    SharedPreferences.Editor editor = sharedPrefMM.edit();
+                    editor.putString("key", "1");
+
+                    editor.commit();
+
+
+
+
+
+                    //  Toast.makeText(EightDivisonActivity.this, "Akash", Toast.LENGTH_SHORT).show();
+
+                }
+
+            }
+        });
+
+        if (ff.equals("1")){
+            Intent in = new Intent(this,UpdateShowActivity.class);
+            startActivity(in);
+            this.finish();
+
+        }
+
+
+
     }
     private Bitmap resizeBitmapImageFn(Bitmap bmpSource, int maxResolution) {
         int iWidth = bmpSource.getWidth();

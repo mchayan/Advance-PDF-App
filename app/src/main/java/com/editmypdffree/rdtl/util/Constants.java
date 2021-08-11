@@ -80,7 +80,7 @@ public class Constants {
 
     public static final String LAUNCH_COUNT = "launch_count";
 
-    public static final String pdfDirectory = "/PDFfiles/";
+    public static final String pdfDirectory = "/R PDF Editor Offline/";
     public static final String pdfExtension = ".pdf";
     public static final String appName = "PDF Converter";
     public static final String PATH_SEPERATOR = "/";
