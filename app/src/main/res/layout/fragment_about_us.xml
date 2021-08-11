@@ -142,7 +142,7 @@
                     android:layout_gravity="center_vertical"
                     android:padding="8dp"
                     android:fontFamily="@font/sarabunregular"
-                    android:text="www.facebook.com/radissonbd.com"
+                    android:text="www.facebook.com/rdtl.info"
                     tools:targetApi="m"
                     android:textColor="@color/colorAccent1"
                     app:drawableTint="@color/colorAccent1" />

@@ -1674,6 +1674,8 @@ drawable playstore
 drawable pluse
 drawable poster
 drawable preference_list_divider_material
+drawable r_logo
+drawable r_logo2
 drawable rectangle
 drawable rectangle1
 drawable rectangle2

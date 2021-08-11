@@ -89,7 +89,7 @@ public class AboutUsFragment extends Fragment {
             @Override
             public void onClick(View arg0) {
 
-                Uri uri = Uri.parse("https://play.google.com/store/apps/developer?id=Radisson+Digital+Technologies+Ltd");
+                Uri uri = Uri.parse("https://play.google.com/store/apps/developer?id=Radisson+Digital+Technologies+Limited");
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
 
