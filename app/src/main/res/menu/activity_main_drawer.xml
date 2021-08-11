@@ -27,6 +27,11 @@
                         android:id="@+id/nav_excel_to_pdf"
                         android:icon="@drawable/ic_excel"
                         android:title="@string/excel_to_pdf1" />
+
+                    <item
+                        android:id="@+id/nav_pdf_to_images"
+                        android:icon="@drawable/ic_image_black_24dp"
+                        android:title="@string/pdf_to_images1" />
                 </group>
             </menu>
         </item>
@@ -43,6 +48,10 @@
                         android:id="@+id/nav_history"
                         android:icon="@drawable/ic_history_black_24dp"
                         android:title="@string/history1" />
+                    <item
+                        android:id="@+id/nav_add_watermark"
+                        android:icon="@drawable/ic_branding_watermark_black_24dp"
+                        android:title="@string/add_watermark1" />
                 </group>
 
             </menu>
@@ -66,10 +75,7 @@
                         android:id="@+id/nav_add_images"
                         android:icon="@drawable/ic_add_black_24dp"
                         android:title="@string/add_images1" />
-                    <item
-                        android:id="@+id/nav_add_watermark"
-                        android:icon="@drawable/ic_branding_watermark_black_24dp"
-                        android:title="@string/add_watermark1" />
+
                     <item
                         android:id="@+id/nav_rotate_pages"
                         android:icon="@drawable/baseline_crop_rotate_24"
@@ -122,10 +128,7 @@
                         android:id="@+id/nav_extract_images"
                         android:icon="@drawable/ic_broken_image_black_24dp"
                         android:title="@string/extract_images1" />
-                    <item
-                        android:id="@+id/nav_pdf_to_images"
-                        android:icon="@drawable/ic_image_black_24dp"
-                        android:title="@string/pdf_to_images1" />
+
 <!--                    <item-->
 <!--                        android:id="@+id/nav_zip_to_pdf"-->
 <!--                        android:icon="@drawable/ic_zip_to_pdf"-->

@@ -277,6 +277,7 @@ public class  AddTextFragment extends Fragment implements MergeFilesAdapter.OnCl
 
             midlocLL2.setVisibility(View.VISIBLE);
             mfileLocation2.setText(mTextPath);
+
             mpdfCreate.setVisibility(View.VISIBLE);
 
             i++;
