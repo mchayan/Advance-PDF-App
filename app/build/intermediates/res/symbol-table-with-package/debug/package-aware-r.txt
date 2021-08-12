@@ -1006,6 +1006,7 @@ color notification_action_color_filter
 color notification_icon_bg_color
 color notification_material_background_media_default_color
 color ntrclr
+color pdf_background
 color preference_fallback_accent_color
 color preview_bottom_size
 color preview_bottom_toolbar_bg
@@ -1670,6 +1671,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable pdf_logo
 drawable playstore
 drawable pluse
 drawable poster
@@ -2607,6 +2609,9 @@ menu menu_favourites
 menu menu_history_fragment
 mipmap ic_launcher
 mipmap ic_launchers
+mipmap pdf_logo
+mipmap pdf_logo_forground
+mipmap pdf_logo_round
 raw consumer_onesignal_keep
 raw favourites
 raw image_icon_tadah

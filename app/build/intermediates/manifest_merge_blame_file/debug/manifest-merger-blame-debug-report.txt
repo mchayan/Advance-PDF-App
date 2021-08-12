@@ -156,149 +156,147 @@
 76-->[androidx.work:work-runtime:2.5.0] C:\Users\Farhad\.gradle\caches\transforms-2\files-2.1\ceb43b3ffec2bbfc40510d239624f30c\work-runtime-2.5.0\AndroidManifest.xml:28:22-74
 77
 78    <application
-78-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:17:5-87:19
+78-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:20:5-90:19
 79        android:name="com.editmypdffree.rdtl.util.PDFApplication"
-79-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:18:9-44
+79-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:21:9-44
 80        android:allowBackup="true"
-80-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:19:9-35
+80-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:22:9-35
 81        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 81-->[androidx.core:core:1.3.0] C:\Users\Farhad\.gradle\caches\transforms-2\files-2.1\0a8074148327b7791068022b900a83a6\core-1.3.0\AndroidManifest.xml:24:18-86
 82        android:fullBackupContent="@xml/backup_descriptor"
-82-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:20:9-59
+82-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:23:9-59
 83        android:hardwareAccelerated="true"
-83-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:21:9-43
-84        android:icon="@drawable/ic_launcher"
-84-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:22:9-45
+83-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:24:9-43
+84        android:icon="@mipmap/pdf_logo"
+84-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:25:9-40
 85        android:label="@string/app_name"
-85-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:23:9-41
+85-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:26:9-41
 86        android:largeHeap="true"
-86-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:24:9-33
+86-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:27:9-33
 87        android:requestLegacyExternalStorage="true"
-87-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:25:9-52
-88        android:roundIcon="@drawable/ic_launcher_round"
-88-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:26:9-56
+87-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:28:9-52
+88        android:roundIcon="@mipmap/pdf_logo_round"
+88-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:29:9-51
 89        android:supportsRtl="true"
-89-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:27:9-35
+89-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:30:9-35
 90        android:theme="@style/AppThemeWhite" >
-90-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:28:9-45
+90-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:31:9-45
 91        <activity android:name="com.editmypdffree.rdtl.activity.UpdateShowActivity" />
-91-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:30:9-74
-91-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:30:19-62
+91-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:33:9-74
+91-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:33:19-62
 92        <activity android:name="com.editmypdffree.rdtl.activity.MainActivity2nothing" /> <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
-92-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:31:9-67
-92-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:31:19-64
+92-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:34:9-67
+92-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:34:19-64
 93        <meta-data
-93-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:32:9-34:52
+93-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:35:9-37:52
 94            android:name="com.google.android.gms.ads.APPLICATION_ID"
-94-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:33:13-69
+94-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:36:13-69
 95            android:value="@string/Admob_app_id" />
-95-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:34:13-49
+95-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:37:13-49
 96
 97        <activity
-97-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:36:9-38:59
+97-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:39:9-41:59
 98            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
-98-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:37:13-76
+98-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:40:13-76
 99            android:theme="@style/Base.Theme.AppCompat" />
-99-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:38:13-56
+99-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:41:13-56
 100        <activity
-100-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:39:9-67:20
+100-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:42:9-70:20
 101            android:name="com.editmypdffree.rdtl.activity.MainActivity"
-101-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:40:13-50
+101-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:43:13-50
 102            android:label="@string/app_name"
-102-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:41:13-45
+102-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:44:13-45
 103            android:screenOrientation="portrait"
-103-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:42:13-49
+103-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:45:13-49
 104            android:windowSoftInputMode="adjustPan" >
-104-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:43:13-52
+104-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:46:13-52
 105            <intent-filter>
-105-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:44:13-48:29
+105-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:47:13-51:29
 106                <action android:name="android.intent.action.MAIN" />
-106-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:45:17-69
-106-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:45:25-66
+106-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:48:17-69
+106-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:48:25-66
 107
 108                <category android:name="android.intent.category.LAUNCHER" />
-108-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:47:17-77
-108-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:47:27-74
+108-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:50:17-77
+108-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:50:27-74
 109            </intent-filter>
 110            <intent-filter>
-110-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:49:13-55:29
+110-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:52:13-58:29
 111                <action android:name="android.intent.action.SEND_MULTIPLE" />
-111-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:50:17-78
-111-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:50:25-75
+111-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:53:17-78
+111-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:53:25-75
 112
 113                <category android:name="android.intent.category.DEFAULT" />
-113-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:52:17-76
-113-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:52:27-73
+113-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:55:17-76
+113-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:55:27-73
 114
 115                <data android:mimeType="image/*" />
-115-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:54:17-52
-115-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:54:23-49
+115-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:57:17-52
+115-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:57:23-49
 116            </intent-filter>
 117            <intent-filter>
-117-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:56:13-62:29
+117-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:59:13-65:29
 118                <action android:name="android.intent.action.SEND" />
-118-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:57:17-69
-118-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:57:25-66
+118-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:60:17-69
+118-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:60:25-66
 119
 120                <category android:name="android.intent.category.DEFAULT" />
-120-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:52:17-76
-120-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:52:27-73
+120-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:55:17-76
+120-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:55:27-73
 121
 122                <data android:mimeType="image/*" />
-122-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:54:17-52
-122-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:54:23-49
+122-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:57:17-52
+122-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:57:23-49
 123            </intent-filter>
 124
 125            <meta-data
-125-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:64:13-66:53
+125-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:67:13-69:53
 126                android:name="android.app.shortcuts"
-126-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:65:17-53
+126-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:68:17-53
 127                android:resource="@xml/shortcuts" />
-127-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:66:17-50
+127-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:69:17-50
 128        </activity>
 129        <activity android:name="com.editmypdffree.rdtl.activity.CropImageActivity" />
-129-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:68:9-64
-129-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:68:19-61
+129-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:71:9-64
+129-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:71:19-61
 130
 131        <provider
-131-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:70:9-78:20
+131-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:73:9-81:20
 132            android:name="androidx.core.content.FileProvider"
-132-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:71:13-62
+132-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:74:13-62
 133            android:authorities="com.editmypdffree.rdtl"
-133-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:72:13-57
+133-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:75:13-57
 134            android:exported="false"
-134-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:73:13-37
+134-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:76:13-37
 135            android:grantUriPermissions="true" >
-135-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:74:13-47
+135-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:77:13-47
 136            <meta-data
-136-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:75:13-77:58
+136-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:78:13-80:58
 137                android:name="android.support.FILE_PROVIDER_PATHS"
-137-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:76:17-67
+137-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:79:17-67
 138                android:resource="@xml/provider_paths" />
-138-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:77:17-55
+138-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:80:17-55
 139        </provider>
 140
 141        <activity android:name="com.editmypdffree.rdtl.activity.WelcomeActivity" />
-141-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:80:9-62
-141-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:80:19-59
+141-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:83:9-62
+141-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:83:19-59
 142        <activity android:name="com.editmypdffree.rdtl.activity.ImageEditor" />
-142-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:81:9-58
-142-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:81:19-55
+142-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:84:9-58
+142-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:84:19-55
 143        <activity android:name="com.editmypdffree.rdtl.activity.PreviewActivity" />
-143-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:82:9-62
-143-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:82:19-59
+143-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:85:9-62
+143-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:85:19-59
 144        <activity android:name="com.editmypdffree.rdtl.activity.RearrangeImages" />
-144-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:83:9-62
-144-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:83:19-59
+144-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:86:9-62
+144-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:86:19-59
 145        <activity android:name="com.editmypdffree.rdtl.activity.ImagesPreviewActivity" />
-145-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:84:9-68
-145-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:84:19-65
+145-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:87:9-68
+145-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:87:19-65
 146        <activity android:name="com.editmypdffree.rdtl.activity.RearrangePdfPages" />
-146-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:85:9-64
-146-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:85:19-61
-147        <activity android:name="com.editmypdffree.rdtl.activity.FavouritesActivity" />
-147-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:86:9-65
-147-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:86:19-62
+146-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:88:9-64
+146-->D:\PDF\08-11-2021\Advance-PDF-App\app\src\main\AndroidManifest.xml:88:19-61
+147        <!-- <activity android:name=".activity.FavouritesActivity" /> -->
 148        <activity android:name="com.zhihu.matisse.ui.MatisseActivity" />
 148-->[com.zhihu.android:matisse:0.5.3-beta3] C:\Users\Farhad\.gradle\caches\transforms-2\files-2.1\3e123aa37c4752cc568c057fff62e709\matisse-0.5.3-beta3\AndroidManifest.xml:28:9-73
 148-->[com.zhihu.android:matisse:0.5.3-beta3] C:\Users\Farhad\.gradle\caches\transforms-2\files-2.1\3e123aa37c4752cc568c057fff62e709\matisse-0.5.3-beta3\AndroidManifest.xml:28:19-70

@@ -289,26 +289,26 @@ public final class R {
         public static final int mb_blue = 0x7f06008a;
         public static final int mb_blue_dark = 0x7f06008b;
         public static final int mb_gray = 0x7f06008c;
-        public static final int primary_dark_material_dark = 0x7f0600b8;
-        public static final int primary_dark_material_light = 0x7f0600b9;
-        public static final int primary_material_dark = 0x7f0600ba;
-        public static final int primary_material_light = 0x7f0600bb;
-        public static final int primary_text_default_material_dark = 0x7f0600bc;
-        public static final int primary_text_default_material_light = 0x7f0600bd;
-        public static final int primary_text_disabled_material_dark = 0x7f0600be;
-        public static final int primary_text_disabled_material_light = 0x7f0600bf;
-        public static final int ripple_material_dark = 0x7f0600c1;
-        public static final int ripple_material_light = 0x7f0600c2;
-        public static final int secondary_text_default_material_dark = 0x7f0600c3;
-        public static final int secondary_text_default_material_light = 0x7f0600c4;
-        public static final int secondary_text_disabled_material_dark = 0x7f0600c5;
-        public static final int secondary_text_disabled_material_light = 0x7f0600c6;
-        public static final int switch_thumb_disabled_material_dark = 0x7f0600c7;
-        public static final int switch_thumb_disabled_material_light = 0x7f0600c8;
-        public static final int switch_thumb_material_dark = 0x7f0600c9;
-        public static final int switch_thumb_material_light = 0x7f0600ca;
-        public static final int switch_thumb_normal_material_dark = 0x7f0600cb;
-        public static final int switch_thumb_normal_material_light = 0x7f0600cc;
+        public static final int primary_dark_material_dark = 0x7f0600b9;
+        public static final int primary_dark_material_light = 0x7f0600ba;
+        public static final int primary_material_dark = 0x7f0600bb;
+        public static final int primary_material_light = 0x7f0600bc;
+        public static final int primary_text_default_material_dark = 0x7f0600bd;
+        public static final int primary_text_default_material_light = 0x7f0600be;
+        public static final int primary_text_disabled_material_dark = 0x7f0600bf;
+        public static final int primary_text_disabled_material_light = 0x7f0600c0;
+        public static final int ripple_material_dark = 0x7f0600c2;
+        public static final int ripple_material_light = 0x7f0600c3;
+        public static final int secondary_text_default_material_dark = 0x7f0600c4;
+        public static final int secondary_text_default_material_light = 0x7f0600c5;
+        public static final int secondary_text_disabled_material_dark = 0x7f0600c6;
+        public static final int secondary_text_disabled_material_light = 0x7f0600c7;
+        public static final int switch_thumb_disabled_material_dark = 0x7f0600c8;
+        public static final int switch_thumb_disabled_material_light = 0x7f0600c9;
+        public static final int switch_thumb_material_dark = 0x7f0600ca;
+        public static final int switch_thumb_material_light = 0x7f0600cb;
+        public static final int switch_thumb_normal_material_dark = 0x7f0600cc;
+        public static final int switch_thumb_normal_material_light = 0x7f0600cd;
     }
     public static final class dimen {
         private dimen() {}

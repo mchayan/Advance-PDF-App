@@ -34,7 +34,7 @@
         android:contentDescription="@string/app_name"
         android:layout_marginVertical="10dp"
         android:layout_marginHorizontal="5dp"
-        android:src="@drawable/r_logo2" />
+        android:src="@drawable/pdf_logo" />
 <!--    </androidx.cardview.widget.CardView>-->
 
 

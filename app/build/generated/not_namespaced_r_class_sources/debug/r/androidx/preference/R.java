@@ -443,29 +443,29 @@ public final class R {
         public static final int material_grey_900 = 0x7f060089;
         public static final int notification_action_color_filter = 0x7f0600b1;
         public static final int notification_icon_bg_color = 0x7f0600b2;
-        public static final int preference_fallback_accent_color = 0x7f0600b5;
-        public static final int primary_dark_material_dark = 0x7f0600b8;
-        public static final int primary_dark_material_light = 0x7f0600b9;
-        public static final int primary_material_dark = 0x7f0600ba;
-        public static final int primary_material_light = 0x7f0600bb;
-        public static final int primary_text_default_material_dark = 0x7f0600bc;
-        public static final int primary_text_default_material_light = 0x7f0600bd;
-        public static final int primary_text_disabled_material_dark = 0x7f0600be;
-        public static final int primary_text_disabled_material_light = 0x7f0600bf;
-        public static final int ripple_material_dark = 0x7f0600c1;
-        public static final int ripple_material_light = 0x7f0600c2;
-        public static final int secondary_text_default_material_dark = 0x7f0600c3;
-        public static final int secondary_text_default_material_light = 0x7f0600c4;
-        public static final int secondary_text_disabled_material_dark = 0x7f0600c5;
-        public static final int secondary_text_disabled_material_light = 0x7f0600c6;
-        public static final int switch_thumb_disabled_material_dark = 0x7f0600c7;
-        public static final int switch_thumb_disabled_material_light = 0x7f0600c8;
-        public static final int switch_thumb_material_dark = 0x7f0600c9;
-        public static final int switch_thumb_material_light = 0x7f0600ca;
-        public static final int switch_thumb_normal_material_dark = 0x7f0600cb;
-        public static final int switch_thumb_normal_material_light = 0x7f0600cc;
-        public static final int tooltip_background_dark = 0x7f0600cd;
-        public static final int tooltip_background_light = 0x7f0600ce;
+        public static final int preference_fallback_accent_color = 0x7f0600b6;
+        public static final int primary_dark_material_dark = 0x7f0600b9;
+        public static final int primary_dark_material_light = 0x7f0600ba;
+        public static final int primary_material_dark = 0x7f0600bb;
+        public static final int primary_material_light = 0x7f0600bc;
+        public static final int primary_text_default_material_dark = 0x7f0600bd;
+        public static final int primary_text_default_material_light = 0x7f0600be;
+        public static final int primary_text_disabled_material_dark = 0x7f0600bf;
+        public static final int primary_text_disabled_material_light = 0x7f0600c0;
+        public static final int ripple_material_dark = 0x7f0600c2;
+        public static final int ripple_material_light = 0x7f0600c3;
+        public static final int secondary_text_default_material_dark = 0x7f0600c4;
+        public static final int secondary_text_default_material_light = 0x7f0600c5;
+        public static final int secondary_text_disabled_material_dark = 0x7f0600c6;
+        public static final int secondary_text_disabled_material_light = 0x7f0600c7;
+        public static final int switch_thumb_disabled_material_dark = 0x7f0600c8;
+        public static final int switch_thumb_disabled_material_light = 0x7f0600c9;
+        public static final int switch_thumb_material_dark = 0x7f0600ca;
+        public static final int switch_thumb_material_light = 0x7f0600cb;
+        public static final int switch_thumb_normal_material_dark = 0x7f0600cc;
+        public static final int switch_thumb_normal_material_light = 0x7f0600cd;
+        public static final int tooltip_background_dark = 0x7f0600ce;
+        public static final int tooltip_background_light = 0x7f0600cf;
     }
     public static final class dimen {
         private dimen() {}
@@ -697,9 +697,9 @@ public final class R {
         public static final int notification_template_icon_low_bg = 0x7f080143;
         public static final int notification_tile_bg = 0x7f080144;
         public static final int notify_panel_notification_icon_bg = 0x7f080145;
-        public static final int preference_list_divider_material = 0x7f080149;
-        public static final int tooltip_frame_dark = 0x7f08015f;
-        public static final int tooltip_frame_light = 0x7f080160;
+        public static final int preference_list_divider_material = 0x7f08014a;
+        public static final int tooltip_frame_dark = 0x7f080160;
+        public static final int tooltip_frame_light = 0x7f080161;
     }
     public static final class id {
         private id() {}
