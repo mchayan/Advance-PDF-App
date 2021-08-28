@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\PDF\\08-11-2021\\Advance-PDF-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ro\\values-ro.xml",
+            "outputFile": "D:\\PDF Experiments\\Advance-PDF-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ro\\values-ro.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Farhad\\.gradle\\caches\\transforms-2\\files-2.1\\05207fabaa90468bfaad8dd6d78f8b34\\jetified-play-services-ads-19.4.0\\res\\values-ro\\values.xml",

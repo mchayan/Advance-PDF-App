@@ -1,4 +1,4 @@
-#Thu Aug 12 11:46:14 BDT 2021
+#Thu Aug 26 10:49:41 BDT 2021
 path.3=classes4.dex
 path.2=classes3.dex
 path.1=classes2.dex
@@ -7,10 +7,10 @@ path.0=classes.dex
 renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
-base.4=D\:\\PDF\\08-11-2021\\Advance-PDF-App\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes5.dex
+base.4=D\:\\PDF Experiments\\Advance-PDF-App\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes5.dex
 renamed.0=classes.dex
-base.3=D\:\\PDF\\08-11-2021\\Advance-PDF-App\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes4.dex
-base.2=D\:\\PDF\\08-11-2021\\Advance-PDF-App\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes3.dex
-base.1=D\:\\PDF\\08-11-2021\\Advance-PDF-App\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes2.dex
-base.0=D\:\\PDF\\08-11-2021\\Advance-PDF-App\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+base.3=D\:\\PDF Experiments\\Advance-PDF-App\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes4.dex
+base.2=D\:\\PDF Experiments\\Advance-PDF-App\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes3.dex
+base.1=D\:\\PDF Experiments\\Advance-PDF-App\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes2.dex
+base.0=D\:\\PDF Experiments\\Advance-PDF-App\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.4=classes5.dex

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\PDF\\08-11-2021\\Advance-PDF-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rHK\\values-zh-rHK.xml",
+            "outputFile": "D:\\PDF Experiments\\Advance-PDF-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rHK\\values-zh-rHK.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Farhad\\.gradle\\caches\\transforms-2\\files-2.1\\68b9b97e65b73477305ef0de08e681ec\\jetified-zxing-android-embedded-3.4.0\\res\\values-zh-rHK\\values-zh-rHK.xml",

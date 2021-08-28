@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\PDF\\08-11-2021\\Advance-PDF-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lo\\values-lo.xml",
+            "outputFile": "D:\\PDF Experiments\\Advance-PDF-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lo\\values-lo.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Farhad\\.gradle\\caches\\transforms-2\\files-2.1\\a8a0517b4e7756c435bc7522bc33fb11\\preference-1.0.0\\res\\values-lo\\values-lo.xml",

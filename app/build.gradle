@@ -7,15 +7,15 @@ apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
 
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion '29'
+    compileSdkVersion 30
+    buildToolsVersion '30'
     defaultConfig {
         applicationId "com.editmypdffree.rdtl"
         vectorDrawables.useSupportLibrary = true
         multiDexEnabled true
         minSdkVersion 21
         multiDexEnabled true
-        targetSdkVersion 29
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
         //testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -39,12 +39,15 @@ android {
     dexOptions {
         javaMaxHeapSize "4g"
     }
+
     packagingOptions {
         exclude 'META-INF/DEPENDENCIES'
         exclude 'META-INF/NOTICE'
         exclude 'META-INF/LICENSE'
         exclude 'META-INF/NOTICE.txt'
         exclude 'META-INF/LICENSE.txt'
+        exclude 'com/itextpdf/io/font/cmap_info.txt'
+        exclude 'com/itextpdf/io/font/cmap/*'
     }
     lintOptions {
         checkReleaseBuilds false
@@ -102,7 +105,8 @@ dependencies {
     implementation group: 'org.apache.poi', name: 'poi-scratchpad', version: '3.9'
 
     // Itext pdf library
-    implementation 'com.itextpdf:itextg:5.5.10'
+    //implementation 'com.itextpdf:itextg:5.5.10'
+    implementation group: 'com.itextpdf', name: 'itextpdf', version: '5.5.13.2'
     implementation 'com.madgag.spongycastle:core:1.58.0.0'
 
     // Picasso, image editor, image cropper

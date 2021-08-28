@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\PDF\\08-11-2021\\Advance-PDF-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xlarge-v4\\values-xlarge-v4.xml",
+            "outputFile": "D:\\PDF Experiments\\Advance-PDF-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xlarge-v4\\values-xlarge-v4.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Farhad\\.gradle\\caches\\transforms-2\\files-2.1\\13bf35cff53e040a73d7f72ede9ccc97\\appcompat-1.2.0\\res\\values-xlarge-v4\\values-xlarge-v4.xml",

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\PDF\\08-11-2021\\Advance-PDF-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ko\\values-ko.xml",
+            "outputFile": "D:\\PDF Experiments\\Advance-PDF-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ko\\values-ko.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Farhad\\.gradle\\caches\\transforms-2\\files-2.1\\3e123aa37c4752cc568c057fff62e709\\matisse-0.5.3-beta3\\res\\values-ko\\values-ko.xml",
